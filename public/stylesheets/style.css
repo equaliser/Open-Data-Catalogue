@@ -1,0 +1,306 @@
+/* main stylesheet */
+
+/* structure */
+body
+	{
+		font-family: Arial, Helvetica, Sans-serif;
+		font-size: 70%;
+		margin: 0px;
+		text-align: center;
+		color: #323232;
+	}
+
+#pageContainer
+	{
+		width:760px;
+		margin:0 auto;
+		text-align:left;
+	}
+	
+/* standards */
+
+form
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+a, a:link
+	{
+		color: #3928AE;
+	}
+	
+a:visited
+	{
+		color: #702376;
+	}
+
+a:hover	
+	{
+		color: #CC0000;
+	}
+
+	
+/***** Top Bar starts *****/
+
+#top-navbar {
+	display:block;
+	width: 761px;
+	background-color: #999;
+	padding: 4px 0 5px 0;
+}
+
+#top-navbar ul 
+	{
+		display: inline;	
+		margin: 0;
+		padding: 0;
+	}
+
+#top-navbar li{
+	display: inline;
+	padding: 0 0 0 10px;
+}
+
+#top-navbar li a
+	{
+		color: white;
+	}
+
+#top-navbar  li a:hover{
+	color: white !important;
+	text-decoration:underline !important;
+}
+
+.top-navbar-right{
+	text-align: right;	
+	margin-left: 346px;
+}
+
+/** Top Bar ends **/
+
+
+/** Main Nav starts **/
+
+header#main .logo
+	{
+		float: left;
+		width: 171px;
+		height:74px;
+		background-image:url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/WCCtopleftlogo/$file/wcc_logo2005.gif);
+		background-repeat:no-repeat;
+		font-size:0;
+	}
+
+.main-navlist-1 
+	{
+		margin-left: 15px;
+	}
+
+#main-navbar ul.threecol 
+	{ 
+		float:right; 
+		width: 520px; 
+		padding:0; 
+		margin:18px 50px 0 0; 
+	}
+
+.threecol li a 
+	{
+		display:block;
+		height:100%;
+		padding-left:15px;
+		width:100%;
+	}
+
+#main-navbar ul 
+	{
+	list-style: none outside none; 
+	}
+
+#main-navbar li { 
+	float: left; 
+	width: 140px; 
+	list-style: none outside none; 
+	padding:0; 
+	margin: 0 0 5px 0; 
+	line-height:8px; 
+	height:0.8em;
+}
+
+.business{	
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet1/$file/bullet_arrow_1.gif) left no-repeat;
+}
+
+.council{	
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet2/$file/bullet_arrow_2.gif) left no-repeat;
+}
+
+.environment{	
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet3/$file/bullet_arrow_3.gif) left no-repeat;	
+}
+
+.leisure{	
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet4/$file/bullet_arrow_4.gif) left no-repeat;	
+}
+
+.travel{	
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet5/$file/bullet_arrow_5.gif) left no-repeat;
+}
+
+.learning{	
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet6/$file/bullet_arrow_6.gif) left no-repeat;
+}
+
+.health{	
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet7/$file/bullet_arrow_7.gif) left no-repeat;
+}
+
+.safety{	
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet8/$file/bullet_arrow_8.gif) left no-repeat;
+}
+
+.community{	
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet9/$file/bullet_arrow_9.gif) left no-repeat;
+}
+
+ul a{
+	color: #000;
+}
+
+#main-navbar a, .sub-nav a, #main-navbar a:visited {
+	text-decoration: none;
+	color: #666;
+}
+
+#main-navbar a a:hover{
+	color: #CC0000;
+}
+
+
+/***** Main Nav ends *****/
+	
+
+/***** Content starts *****/
+
+h1#pageHeader
+	{
+		clear:both;
+		color:#999;
+		font-size:3em;
+		padding-left:18px;
+	}
+
+h1#pageHeader  a:link, h1#pageHeader  a:visited, h1#pageHeader  a:hover, h1#pageHeader  a:active
+	{
+		text-decoration:none;
+		font-weight:100;
+		color:#777;
+	}
+
+	
+/** Content nav **/
+
+nav#pageNav 
+	{
+		float:left;
+		margin-right:40px;
+	}
+
+nav#pageNav ul
+	{
+		padding:0;
+		margin:0;
+		list-style:none;
+	}
+
+nav#pageNav li a
+	{
+		text-decoration:none;
+		display:block;
+		font-size:2em;
+		width:180px;
+		padding:8px 8px 8px 18px;
+		background-image:url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/Dotted+Line/$file/dotted_line.gif);
+		background-repeat:repeat-x;
+		background-position:top left;
+	}
+	
+nav#pageNav li.last
+	{
+		width:206px;
+	background-image:url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/Dotted+Line/$file/dotted_line.gif);
+		background-repeat:repeat-x;
+		background-position:bottom left;
+	}
+
+/** Content nav ends **/	
+	
+#mainCol
+	{
+		float:left;
+		width:514px;
+	}
+	
+	
+/***** Content ends *****/	
+	
+	
+	
+/***** Footer *****/
+
+footer
+	{
+		display:block;
+		width: 760px;
+		margin: 15px auto 15px auto;
+		border-top:25px solid #E7E7E7;
+		color: #1C8445;	
+	}
+
+footer ul, footer p
+	{
+		margin:0;
+		padding:0;
+	}
+	
+footer nav li
+	{
+		display:inline;
+		margin-left:10px;
+	}
+
+footer .left
+	{	
+		float: left;
+		padding: 6px;
+	}
+
+footer .right
+	{	
+		float: right;
+		padding: 6px;
+	}
+
+footer .right a
+	{	
+		color: #1C8445;
+		text-decoration:none;
+	}
+
+/***** Footer Ends *****/	
+	
+	
+/** clearfix **/
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */

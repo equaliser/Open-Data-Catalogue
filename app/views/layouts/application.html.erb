@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+	<meta charset="utf-8">
+	<title><%= h(@title) %> : Warwickshire Data</title>
+	<%= stylesheet_link_tag 'style' %>
+
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	
+	</head>
+<body>
+	<div id="pageContainer">
+		<header id="main" class="clearfix">
+			<nav id="top-navbar" class="clearfix">
+				<ul>
+					<li><a href="http://www.warwickshire.gov.uk/home">Home</a></li>
+					<li><a href="http://www.warwickshire.gov.uk/home">Text-only</a></li>
+					<li><a href="http://www.warwickshire.gov.uk/accessibility">Accessibility</a></li>
+					<li><a href="http://search2.openobjects.com/kbroker/warks/warks/search.jsp">Search</a></li>
+					<li><a href="http://www.warwickshire.gov.uk/me@wcc">Me@WCC</a></li>
+					<li><a href="http://www.warwickshire.gov.uk/feedbackmail">Contact us</a></li>
+				</ul>
+			</nav>
+			
+			<hgroup>
+				<h2 class="logo"><a href="/">Warwickshire County Council</a></h2>
+			</hgroup>
+			
+			<nav id="main-navbar">
+				<ul class="threecol">   
+					<li class="business"><a href="//www.warwickshire.gov.uk/business">Business &amp; Economy</a></li> 
+					<li class="council"><a href="//www.warwickshire.gov.uk/council">Council &amp; Democracy</a></li> 
+					<li class="learning"><a href="/Web/corporate/pages.nsf/Pages%20by%20Department/210D6242C8D89DB280257065002FF7C2">Schools &amp; Learning</a></li>
+					<li class="community"><a href="//www.warwickshire.gov.uk/community">Communities</a></li>
+					<li class="environment"><a href="//www.warwickshire.gov.uk/environment">Environment &amp; Planning</a></li>
+					<li class="health"><a href="//www.warwickshire.gov.uk/Web/corporate/pages.nsf/Pages%20by%20Department/6F2C5AC8AD85D9CB802570650030E1F5">Social Care &amp; Health</a></li> 
+					<li class="safety"><a href="//www.warwickshire.gov.uk/Web/corporate/pages.nsf/Pages%20by%20Department/BE97049A6484433080257065004A7295">Community Safety</a></li>
+					<li class="leisure"><a href="//www.warwickshire.gov.uk/Web/corporate/pages.nsf/Links/D84744B60451230780257065002F8938">Leisure &amp; Tourism</a></li> 
+					<li class="travel"><a href="//www.warwickshire.gov.uk/roads">Roads &amp; Travel</a></li> 
+				</ul>
+			</nav>
+			
+			<h1 id="pageHeader"><a href="/">Warwickshire Open Data</a></h1>
+		</header>
+		
+		<div id="home" class="pageContent clearfix">
+			<nav id="pageNav">
+				<ul>
+					<li><a href="#">Categories</a></li>
+					<li><a href="#">Tags</a></li>
+					<li><a href="#">Thing</a></li>
+					<li><a href="#">Blog</a></li>
+					<li class="last"><a href="#">Community</a></li>
+				</ul>
+			</nav>
+			<div id="mainCol">
+				<%= yield %>
+			</div>
+		</div>
+			
+		<footer class="clearfix">
+			<p id="address" class="left">Warwickshire County Council, Shire Hall, Warwick CV34 4SA Telephone: 01926 410410</p>
+			<nav class="right">
+				<ul>
+					<li><a href="">Location Map</a></li>
+					<li><a href="">A-Z Index</a></li>
+					<li><a href="">Disclaimer and Privacy</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+</body>
+</html>
