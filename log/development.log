@@ -4074,3 +4074,1067 @@ Migrating to CreateLanguages (20100303174430)
   [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `people`[0m
   [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `people`[0m
   [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-03 17:57:49) [GET]
+
+ActionController::RoutingError (No route matches "/language" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 17:57:51) [GET]
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://localhost/languages]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 17:57:54) [GET]
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 17:58:36) [GET]
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 14ms (View: 8, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 17:58:44) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Afrikaans"}}
+  [4;36;1mLanguage Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.3ms)[0m   [0;1mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Afrikaans', '2010-03-03 17:58:44', '2010-03-03 17:58:44')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/languages/1
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 17:58:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mLanguage Load (0.4ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 1) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 77ms (View: 71, DB: 2) | 200 OK [http://localhost/languages/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 17:58:46) [GET]
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 12ms (View: 6, DB: 2) | 200 OK [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 17:58:48) [GET]
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 17:58:53) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Arabic"}}
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Arabic', '2010-03-03 17:58:53', '2010-03-03 17:58:53')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/languages/2
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 17:58:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mLanguage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` WHERE (`languages`.`id` = 2) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/languages/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 17:58:54) [GET]
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;36;1mLanguage Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 14ms (View: 8, DB: 2) | 200 OK [http://localhost/languages]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 17:58:57) [GET]
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 17:59:01) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Bengali"}}
+  [4;36;1mLanguage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Bengali', '2010-03-03 17:59:01', '2010-03-03 17:59:01')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/languages/3
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 17:59:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mLanguage Load (0.2ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 3) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/languages/3]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 17:59:03) [GET]
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;35;1mLanguage Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 19ms (View: 13, DB: 2) | 200 OK [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 17:59:06) [GET]
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 17:59:11) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Cantonese"}}
+  [4;35;1mLanguage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Cantonese', '2010-03-03 17:59:11', '2010-03-03 17:59:11')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/languages/4
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 17:59:11) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mLanguage Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` WHERE (`languages`.`id` = 4) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/languages/4]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 17:59:12) [GET]
+  [4;35;1mLanguage Load (0.4ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 21ms (View: 15, DB: 2) | 200 OK [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 17:59:15) [GET]
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 17:59:19) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"English"}}
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('English', '2010-03-03 17:59:19', '2010-03-03 17:59:19')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/languages/5
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 17:59:19) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mLanguage Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 5) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 2, DB: 2) | 200 OK [http://localhost/languages/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 17:59:20) [GET]
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;35;1mLanguage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 23ms (View: 17, DB: 2) | 200 OK [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 17:59:23) [GET]
+  [4;36;1mLanguage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 17:59:27) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"French"}}
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('French', '2010-03-03 17:59:27', '2010-03-03 17:59:27')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/languages/6
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 17:59:27) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mLanguage Load (0.2ms)[0m   [0;1mSELECT * FROM `languages` WHERE (`languages`.`id` = 6) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 2, DB: 2) | 200 OK [http://localhost/languages/6]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 17:59:28) [GET]
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;36;1mLanguage Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 28ms (View: 22, DB: 2) | 200 OK [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 17:59:30) [GET]
+  [4;35;1mLanguage Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 17:59:34) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Greek"}}
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Greek', '2010-03-03 17:59:34', '2010-03-03 17:59:34')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/languages/7
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 17:59:34) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mLanguage Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mLanguage Load (0.2ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 7) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/languages/7]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 17:59:35) [GET]
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 29ms (View: 23, DB: 2) | 200 OK [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 17:59:38) [GET]
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 17:59:43) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Gujerati"}}
+  [4;35;1mLanguage Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Gujerati', '2010-03-03 17:59:43', '2010-03-03 17:59:43')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/languages/8
+Completed in 11ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 17:59:43) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mLanguage Columns (17.0ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` WHERE (`languages`.`id` = 8) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 25ms (View: 3, DB: 17) | 200 OK [http://localhost/languages/8]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 17:59:44) [GET]
+  [4;35;1mLanguage Load (0.4ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 31ms (View: 25, DB: 2) | 200 OK [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 17:59:47) [GET]
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 78ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 17:59:50) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Hindi"}}
+  [4;36;1mLanguage Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Hindi', '2010-03-03 17:59:51', '2010-03-03 17:59:51')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/languages/9
+Completed in 10ms (DB: 2) | 302 Found [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 17:59:51) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mLanguage Load (0.2ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 9) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/languages/9]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 17:59:51) [GET]
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;35;1mLanguage Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 33ms (View: 27, DB: 2) | 200 OK [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 17:59:53) [GET]
+  [4;36;1mLanguage Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 17:59:56) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Irish"}}
+  [4;35;1mLanguage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Irish', '2010-03-03 17:59:56', '2010-03-03 17:59:56')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/languages/10
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 17:59:56) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mLanguage Load (0.2ms)[0m   [0;1mSELECT * FROM `languages` WHERE (`languages`.`id` = 10) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/languages/10]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 17:59:57) [GET]
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 37ms (View: 31, DB: 2) | 200 OK [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 18:00:03) [GET]
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 18:00:09) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Mandarin Chinese"}}
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Mandarin Chinese', '2010-03-03 18:00:09', '2010-03-03 18:00:09')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/languages/11
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 18:00:09) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mLanguage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mLanguage Load (0.2ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 11) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/languages/11]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 18:00:09) [GET]
+  [4;36;1mLanguage Load (0.4ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;35;1mLanguage Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 106ms (View: 100, DB: 2) | 200 OK [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 18:00:13) [GET]
+  [4;36;1mLanguage Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 11ms (View: 4, DB: 3) | 200 OK [http://localhost/languages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 18:00:18) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Pahari"}}
+  [4;35;1mLanguage Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Pahari', '2010-03-03 18:00:18', '2010-03-03 18:00:18')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/languages/12
+Completed in 11ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 18:00:18) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mLanguage Load (0.2ms)[0m   [0;1mSELECT * FROM `languages` WHERE (`languages`.`id` = 12) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/languages/12]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 18:00:18) [GET]
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 42ms (View: 35, DB: 2) | 200 OK [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 18:00:21) [GET]
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 18:00:25) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Polish"}}
+  [4;36;1mLanguage Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Polish', '2010-03-03 18:00:25', '2010-03-03 18:00:25')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/languages/13
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 18:00:25) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 13) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/languages/13]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 18:00:26) [GET]
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;35;1mLanguage Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 47ms (View: 40, DB: 2) | 200 OK [http://localhost/languages]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 18:00:29) [GET]
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 18:00:39) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Portuguese"}}
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Portuguese', '2010-03-03 18:00:39', '2010-03-03 18:00:39')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/languages/14
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 18:00:39) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mLanguage Load (0.4ms)[0m   [0;1mSELECT * FROM `languages` WHERE (`languages`.`id` = 14) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 76ms (View: 3, DB: 2) | 200 OK [http://localhost/languages/14]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 18:00:43) [GET]
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;36;1mLanguage Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 49ms (View: 43, DB: 2) | 200 OK [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 18:00:44) [GET]
+  [4;35;1mLanguage Columns (40.4ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 49ms (View: 4, DB: 41) | 200 OK [http://localhost/languages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 18:00:48) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Punjabi"}}
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Punjabi', '2010-03-03 18:00:48', '2010-03-03 18:00:48')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/languages/15
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 18:00:48) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mLanguage Load (0.2ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 15) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 2, DB: 2) | 200 OK [http://localhost/languages/15]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 18:00:49) [GET]
+  [4;36;1mLanguage Load (1.0ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;35;1mLanguage Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 128ms (View: 120, DB: 2) | 200 OK [http://localhost/languages]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 18:00:53) [GET]
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 18:00:59) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Scottish Gaelic"}}
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Scottish Gaelic', '2010-03-03 18:00:59', '2010-03-03 18:00:59')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/languages/16
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 18:00:59) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mLanguage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mLanguage Load (0.2ms)[0m   [0;1mSELECT * FROM `languages` WHERE (`languages`.`id` = 16) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 2, DB: 2) | 200 OK [http://localhost/languages/16]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 18:01:00) [GET]
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;36;1mLanguage Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 54ms (View: 47, DB: 3) | 200 OK [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 18:01:04) [GET]
+  [4;35;1mLanguage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 80ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 18:01:08) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Spanish"}}
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Spanish', '2010-03-03 18:01:08', '2010-03-03 18:01:08')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/languages/17
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 18:01:08) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mLanguage Load (0.2ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 17) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/languages/17]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 18:01:09) [GET]
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;35;1mLanguage Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 55ms (View: 49, DB: 2) | 200 OK [http://localhost/languages]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 18:01:12) [GET]
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 18:01:16) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Tamil"}}
+  [4;35;1mLanguage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Tamil', '2010-03-03 18:01:16', '2010-03-03 18:01:16')[0m
+  [4;36;1mSQL (33.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/languages/18
+Completed in 43ms (DB: 36) | 302 Found [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 18:01:16) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mLanguage Load (0.2ms)[0m   [0;1mSELECT * FROM `languages` WHERE (`languages`.`id` = 18) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 10ms (View: 3, DB: 2) | 200 OK [http://localhost/languages/18]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 18:01:18) [GET]
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;36;1mLanguage Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 60ms (View: 53, DB: 2) | 200 OK [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 18:01:19) [GET]
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 18:01:22) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Turkish"}}
+  [4;36;1mLanguage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.3ms)[0m   [0;1mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Turkish', '2010-03-03 18:01:22', '2010-03-03 18:01:22')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/languages/19
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 18:01:23) [GET]
+  Parameters: {"id"=>"19"}
+  [4;36;1mLanguage Columns (26.3ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 19) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 36ms (View: 4, DB: 27) | 200 OK [http://localhost/languages/19]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 18:01:26) [GET]
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 64ms (View: 58, DB: 2) | 200 OK [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 18:01:27) [GET]
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 18:01:30) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Urdu"}}
+  [4;35;1mLanguage Columns (25.0ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Urdu', '2010-03-03 18:01:30', '2010-03-03 18:01:30')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/languages/20
+Completed in 34ms (DB: 26) | 302 Found [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 18:01:30) [GET]
+  Parameters: {"id"=>"20"}
+  [4;35;1mLanguage Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` WHERE (`languages`.`id` = 20) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/languages/20]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 18:01:31) [GET]
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;36;1mLanguage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 135ms (View: 129, DB: 2) | 200 OK [http://localhost/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2010-03-03 18:01:33) [GET]
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/languages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2010-03-03 18:01:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "language"=>{"name"=>"Welsh"}}
+  [4;36;1mLanguage Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `created_at`, `updated_at`) VALUES('Welsh', '2010-03-03 18:01:36', '2010-03-03 18:01:36')[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/languages/21
+Completed in 12ms (DB: 4) | 302 Found [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2010-03-03 18:01:36) [GET]
+  Parameters: {"id"=>"21"}
+  [4;36;1mLanguage Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 21) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/languages/21]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 18:01:37) [GET]
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/languages
+Rendering languages/index
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 67ms (View: 60, DB: 2) | 200 OK [http://localhost/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AudiencesController#index (for 127.0.0.1 at 2010-03-03 18:01:41) [GET]
+  [4;36;1mAudience Load (0.4ms)[0m   [0;1mSELECT * FROM `audiences` [0m
+Rendering template within layouts/audiences
+Rendering audiences/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/audiences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AudiencesController#new (for 127.0.0.1 at 2010-03-03 18:01:43) [GET]
+  [4;35;1mAudience Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+Rendering template within layouts/audiences
+Rendering audiences/new
+Completed in 15ms (View: 9, DB: 2) | 200 OK [http://localhost/audiences/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AudiencesController#create (for 127.0.0.1 at 2010-03-03 18:01:48) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "audience"=>{"name"=>"Public"}}
+  [4;36;1mAudience Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mAudience Create (0.2ms)[0m   [0;1mINSERT INTO `audiences` (`name`, `created_at`, `updated_at`) VALUES('Public', '2010-03-03 18:01:48', '2010-03-03 18:01:48')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/audiences/1
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/audiences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AudiencesController#show (for 127.0.0.1 at 2010-03-03 18:01:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAudience Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+  [4;35;1mAudience Load (0.3ms)[0m   [0mSELECT * FROM `audiences` WHERE (`audiences`.`id` = 1) [0m
+Rendering template within layouts/audiences
+Rendering audiences/show
+Completed in 13ms (View: 6, DB: 2) | 200 OK [http://localhost/audiences/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AudiencesController#index (for 127.0.0.1 at 2010-03-03 18:01:49) [GET]
+  [4;36;1mAudience Load (0.3ms)[0m   [0;1mSELECT * FROM `audiences` [0m
+Rendering template within layouts/audiences
+Rendering audiences/index
+  [4;35;1mAudience Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+Completed in 12ms (View: 6, DB: 2) | 200 OK [http://localhost/audiences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AudiencesController#new (for 127.0.0.1 at 2010-03-03 18:01:50) [GET]
+  [4;36;1mAudience Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+Rendering template within layouts/audiences
+Rendering audiences/new
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/audiences/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AudiencesController#create (for 127.0.0.1 at 2010-03-03 18:01:53) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "audience"=>{"name"=>"Restricted"}}
+  [4;35;1mAudience Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAudience Create (0.2ms)[0m   [0mINSERT INTO `audiences` (`name`, `created_at`, `updated_at`) VALUES('Restricted', '2010-03-03 18:01:53', '2010-03-03 18:01:53')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/audiences/2
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/audiences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AudiencesController#show (for 127.0.0.1 at 2010-03-03 18:01:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAudience Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mAudience Load (0.3ms)[0m   [0;1mSELECT * FROM `audiences` WHERE (`audiences`.`id` = 2) [0m
+Rendering template within layouts/audiences
+Rendering audiences/show
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/audiences/2]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AudiencesController#index (for 127.0.0.1 at 2010-03-03 18:01:54) [GET]
+  [4;35;1mAudience Load (0.3ms)[0m   [0mSELECT * FROM `audiences` [0m
+Rendering template within layouts/audiences
+Rendering audiences/index
+  [4;36;1mAudience Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+Completed in 15ms (View: 9, DB: 2) | 200 OK [http://localhost/audiences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2010-03-03 18:01:59) [GET]
+Rendering template within layouts/application
+Rendering hello/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2010-03-03 21:18:42) [GET]
+Rendering template within layouts/application
+Rendering hello/index
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 21:18:43) [GET]
+  [4;35;1mBlogpost Load (0.4ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Completed in 128ms (View: 85, DB: 13) | 200 OK [http://localhost/blogposts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (75.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDatasets (20100301214544)
+Migrating to CreateBlogposts (20100303132134)
+Migrating to BlogPostContent (20100303145129)
+Migrating to CreatePeople (20100303160243)
+Migrating to CreateAudiences (20100303173250)
+Migrating to CreateLanguages (20100303174430)
+Migrating to CreateUsers (20100303213834)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (62.7ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `email` varchar(255), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(255), `remember_token_expires_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100303213834')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (17.7ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `audiences`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `audiences`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `blogposts`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `blogposts`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `datasets`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `datasets`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `languages`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `languages`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `users`[0m

@@ -1,5 +1,5 @@
 # This controller handles the login/logout function of the site.  
-class SessionController < ApplicationController
+class <%= controller_class_name %>Controller < ApplicationController
   # Be sure to include AuthenticationSystem in Application Controller instead
   include AuthenticatedSystem
 
@@ -8,11 +8,11 @@ class SessionController < ApplicationController
   end
 
   def create
-    self.current_user = User.authenticate(params[:login], params[:password])
+    self.current_<%= file_name %> = <%= class_name %>.authenticate(params[:login], params[:password])
     if logged_in?
       if params[:remember_me] == "1"
-        current_user.remember_me unless current_user.remember_token?
-        cookies[:auth_token] = { :value => self.current_user.remember_token , :expires => self.current_user.remember_token_expires_at }
+        current_<%= file_name %>.remember_me unless current_<%= file_name %>.remember_token?
+        cookies[:auth_token] = { :value => self.current_<%= file_name %>.remember_token , :expires => self.current_<%= file_name %>.remember_token_expires_at }
       end
       redirect_back_or_default('/')
       flash[:notice] = "Logged in successfully"
@@ -22,7 +22,7 @@ class SessionController < ApplicationController
   end
 
   def destroy
-    self.current_user.forget_me if logged_in?
+    self.current_<%= file_name %>.forget_me if logged_in?
     cookies.delete :auth_token
     reset_session
     flash[:notice] = "You have been logged out."
