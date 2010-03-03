@@ -1564,3 +1564,1558 @@ Migrating to BlogPostContent (20100303145129)
   [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
   [4;36;1mSQL (2.2ms)[0m   [0;1mdescribe `datasets`[0m
   [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `datasets`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 15:10:10) [GET]
+Rendering template within layouts/application
+Rendering blogposts/index
+Completed in 71ms (View: 70, DB: 0) | 200 OK [http://localhost/blogposts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:10:13) [GET]
+Rendering template within layouts/application
+Rendering blogposts/add
+ERROR: compiling _run_erb_app47views47blogposts47add46html46erb RAISED compile error
+/Users/equaliser/ruby/opendata/app/views/blogposts/add.html.erb:4: syntax error, unexpected ')'
+...( form_for(@blogpost) do |f| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/equaliser/ruby/opendata/app/views/blogposts/add.html.erb:39: syntax error, unexpected kENSURE, expecting ')'
+/Users/equaliser/ruby/opendata/app/views/blogposts/add.html.erb:41: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47blogposts47add46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"addPost\">\n\t"
+; @output_buffer.concat(( error_messages_for :blogpost ).to_s); @output_buffer.concat "\n\n\t"
+
+; @output_buffer.concat(( form_for(@blogpost) do |f| ).to_s); @output_buffer.concat "\n\n\t<p class=\"fieldItem\">\n\t\t<label for=\"title\">Title</label>\n\t\t"
+
+
+
+; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "\n\t</p>\n\n\t<p class=\"fieldItem\">\n\t\t<label for=\"author\">Author</label>\n\t\t"
+
+
+
+
+; @output_buffer.concat(( f.text_field :author ).to_s); @output_buffer.concat "\n\t</p>\n\n\t<p class=\"fieldItem\">\n\t\t<label for=\"synopsis\">Synopsis</label>\n\t\t"
+
+
+
+
+; @output_buffer.concat(( f.text_area :synopsis ).to_s); @output_buffer.concat "\n\t</p>\n\n\t<p class=\"fieldItem\">\n\t\t<label for=\"content\">Content</label>\n\t\t"
+
+
+
+
+; @output_buffer.concat(( f.text_area :content ).to_s); @output_buffer.concat "\n\t</p>\n\n\t<p class=\"fieldItem\">\n\t\t<label for=\"published\">Is it published?</label>\n\t\t"
+
+
+
+
+; @output_buffer.concat(( f.check_box :published ).to_s); @output_buffer.concat "\n\t</p>\n\n\t<p class=\"fieldItem\">\n\t\t<label for=\"published\">Is it published?</label>\n\t\t"
+
+
+
+
+; @output_buffer.concat(( f.datetime_select :publishdate ).to_s); @output_buffer.concat "\n\t</p>\n\n\t"
+
+
+;  end ; @output_buffer.concat "\n\n</div>"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/equaliser/ruby/opendata/app/views/blogposts/add.html.erb:41:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/equaliser/ruby/opendata/app/views/blogposts/add.html.erb:4: syntax error, unexpected ')'
+...( form_for(@blogpost) do |f| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/equaliser/ruby/opendata/app/views/blogposts/add.html.erb:39: syntax error, unexpected kENSURE, expecting ')'
+/Users/equaliser/ruby/opendata/app/views/blogposts/add.html.erb:41: syntax error, unexpected kEND, expecting ')') on line #4 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<%= error_messages_for :blogpost %>
+3: 
+4: 	<%= form_for(@blogpost) do |f| %>
+5: 
+6: 	<p class="fieldItem">
+7: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:41:in `compile!'
+
+Rendered rescues/_trace (51.5ms)
+Rendered rescues/_request_and_response (2.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:11:48) [GET]
+Rendering template within layouts/application
+Rendering blogposts/add
+ERROR: compiling _run_erb_app47views47blogposts47add46html46erb RAISED compile error
+/Users/equaliser/ruby/opendata/app/views/blogposts/add.html.erb:3: syntax error, unexpected ')'
+...( form_for(@blogpost) do |f| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/equaliser/ruby/opendata/app/views/blogposts/add.html.erb:38: syntax error, unexpected kENSURE, expecting ')'
+/Users/equaliser/ruby/opendata/app/views/blogposts/add.html.erb:40: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47blogposts47add46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"addPost\">\n\n\t"
+
+; @output_buffer.concat(( form_for(@blogpost) do |f| ).to_s); @output_buffer.concat "\n\n\t<p class=\"fieldItem\">\n\t\t<label for=\"title\">Title</label>\n\t\t"
+
+
+
+; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "\n\t</p>\n\n\t<p class=\"fieldItem\">\n\t\t<label for=\"author\">Author</label>\n\t\t"
+
+
+
+
+; @output_buffer.concat(( f.text_field :author ).to_s); @output_buffer.concat "\n\t</p>\n\n\t<p class=\"fieldItem\">\n\t\t<label for=\"synopsis\">Synopsis</label>\n\t\t"
+
+
+
+
+; @output_buffer.concat(( f.text_area :synopsis ).to_s); @output_buffer.concat "\n\t</p>\n\n\t<p class=\"fieldItem\">\n\t\t<label for=\"content\">Content</label>\n\t\t"
+
+
+
+
+; @output_buffer.concat(( f.text_area :content ).to_s); @output_buffer.concat "\n\t</p>\n\n\t<p class=\"fieldItem\">\n\t\t<label for=\"published\">Is it published?</label>\n\t\t"
+
+
+
+
+; @output_buffer.concat(( f.check_box :published ).to_s); @output_buffer.concat "\n\t</p>\n\n\t<p class=\"fieldItem\">\n\t\t<label for=\"published\">Is it published?</label>\n\t\t"
+
+
+
+
+; @output_buffer.concat(( f.datetime_select :publishdate ).to_s); @output_buffer.concat "\n\t</p>\n\n\t"
+
+
+;  end ; @output_buffer.concat "\n\n</div>"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/equaliser/ruby/opendata/app/views/blogposts/add.html.erb:40:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/equaliser/ruby/opendata/app/views/blogposts/add.html.erb:3: syntax error, unexpected ')'
+...( form_for(@blogpost) do |f| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/equaliser/ruby/opendata/app/views/blogposts/add.html.erb:38: syntax error, unexpected kENSURE, expecting ')'
+/Users/equaliser/ruby/opendata/app/views/blogposts/add.html.erb:40: syntax error, unexpected kEND, expecting ')') on line #3 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 	<%= form_for(@blogpost) do |f| %>
+4: 
+5: 	<p class="fieldItem">
+6: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:40:in `compile!'
+
+Rendered rescues/_trace (112.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:12:05) [GET]
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 	<% form_for(@blogpost) do |f| %>
+4: 
+5: 	<p class="fieldItem">
+6: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:3
+
+Rendered rescues/_trace (43.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:12:20) [GET]
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 	<% form_for(@blogpost) do |f| %>
+4: 
+5: 	<p class="fieldItem">
+6: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:3
+
+Rendered rescues/_trace (114.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:12:21) [GET]
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 	<% form_for(@blogpost) do |f| %>
+4: 
+5: 	<p class="fieldItem">
+6: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:3
+
+Rendered rescues/_trace (41.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:12:21) [GET]
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 	<% form_for(@blogpost) do |f| %>
+4: 
+5: 	<p class="fieldItem">
+6: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:3
+
+Rendered rescues/_trace (49.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:12:21) [GET]
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 	<% form_for(@blogpost) do |f| %>
+4: 
+5: 	<p class="fieldItem">
+6: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:3
+
+Rendered rescues/_trace (121.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:12:27) [GET]
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 	<% form_for(@blogposts) do |f| %>
+4: 
+5: 	<p class="fieldItem">
+6: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:3
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:12:28) [GET]
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 	<% form_for(@blogposts) do |f| %>
+4: 
+5: 	<p class="fieldItem">
+6: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:3
+
+Rendered rescues/_trace (115.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:12:28) [GET]
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 	<% form_for(@blogposts) do |f| %>
+4: 
+5: 	<p class="fieldItem">
+6: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:3
+
+Rendered rescues/_trace (54.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:13:41) [GET]
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 	<% form_for(@blogposts) do |f| %>
+4: 
+5: 	<p class="fieldItem">
+6: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:3
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:13:43) [GET]
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 	<% form_for(@blogposts) do |f| %>
+4: 
+5: 	<p class="fieldItem">
+6: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:3
+
+Rendered rescues/_trace (42.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:36:38) [GET]
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #4 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 
+4: 	<% form_for(@blogposts) do |f| %>
+5: 
+6: 	<p class="fieldItem">
+7: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:4
+
+Rendered rescues/_trace (43.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:36:43) [GET]
+
+NameError (uninitialized constant BlogpostsController::Blogposts):
+  app/controllers/blogposts_controller.rb:8:in `add'
+
+Rendered rescues/_trace (34.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:36:44) [GET]
+
+NameError (uninitialized constant BlogpostsController::Blogposts):
+  app/controllers/blogposts_controller.rb:8:in `add'
+
+Rendered rescues/_trace (41.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:36:45) [GET]
+
+NameError (uninitialized constant BlogpostsController::Blogposts):
+  app/controllers/blogposts_controller.rb:8:in `add'
+
+Rendered rescues/_trace (40.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:36:45) [GET]
+
+NameError (uninitialized constant BlogpostsController::Blogposts):
+  app/controllers/blogposts_controller.rb:8:in `add'
+
+Rendered rescues/_trace (114.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:36:45) [GET]
+
+NameError (uninitialized constant BlogpostsController::Blogposts):
+  app/controllers/blogposts_controller.rb:8:in `add'
+
+Rendered rescues/_trace (35.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:37:17) [GET]
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #4 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 
+4: 	<% form_for(@blogposts) do |f| %>
+5: 
+6: 	<p class="fieldItem">
+7: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:4
+
+Rendered rescues/_trace (116.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:37:18) [GET]
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #4 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 
+4: 	<% form_for(@blogposts) do |f| %>
+5: 
+6: 	<p class="fieldItem">
+7: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:4
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:37:26) [GET]
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #4 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 
+4: 	<% form_for(@blogposts) do |f| %>
+5: 
+6: 	<p class="fieldItem">
+7: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:4
+
+Rendered rescues/_trace (118.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:37:27) [GET]
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #4 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 
+4: 	<% form_for(@blogposts) do |f| %>
+5: 
+6: 	<p class="fieldItem">
+7: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:4
+
+Rendered rescues/_trace (44.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:49:32) [GET]
+  [4;35;1mBlogpost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #4 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 
+4: 	<% form_for(@blogposts) do |f| %>
+5: 		 <%= f.error_messages %>
+6: 	<p class="fieldItem">
+7: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:4
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:49:50) [GET]
+  [4;36;1mBlogpost Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x104294460>) on line #4 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 
+3: 
+4: 	<% form_for(@blogpost) do |f| %>
+5: 		 <%= f.error_messages %>
+6: 	<p class="fieldItem">
+7: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:4
+
+Rendered rescues/_trace (114.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:53:22) [GET]
+  [4;35;1mBlogpost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x10440d5d0>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 		 <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+
+Rendered rescues/_trace (43.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:53:23) [GET]
+  [4;36;1mBlogpost Columns (5.6ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x1041797d8>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 		 <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+
+Rendered rescues/_trace (44.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:53:24) [GET]
+  [4;35;1mBlogpost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x1042c3148>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 		 <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+
+Rendered rescues/_trace (117.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:54:15) [GET]
+  [4;36;1mBlogpost Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x104471c88>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 		 <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+
+Rendered rescues/_trace (42.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:54:15) [GET]
+  [4;35;1mBlogpost Columns (7.8ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x1041d8a08>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 		 <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+
+Rendered rescues/_trace (44.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:54:16) [GET]
+  [4;36;1mBlogpost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x104338da8>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 		 <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:54:17) [GET]
+  [4;35;1mBlogpost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x1044b9448>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 		 <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+
+Rendered rescues/_trace (44.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:55:33) [GET]
+  [4;36;1mBlogpost Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x10423b220>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 		 <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (117.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:55:33) [GET]
+  [4;35;1mBlogpost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x104397b78>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 		 <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (47.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 15:56:02) [GET]
+Rendering template within layouts/application
+Rendering blogposts/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/blogposts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:56:04) [GET]
+  [4;36;1mBlogpost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x10447e550>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 		 <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (47.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:56:14) [GET]
+  [4;36;1mBlogpost Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x1015f2f88>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 		 <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (56.3ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:56:59) [GET]
+  [4;35;1mBlogpost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x104307910>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 	  <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (121.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:57:03) [GET]
+  [4;36;1mBlogpost Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogposts) do |f| %>
+3: 	  <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (47.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:57:06) [GET]
+  [4;35;1mBlogpost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x1041810c8>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 	  <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (48.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:57:41) [GET]
+  [4;36;1mBlogpost Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x1042779a0>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 	  <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (122.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:59:24) [GET]
+  [4;35;1mBlogpost Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x10439e7c0>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 	  <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:59:25) [GET]
+  [4;36;1mBlogpost Columns (8.7ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x1044d9298>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 	  <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (61.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:59:34) [GET]
+  [4;35;1mBlogpost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x1041febe0>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 	  <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (118.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:59:45) [GET]
+  [4;36;1mBlogpost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x1015cd3f0>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 	  <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (51.6ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:59:45) [GET]
+  [4;35;1mBlogpost Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x104302b40>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 	  <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (230.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:59:46) [GET]
+  [4;36;1mBlogpost Columns (173.6ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x1044513e8>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 	  <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (57.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:59:46) [GET]
+  [4;35;1mBlogpost Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x1041abbc0>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 	  <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (48.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#add (for 127.0.0.1 at 2010-03-03 15:59:46) [GET]
+  [4;36;1mBlogpost Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/add
+
+ActionView::TemplateError (undefined method `blogposts_path' for #<ActionView::Base:0x1042dd1d8>) on line #2 of app/views/blogposts/add.html.erb:
+1: <div id="addPost">
+2: 	<% form_for(@blogpost) do |f| %>
+3: 	  <%= f.error_messages %>
+4: 	<p class="fieldItem">
+5: 		<label for="title">Title</label>
+
+    app/views/blogposts/add.html.erb:2
+    app/controllers/blogposts_controller.rb:10:in `add'
+
+Rendered rescues/_trace (124.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-03 16:02:48) [GET]
+
+ActionController::RoutingError (No route matches "/Person" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-03 16:02:51) [GET]
+
+ActionController::RoutingError (No route matches "/person" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-03 16:02:53) [GET]
+
+ActionController::RoutingError (No route matches "/person" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-03 16:03:01) [GET]
+
+ActionController::RoutingError (No route matches "/person" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2010-03-03 16:03:06) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mMysql::Error: Table 'opendata_development.people' doesn't exist: SELECT * FROM `people` [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'opendata_development.people' doesn't exist: SELECT * FROM `people` ):
+  app/controllers/people_controller.rb:5:in `index'
+
+Rendered rescues/_trace (43.6ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (38.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDatasets (20100301214544)
+Migrating to CreateBlogposts (20100303132134)
+Migrating to BlogPostContent (20100303145129)
+Migrating to CreatePeople (20100303160243)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDatasets (20100301214544)
+Migrating to CreateBlogposts (20100303132134)
+Migrating to BlogPostContent (20100303145129)
+Migrating to CreatePeople (20100303160243)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDatasets (20100301214544)
+Migrating to CreateBlogposts (20100303132134)
+Migrating to BlogPostContent (20100303145129)
+Migrating to CreatePeople (20100303160243)
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `age` int(11), `jobtitle` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100303160243')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `blogposts`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `blogposts`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `datasets`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `datasets`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2010-03-03 16:10:24) [GET]
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Completed in 389ms (View: 384, DB: 1) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:15:31) [GET]
+Rendering template within layouts/application
+Rendering blogposts/index
+Completed in 83ms (View: 82, DB: 0) | 200 OK [http://localhost/blogposts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:15:33) [GET]
+  Parameters: {"id"=>"add"}
+
+ActionController::UnknownAction (No action responded to show. Actions: add, index, and view):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:15:49) [GET]
+Rendering template within layouts/application
+Rendering blogposts/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/blogposts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:15:51) [GET]
+  Parameters: {"id"=>"add"}
+
+ActionController::UnknownAction (No action responded to show. Actions: add, index, and view):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:16:05) [GET]
+  Parameters: {"id"=>"add"}
+
+ActionController::UnknownAction (No action responded to show. Actions: add, index, and view):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2010-03-03 16:16:12) [GET]
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://localhost/people]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2010-03-03 16:16:14) [GET]
+  Parameters: {"id"=>"add"}
+  [4;35;1mPerson Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=add):
+  app/controllers/people_controller.rb:16:in `show'
+
+Rendered rescues/_trace (102.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2010-03-03 16:16:17) [GET]
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM `people` [0m
+Rendering template within layouts/people
+Rendering people/index
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2010-03-03 16:16:23) [GET]
+  Parameters: {"id"=>"news"}
+  [4;36;1mPerson Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Person with ID=news):
+  app/controllers/people_controller.rb:16:in `show'
+
+Rendered rescues/_trace (35.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2010-03-03 16:16:24) [GET]
+  [4;36;1mPerson Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+Rendering template within layouts/people
+Rendering people/new
+Completed in 18ms (View: 12, DB: 2) | 200 OK [http://localhost/people/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#new (for 127.0.0.1 at 2010-03-03 16:16:41) [GET]
+  [4;35;1mBlogpost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::MissingTemplate (Missing template blogposts/new.erb in view path app/views):
+  app/controllers/blogposts_controller.rb:10:in `new'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#new (for 127.0.0.1 at 2010-03-03 16:16:57) [GET]
+  [4;36;1mBlogpost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/new
+Completed in 183ms (View: 177, DB: 2) | 200 OK [http://localhost/blogposts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#new (for 127.0.0.1 at 2010-03-03 16:17:52) [GET]
+  [4;35;1mBlogpost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/new
+Completed in 22ms (View: 17, DB: 2) | 200 OK [http://localhost/blogposts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#new (for 127.0.0.1 at 2010-03-03 16:18:23) [GET]
+  [4;36;1mBlogpost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/new
+Completed in 90ms (View: 84, DB: 2) | 200 OK [http://localhost/blogposts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#new (for 127.0.0.1 at 2010-03-03 16:19:30) [GET]
+  [4;35;1mBlogpost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/new
+Completed in 27ms (View: 21, DB: 2) | 200 OK [http://localhost/blogposts/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#new (for 127.0.0.1 at 2010-03-03 16:19:44) [GET]
+  [4;36;1mBlogpost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/new
+Completed in 27ms (View: 21, DB: 2) | 200 OK [http://localhost/blogposts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#new (for 127.0.0.1 at 2010-03-03 16:31:08) [GET]
+  [4;35;1mBlogpost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/new
+Completed in 22ms (View: 16, DB: 2) | 200 OK [http://localhost/blogposts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#create (for 127.0.0.1 at 2010-03-03 16:31:35) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "blogpost"=>{"author"=>"Steve Woodward", "title"=>"My story", "published"=>"1", "publishdate(1i)"=>"2010", "publishdate(2i)"=>"3", "content"=>"Uh. Here is my content.", "publishdate(3i)"=>"4", "publishdate(4i)"=>"16", "synopsis"=>"It's amazig.", "publishdate(5i)"=>"31"}}
+  [4;36;1mBlogpost Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.save):
+  app/controllers/blogposts_controller.rb:35:in `create'
+  app/controllers/blogposts_controller.rb:34:in `create'
+
+Rendered rescues/_trace (107.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#create (for 127.0.0.1 at 2010-03-03 16:32:01) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "blogpost"=>{"author"=>"Steve Woodward", "title"=>"My story", "published"=>"1", "publishdate(1i)"=>"2010", "publishdate(2i)"=>"3", "content"=>"Uh. Here is my content.", "publishdate(3i)"=>"4", "publishdate(4i)"=>"16", "synopsis"=>"It's amazig.", "publishdate(5i)"=>"31"}}
+  [4;35;1mBlogpost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBlogpost Create (0.2ms)[0m   [0mINSERT INTO `blogposts` (`created_at`, `author`, `title`, `updated_at`, `published`, `content`, `synopsis`, `publishdate`) VALUES('2010-03-03 16:32:01', 'Steve Woodward', 'My story', '2010-03-03 16:32:01', 1, 'Uh. Here is my content.', 'It\'s amazig.', '2010-03-04 16:31:00')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/blogposts/1
+Completed in 12ms (DB: 3) | 302 Found [http://localhost/blogposts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:32:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlogpost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 1) [0m
+
+ActionView::MissingTemplate (Missing template blogposts/show.erb in view path app/views):
+  app/controllers/blogposts_controller.rb:20:in `show'
+
+Rendering rescues/layout (internal_server_error)

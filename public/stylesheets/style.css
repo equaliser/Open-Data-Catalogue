@@ -242,6 +242,15 @@ nav#pageNav li.last
 		width:514px;
 	}
 	
+
+/*** forms ***/
+
+label
+	{
+		display:block;
+		font-weight:bold;
+	}
+
 	
 /***** Content ends *****/	
 	
