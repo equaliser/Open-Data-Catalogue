@@ -1,0 +1,18 @@
+<% @blogpost.each do |post| %>
+<article class="blogpost">
+	<header>
+		<h1><%= h post.title %></h1>
+		<time datetime="<%= h post.publishdate  %>" pubdate>
+			<%= h post.publishdate  %>
+		</time>
+	</header>
+
+	<div class="postcontent">	
+		<%= h post.synopsis %>
+	</div>
+</article>
+<% end %>
+
+
+
+

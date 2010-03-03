@@ -1,9 +1,12 @@
 <article id="blogpost">
 	<header>
-		<h1><% h(@title) %></h1>
+		<h1><%= h @blogpost.title  %></h1>
+		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+			<%= h @blogpost.publishdate  %>
+		</time>
 	</header>
 
 	<div id="postcontent">	
-		<% h(@content)%>
+		<%= h @blogpost.content %>
 	</div>
 </article>

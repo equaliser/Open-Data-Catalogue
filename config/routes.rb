@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :languages
+
+  map.resources :audiences
+
   map.resources :people
   map.resources :blogposts
   

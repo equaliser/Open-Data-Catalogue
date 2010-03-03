@@ -1,10 +1,16 @@
 class BlogpostsController < ApplicationController
   
   def index
-    
+    @title = "Blog"
+    @blogpost = Blogpost.all
+     respond_to do |format|
+        format.html # index.html.erb
+        format.xml  { render :xml => @blogpost }
+      end
   end
   
   def new
+   @title = "New blogpost"
    @blogpost = Blogpost.new
    
    respond_to do |format|
@@ -16,7 +22,8 @@ class BlogpostsController < ApplicationController
 
    def show
      @blogpost = Blogpost.find(params[:id])
-
+     @title = @blogpost.title
+     
      respond_to do |format|
        format.html # show.html.erb
        format.xml  { render :xml => @blogpost }
@@ -25,6 +32,7 @@ class BlogpostsController < ApplicationController
 
    def edit
      @blogpost = Blogpost.find(params[:id])
+     @title = @blogpost.title
    end
 
 

@@ -3119,3 +3119,958 @@ ActionView::MissingTemplate (Missing template blogposts/show.erb in view path ap
   app/controllers/blogposts_controller.rb:20:in `show'
 
 Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:34:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlogpost Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering blogposts/show
+Completed in 14ms (View: 7, DB: 3) | 200 OK [http://localhost/blogposts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:35:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlogpost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering blogposts/show
+Completed in 13ms (View: 6, DB: 2) | 200 OK [http://localhost/blogposts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:35:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlogpost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering blogposts/show
+Completed in 9ms (View: 2, DB: 2) | 200 OK [http://localhost/blogposts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:35:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlogpost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering blogposts/show
+Completed in 9ms (View: 2, DB: 2) | 200 OK [http://localhost/blogposts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:35:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlogpost Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mBlogpost Load (1.0ms)[0m   [0;1mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering blogposts/show
+Completed in 11ms (View: 2, DB: 4) | 200 OK [http://localhost/blogposts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:36:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlogpost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering blogposts/show
+Completed in 14ms (View: 7, DB: 2) | 200 OK [http://localhost/blogposts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:39:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlogpost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering blogposts/show
+Completed in 13ms (View: 7, DB: 2) | 200 OK [http://localhost/blogposts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:43:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlogpost Columns (4.8ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mBlogpost Load (17.1ms)[0m   [0;1mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering blogposts/show
+Completed in 36ms (View: 8, DB: 22) | 200 OK [http://localhost/blogposts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:43:13) [GET]
+
+ActionView::MissingTemplate (Missing template blogposts/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:44:27) [GET]
+Rendering template within layouts/application
+Rendering blogposts/index
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h @blogpost.title  %></h1>
+4: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+5: 			<%= h @blogpost.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+
+Rendered rescues/_trace (42.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:44:29) [GET]
+Rendering template within layouts/application
+Rendering blogposts/index
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h @blogpost.title  %></h1>
+4: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+5: 			<%= h @blogpost.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+
+Rendered rescues/_trace (117.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:44:30) [GET]
+Rendering template within layouts/application
+Rendering blogposts/index
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h @blogpost.title  %></h1>
+4: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+5: 			<%= h @blogpost.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+
+Rendered rescues/_trace (42.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:46:02) [GET]
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x1040e8eb8>) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h @blogpost.title  %></h1>
+4: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+5: 			<%= h @blogpost.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+
+Rendered rescues/_trace (114.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:46:03) [GET]
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x1042e92f8>) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h @blogpost.title  %></h1>
+4: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+5: 			<%= h @blogpost.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+
+Rendered rescues/_trace (41.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:46:03) [GET]
+  [4;35;1mBlogpost Load (0.4ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (20.2ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x1044f8738>) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h @blogpost.title  %></h1>
+4: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+5: 			<%= h @blogpost.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+
+Rendered rescues/_trace (52.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:46:35) [GET]
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x1041dfd58>) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h @blogpost.title  %></h1>
+4: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+5: 			<%= h @blogpost.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (118.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:47:26) [GET]
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x104445160>) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h @blogpost.title  %></h1>
+4: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+5: 			<%= h @blogpost.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (44.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:47:27) [GET]
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x1040fb180>) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h @blogpost.title  %></h1>
+4: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+5: 			<%= h @blogpost.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (123.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:47:54) [GET]
+  [4;35;1mBlogpost Load (0.4ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x1042d6180>) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h @blogposta.title  %></h1>
+4: 		<time datetime="<%= h @blogposta.publishdate  %>" pubdate>
+5: 			<%= h @blogposta.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:47:54) [GET]
+  [4;35;1mBlogpost Load (0.4ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x10448c538>) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h @blogposta.title  %></h1>
+4: 		<time datetime="<%= h @blogposta.publishdate  %>" pubdate>
+5: 			<%= h @blogposta.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:48:07) [GET]
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h @blogpost.title  %></h1>
+4: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+5: 			<%= h @blogpost.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (118.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:48:36) [GET]
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h(@blogpost.title)  %></h1>
+4: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+5: 			<%= h @blogpost.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (45.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:48:37) [GET]
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h(@blogpost.title)  %></h1>
+4: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+5: 			<%= h @blogpost.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:48:53) [GET]
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;35;1mBlogpost Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x104175598>) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h(@blogpost.title)  %></h1>
+4: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+5: 			<%= h @blogpost.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (119.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:48:54) [GET]
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;35;1mBlogpost Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x1043d6e40>) on line #3 of app/views/blogposts/index.html.erb:
+1: <article id="blogpost">
+2: 	<header>
+3: 		<h1><%= h(@blogpost.title)  %></h1>
+4: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+5: 			<%= h @blogpost.publishdate  %>
+6: 		</time>
+
+    app/views/blogposts/index.html.erb:3
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (45.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:49:41) [GET]
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;35;1mBlogpost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x10408cdc0>) on line #5 of app/views/blogposts/index.html.erb:
+2: 
+3: <article id="blogpost">
+4: 	<header>
+5: 		<h1><%= h(@blogpost.title)  %></h1>
+6: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+7: 			<%= h @blogpost.publishdate  %>
+8: 		</time>
+
+    app/views/blogposts/index.html.erb:5
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (45.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:49:50) [GET]
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;35;1mBlogpost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `publishdate' for #<Array:0x1041d4098>) on line #6 of app/views/blogposts/index.html.erb:
+3: <article id="blogpost">
+4: 	<header>
+5: 
+6: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+7: 			<%= h @blogpost.publishdate  %>
+8: 		</time>
+9: 	</header>
+
+    app/views/blogposts/index.html.erb:6
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (120.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:49:58) [GET]
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/blogposts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:50:17) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mBlogpost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mBlogpost Load (0.2ms)[0m   [0;1mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Blogpost with ID=index):
+  app/controllers/blogposts_controller.rb:22:in `show'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:50:23) [GET]
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x104113af0>) on line #5 of app/views/blogposts/index.html.erb:
+2: 
+3: <article id="blogpost">
+4: 	<header>
+5: 		<h1><%= h(@blogpost.title)  %></h1>
+6: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+7: 			<%= h @blogpost.publishdate  %>
+8: 		</time>
+
+    app/views/blogposts/index.html.erb:5
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (45.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:51:00) [GET]
+  [4;35;1mBlogpost Load (0.4ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x1042393f8>) on line #5 of app/views/blogposts/index.html.erb:
+2: 
+3: <article id="blogpost">
+4: 	<header>
+5: 		<h1><%= h(@blogpost.title)  %></h1>
+6: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+7: 			<%= h @blogpost.publishdate  %>
+8: 		</time>
+
+    app/views/blogposts/index.html.erb:5
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (120.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:51:01) [GET]
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x10447a590>) on line #5 of app/views/blogposts/index.html.erb:
+2: 
+3: <article id="blogpost">
+4: 	<header>
+5: 		<h1><%= h(@blogpost.title)  %></h1>
+6: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+7: 			<%= h @blogpost.publishdate  %>
+8: 		</time>
+
+    app/views/blogposts/index.html.erb:5
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:52:14) [GET]
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x10412f2f0>) on line #7 of app/views/blogposts/index.html.erb:
+4: 
+5: <article class="blogpost">
+6: 	<header>
+7: 		<h1><%= h @blogpost.title %></h1>
+8: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+9: 			<%= h @blogpost.publishdate  %>
+10: 		</time>
+
+    app/views/blogposts/index.html.erb:7
+    app/views/blogposts/index.html.erb:3:in `each'
+    app/views/blogposts/index.html.erb:3
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (118.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:52:15) [GET]
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x1042d8f98>) on line #7 of app/views/blogposts/index.html.erb:
+4: 
+5: <article class="blogpost">
+6: 	<header>
+7: 		<h1><%= h @blogpost.title %></h1>
+8: 		<time datetime="<%= h @blogpost.publishdate  %>" pubdate>
+9: 			<%= h @blogpost.publishdate  %>
+10: 		</time>
+
+    app/views/blogposts/index.html.erb:7
+    app/views/blogposts/index.html.erb:3:in `each'
+    app/views/blogposts/index.html.erb:3
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (47.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:52:31) [GET]
+  [4;35;1mBlogpost Load (0.4ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #7 of app/views/blogposts/index.html.erb:
+4: 
+5: <article class="blogpost">
+6: 	<header>
+7: 		<h1><%= h @post.title %></h1>
+8: 		<time datetime="<%= h @post.publishdate  %>" pubdate>
+9: 			<%= h @post.publishdate  %>
+10: 		</time>
+
+    app/views/blogposts/index.html.erb:7
+    app/views/blogposts/index.html.erb:3:in `each'
+    app/views/blogposts/index.html.erb:3
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:52:48) [GET]
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;35;1mBlogpost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+
+ActionView::TemplateError (undefined method `publishdate' for nil:NilClass) on line #8 of app/views/blogposts/index.html.erb:
+5: <article class="blogpost">
+6: 	<header>
+7: 		<h1><%= h post.title %></h1>
+8: 		<time datetime="<%= h @post.publishdate  %>" pubdate>
+9: 			<%= h @post.publishdate  %>
+10: 		</time>
+11: 	</header>
+
+    app/views/blogposts/index.html.erb:8
+    app/views/blogposts/index.html.erb:3:in `each'
+    app/views/blogposts/index.html.erb:3
+    app/controllers/blogposts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (119.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:52:55) [GET]
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;35;1mBlogpost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Completed in 13ms (View: 7, DB: 2) | 200 OK [http://localhost/blogposts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:53:06) [GET]
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;35;1mBlogpost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Completed in 13ms (View: 7, DB: 2) | 200 OK [http://localhost/blogposts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:53:09) [GET]
+  Parameters: {"id"=>"add"}
+  [4;36;1mBlogpost Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+  [4;35;1mBlogpost Load (0.8ms)[0m   [0mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Blogpost with ID=add):
+  app/controllers/blogposts_controller.rb:22:in `show'
+
+Rendered rescues/_trace (105.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#new (for 127.0.0.1 at 2010-03-03 16:53:22) [GET]
+  [4;36;1mBlogpost Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Rendering template within layouts/application
+Rendering blogposts/new
+Completed in 23ms (View: 16, DB: 2) | 200 OK [http://localhost/blogposts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#create (for 127.0.0.1 at 2010-03-03 16:53:46) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "blogpost"=>{"author"=>"Steve Woodward", "title"=>"Dammit", "published"=>"1", "publishdate(1i)"=>"2010", "publishdate(2i)"=>"3", "content"=>"Rabbits.", "publishdate(3i)"=>"3", "publishdate(4i)"=>"16", "synopsis"=>"Uh, now then.", "publishdate(5i)"=>"53"}}
+  [4;35;1mBlogpost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBlogpost Create (0.3ms)[0m   [0mINSERT INTO `blogposts` (`created_at`, `author`, `title`, `updated_at`, `published`, `content`, `synopsis`, `publishdate`) VALUES('2010-03-03 16:53:46', 'Steve Woodward', 'Dammit', '2010-03-03 16:53:46', 1, 'Rabbits.', 'Uh, now then.', '2010-03-03 16:53:00')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/blogposts/2
+Completed in 12ms (DB: 3) | 302 Found [http://localhost/blogposts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:53:46) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mBlogpost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering blogposts/show
+Completed in 9ms (View: 2, DB: 2) | 200 OK [http://localhost/blogposts/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:53:50) [GET]
+  [4;35;1mBlogpost Load (0.4ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/blogposts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:55:09) [GET]
+  [4;35;1mBlogpost Load (0.4ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/blogposts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#edit (for 127.0.0.1 at 2010-03-03 16:55:12) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mBlogpost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 2) [0m
+
+ActionView::MissingTemplate (Missing template blogposts/edit.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#edit (for 127.0.0.1 at 2010-03-03 16:56:46) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mBlogpost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering blogposts/edit
+Completed in 28ms (View: 20, DB: 2) | 200 OK [http://localhost/blogposts/edit/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#update (for 127.0.0.1 at 2010-03-03 16:57:17) [PUT]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ZmSuvs4rdJRhwOi8cE/4sYwgvDpKdSsV5f6tnE0jqJQ=", "blogpost"=>{"author"=>"Steve Woodward", "title"=>"Dammit", "published"=>"1", "publishdate(1i)"=>"2010", "publishdate(2i)"=>"3", "content"=>"Rabbits. Rabbits. Rabbits. Rabbits", "publishdate(3i)"=>"3", "publishdate(4i)"=>"16", "synopsis"=>"Uh, now then.", "publishdate(5i)"=>"53"}, "id"=>"2"}
+  [4;35;1mBlogpost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mBlogpost Update (0.9ms)[0m   [0;1mUPDATE `blogposts` SET `content` = 'Rabbits. Rabbits. Rabbits. Rabbits', `updated_at` = '2010-03-03 16:57:17' WHERE `id` = 2[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/blogposts/2
+Completed in 13ms (DB: 4) | 302 Found [http://localhost/blogposts/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 16:57:18) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBlogpost Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering blogposts/show
+Completed in 9ms (View: 1, DB: 2) | 200 OK [http://localhost/blogposts/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 16:57:22) [GET]
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;35;1mBlogpost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/blogposts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-03 17:30:07) [GET]
+  [4;36;1mBlogpost Load (0.3ms)[0m   [0;1mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/application
+Rendering blogposts/index
+  [4;35;1mBlogpost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `blogposts`[0m
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/blogposts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 17:30:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mBlogpost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering blogposts/show
+Completed in 10ms (View: 1, DB: 2) | 200 OK [http://localhost/blogposts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#show (for 127.0.0.1 at 2010-03-03 17:30:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBlogpost Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+  [4;35;1mBlogpost Load (0.3ms)[0m   [0mSELECT * FROM `blogposts` WHERE (`blogposts`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering blogposts/show
+Completed in 10ms (View: 1, DB: 2) | 200 OK [http://localhost/blogposts/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2010-03-03 17:44:36) [GET]
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mMysql::Error: Table 'opendata_development.languages' doesn't exist: SELECT * FROM `languages` [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'opendata_development.languages' doesn't exist: SELECT * FROM `languages` ):
+  app/controllers/languages_controller.rb:5:in `index'
+
+Rendered rescues/_trace (39.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-03 17:44:38) [GET]
+
+ActionController::RoutingError (No route matches "/language" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (54.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDatasets (20100301214544)
+Migrating to CreateBlogposts (20100303132134)
+Migrating to BlogPostContent (20100303145129)
+Migrating to CreatePeople (20100303160243)
+Migrating to CreateAudiences (20100303173250)
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE `audiences` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100303173250')[0m
+Migrating to CreateLanguages (20100303174430)
+  [4;36;1mSQL (375.7ms)[0m   [0;1mCREATE TABLE `languages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100303174430')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `audiences`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `audiences`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `blogposts`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `blogposts`[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `datasets`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `datasets`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `languages`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `languages`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `people`[0m
