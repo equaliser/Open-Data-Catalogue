@@ -58,6 +58,12 @@
 				</ul>
 			</nav>
 			<div id="mainCol">
+				<% if flash[:notice] %>
+					<p id="flashNotice"><%= flash[:notice] -%></p>
+				<% end %>
+				<% if flash[:error] %>
+					<p id="flashError"><%= flash[:error] -%></p>
+				<% end %>
 				<%= yield %>
 			</div>
 		</div>
