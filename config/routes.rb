@@ -1,10 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :themes
+
+  map.resources :licences
+
   map.resources :users
 
   map.resource :session, :controller => 'session'
   map.signup '/signup', :controller => 'users', :action => 'new'
-  map.signup '/login', :controller => 'session', :action => 'new'
-  map.signup '/logout', :controller => 'session', :action => 'destroy'
+  map.login '/login', :controller => 'session', :action => 'new'
+  map.logout '/logout', :controller => 'session', :action => 'destroy'
 
   map.resources :languages
   map.resources :audiences
