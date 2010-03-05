@@ -45,6 +45,7 @@ header#site h1
 		float:right;
 		width:200px;
 		text-align:right;
+		#B1C7B2
 	}
 
 header#site h1 a
@@ -108,6 +109,17 @@ footer
 		display:block;
 		padding:6px 12px;
 	}
+
+
+/* flash notice */
+
+#flashNotice
+    {
+    background-color:#FFF5A8;
+    padding:10px;
+    font-weight:bold;
+    color:#666;
+}
 
 
 /* main content */

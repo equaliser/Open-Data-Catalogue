@@ -3,6 +3,10 @@ class UsersController < ApplicationController
   include AuthenticatedSystem
   layout "public"
 
+  def initalize
+    @title = "Users"
+  end
+
   # render new.rhtml
   def new
   end

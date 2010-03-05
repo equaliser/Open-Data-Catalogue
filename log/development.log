@@ -17510,3 +17510,3315 @@ Rendering admin/datasets/index
   [4;36;1mLicence Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
   [4;35;1mLicence Load (0.4ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
 Completed in 37ms (View: 16, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 17:00:37) [GET]
+  [4;36;1mUser Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mAudience Load (0.3ms)[0m   [0;1mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;35;1mAudience Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+Completed in 32ms (View: 15, DB: 5) | 200 OK [http://localhost/admin/audiences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-05 17:00:39) [GET]
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;35;1mLanguage Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 85ms (View: 69, DB: 4) | 200 OK [http://localhost/admin/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 17:00:40) [GET]
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;35;1mLicence Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+Completed in 28ms (View: 12, DB: 4) | 200 OK [http://localhost/admin/licences]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 17:00:42) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (21.2ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 135ms (View: 17, DB: 27) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 17:00:43) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;35;1mCategory Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Completed in 28ms (View: 12, DB: 5) | 200 OK [http://localhost/admin/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 17:00:46) [GET]
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mAudience Load (0.2ms)[0m   [0;1mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;35;1mAudience Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+Completed in 32ms (View: 17, DB: 4) | 200 OK [http://localhost/admin/audiences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 17:00:47) [GET]
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;35;1mLicence Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+Completed in 32ms (View: 15, DB: 4) | 200 OK [http://localhost/admin/licences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-05 17:00:49) [GET]
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLanguage Load (0.4ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;35;1mLanguage Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 89ms (View: 70, DB: 5) | 200 OK [http://localhost/admin/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 17:00:54) [GET]
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mDataset Load (0.5ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (14.9ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 127ms (View: 94, DB: 20) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 17:01:38) [GET]
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mAudience Load (0.3ms)[0m   [0;1mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;35;1mAudience Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+Completed in 32ms (View: 16, DB: 5) | 200 OK [http://localhost/admin/audiences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#new (for 127.0.0.1 at 2010-03-05 17:01:39) [GET]
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mAudience Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+Rendering template within layouts/admin
+Rendering admin/audiences/new
+Completed in 27ms (View: 11, DB: 4) | 200 OK [http://localhost/admin/audiences/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#create (for 127.0.0.1 at 2010-03-05 17:01:46) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"oVOGuqjX5DKJdKVljgghPRVgQJHB595UkTitACj5XjY=", "audience"=>{"name"=>"The dead"}}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mAudience Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAudience Create (0.2ms)[0m   [0mINSERT INTO `audiences` (`name`, `created_at`, `updated_at`) VALUES('The dead', '2010-03-05 17:01:46', '2010-03-05 17:01:46')[0m
+  [4;36;1mSQL (46.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/admin/audiences/5
+Completed in 137ms (DB: 50) | 302 Found [http://localhost/admin/audiences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#show (for 127.0.0.1 at 2010-03-05 17:01:46) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mUser Columns (12.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mAudience Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mAudience Load (0.2ms)[0m   [0;1mSELECT * FROM `audiences` WHERE (`audiences`.`id` = 5) [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/show
+Completed in 41ms (View: 10, DB: 17) | 200 OK [http://localhost/admin/audiences/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#show (for 127.0.0.1 at 2010-03-05 17:09:33) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mUser Columns (22.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mAudience Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mAudience Load (0.4ms)[0m   [0;1mSELECT * FROM `audiences` WHERE (`audiences`.`id` = 5) [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/show
+Completed in 66ms (View: 6, DB: 24) | 200 OK [http://localhost/admin/audiences/5]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 17:09:36) [GET]
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLicence Load (0.6ms)[0m   [0mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;36;1mLicence Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+Completed in 40ms (View: 19, DB: 7) | 200 OK [http://localhost/admin/licences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 17:09:37) [GET]
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (22.2ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 79ms (View: 37, DB: 27) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 17:09:49) [GET]
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mAudience Load (0.3ms)[0m   [0mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;36;1mAudience Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+Completed in 34ms (View: 18, DB: 4) | 200 OK [http://localhost/admin/audiences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 17:09:50) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;36;1mLicence Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+Completed in 98ms (View: 12, DB: 4) | 200 OK [http://localhost/admin/licences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 17:09:52) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;36;1mCategory Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Completed in 29ms (View: 13, DB: 4) | 200 OK [http://localhost/admin/categories]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-05 17:09:53) [GET]
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;36;1mLanguage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 85ms (View: 69, DB: 4) | 200 OK [http://localhost/admin/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-05 17:11:36) [GET]
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;36;1mLanguage Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 99ms (View: 78, DB: 5) | 200 OK [http://localhost/admin/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-03-05 17:11:39) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create and new):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 18:19:59) [GET]
+  [4;35;1mUser Columns (14.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (27.4ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 405ms (View: 47, DB: 46) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 18:20:02) [GET]
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;36;1mLicence Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+Completed in 67ms (View: 47, DB: 7) | 200 OK [http://localhost/admin/licences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 18:20:04) [GET]
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;36;1mCategory Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Completed in 70ms (View: 54, DB: 5) | 200 OK [http://localhost/admin/categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#show (for 127.0.0.1 at 2010-03-05 18:21:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCategory Columns (30.9ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/categories/show
+Completed in 131ms (View: 9, DB: 34) | 200 OK [http://localhost/admin/categories/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 18:21:49) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.5ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 37ms (View: 17, DB: 6) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 18:21:50) [GET]
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mAudience Load (0.3ms)[0m   [0mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;36;1mAudience Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+Completed in 36ms (View: 18, DB: 5) | 200 OK [http://localhost/admin/audiences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 18:21:52) [GET]
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;36;1mLicence Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+Completed in 30ms (View: 12, DB: 4) | 200 OK [http://localhost/admin/licences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 18:22:07) [GET]
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 77ms (View: 64, DB: 4) | 200 OK [http://localhost/admin/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 18:36:31) [GET]
+  [4;35;1mUser Columns (14.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (21.6ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.2ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 95ms (View: 30, DB: 40) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 18:36:35) [GET]
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/admin/users/index.html.erb:
+8:     <th>Email</th>
+9:   </tr>
+10: 
+11: <% @users.each do |licence| %>
+12:   <tr>
+13:     <td><%=h user.login %></td>
+14:     <td><%=h login.email %></td>
+
+    app/views/admin/users/index.html.erb:11
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 18:37:30) [GET]
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+
+ActionView::TemplateError (undefined local variable or method `user' for #<ActionView::Base:0x1030af830>) on line #13 of app/views/admin/users/index.html.erb:
+10: 
+11: <% @users.each do |licence| %>
+12:   <tr>
+13:     <td><%=h user.login %></td>
+14:     <td><%=h login.email %></td>
+15:     <td><%= link_to 'Show', [:admin, user] %></td>
+16:     <td><%= link_to 'Edit', edit_admin_user_path(licence) %></td>
+
+    app/views/admin/users/index.html.erb:13
+    app/views/admin/users/index.html.erb:11:in `each'
+    app/views/admin/users/index.html.erb:11
+    app/controllers/admin/users_controller.rb:17:in `index'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 18:37:47) [GET]
+  [4;36;1mUser Columns (25.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+
+ActionView::TemplateError (undefined local variable or method `licence' for #<ActionView::Base:0x103192748>) on line #16 of app/views/admin/users/index.html.erb:
+13:     <td><%=h user.login %></td>
+14:     <td><%=h user.email %></td>
+15:     <td><%= link_to 'Show', [:admin, user] %></td>
+16:     <td><%= link_to 'Edit', edit_admin_user_path(licence) %></td>
+17:     <td><%= link_to 'Destroy', [:admin, user], :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    app/views/admin/users/index.html.erb:16
+    app/views/admin/users/index.html.erb:11:in `each'
+    app/views/admin/users/index.html.erb:11
+    app/controllers/admin/users_controller.rb:17:in `index'
+
+Rendered rescues/_trace (127.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 18:37:56) [GET]
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 25ms (View: 12, DB: 3) | 200 OK [http://localhost/admin/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 18:39:22) [GET]
+  [4;36;1mUser Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 24ms (View: 9, DB: 5) | 200 OK [http://localhost/admin/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#show (for 127.0.0.1 at 2010-03-05 18:39:24) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/users/show
+
+ActionView::TemplateError (undefined method `login' for nil:NilClass) on line #2 of app/views/admin/users/show.html.erb:
+1: <header id="page">
+2: 	<h1><%= h @title %> : <%=h @user.login %></h1>
+3: </header>
+
+    app/views/admin/users/show.html.erb:2
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#show (for 127.0.0.1 at 2010-03-05 18:41:31) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/admin
+Rendering admin/users/show
+Completed in 15ms (View: 3, DB: 3) | 200 OK [http://localhost/admin/users/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#show (for 127.0.0.1 at 2010-03-05 18:42:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/admin
+Rendering admin/users/show
+Completed in 20ms (View: 8, DB: 3) | 200 OK [http://localhost/admin/users/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-05 18:42:15) [GET]
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;36;1mLanguage Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 84ms (View: 67, DB: 4) | 200 OK [http://localhost/admin/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 18:42:16) [GET]
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.4ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 125ms (View: 21, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 18:42:17) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mAudience Load (0.2ms)[0m   [0mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;36;1mAudience Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+Completed in 34ms (View: 18, DB: 4) | 200 OK [http://localhost/admin/audiences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 18:42:18) [GET]
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLicence Load (0.2ms)[0m   [0mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;36;1mLicence Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+Completed in 28ms (View: 12, DB: 5) | 200 OK [http://localhost/admin/licences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 18:42:20) [GET]
+  [4;35;1mUser Columns (4.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (7.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;36;1mCategory Columns (19.5ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Completed in 131ms (View: 11, DB: 32) | 200 OK [http://localhost/admin/categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-05 18:42:21) [GET]
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;36;1mLanguage Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 85ms (View: 66, DB: 8) | 200 OK [http://localhost/admin/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 18:42:29) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 19ms (View: 8, DB: 2) | 200 OK [http://localhost/admin/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 18:42:31) [GET]
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.2ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 39ms (View: 17, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 18:42:32) [GET]
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mAudience Load (0.3ms)[0m   [0;1mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;35;1mAudience Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+Completed in 34ms (View: 18, DB: 4) | 200 OK [http://localhost/admin/audiences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 18:42:33) [GET]
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;35;1mLicence Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+Completed in 28ms (View: 11, DB: 4) | 200 OK [http://localhost/admin/licences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 18:42:34) [GET]
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;35;1mCategory Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Completed in 29ms (View: 12, DB: 4) | 200 OK [http://localhost/admin/categories]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (96.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBlogposts (20100303132134)
+Migrating to BlogPostContent (20100303145129)
+Migrating to CreatePeople (20100303160243)
+Migrating to CreateAudiences (20100303173250)
+Migrating to CreateLanguages (20100303174430)
+Migrating to CreateUsers (20100303213834)
+Migrating to CreateLicences (20100304171609)
+Migrating to CreateDatasets (20100304231108)
+Migrating to CreateCategories (20100305101835)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `audiences`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `audiences`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mdescribe `blogposts`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `blogposts`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `datasets`[0m
+  [4;36;1mSQL (24.7ms)[0m   [0;1mSHOW KEYS FROM `datasets`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `languages`[0m
+  [4;35;1mSQL (7.2ms)[0m   [0mSHOW KEYS FROM `languages`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mSQL (8.7ms)[0m   [0mdescribe `licences`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `licences`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (7.8ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `themes`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `themes`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `themes`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 18:43:16) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 59ms (View: 7, DB: 2) | 200 OK [http://localhost/admin/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#new (for 127.0.0.1 at 2010-03-05 18:43:20) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/users/new
+Completed in 53ms (View: 43, DB: 2) | 200 OK [http://localhost/admin/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#new (for 127.0.0.1 at 2010-03-05 18:45:40) [GET]
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/users/new
+Completed in 24ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 18:45:43) [GET]
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 19ms (View: 7, DB: 2) | 200 OK [http://localhost/admin/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#edit (for 127.0.0.1 at 2010-03-05 18:45:47) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/admin
+Rendering admin/users/edit
+Completed in 23ms (View: 12, DB: 2) | 200 OK [http://localhost/admin/users/2/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#update (for 127.0.0.1 at 2010-03-05 18:45:53) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"89UPRD8IC/s2YylQyh1jz/xojjUgwMpbvdtp9m+u+sU=", "id"=>"2", "user"=>{"login"=>"equaliser", "email"=>"steve.paperjam@gmail.commmm"}}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (96.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'equaliser' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'steve.paperjam@gmail.commmm' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Update (24.5ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-03-05 18:45:53', `email` = 'steve.paperjam@gmail.commmm' WHERE `id` = 2[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users/2
+Completed in 378ms (DB: 125) | 302 Found [http://localhost/admin/users/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#show (for 127.0.0.1 at 2010-03-05 18:45:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/admin
+Rendering admin/users/show
+Completed in 16ms (View: 4, DB: 3) | 200 OK [http://localhost/admin/users/2]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 18:46:12) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 19ms (View: 7, DB: 3) | 200 OK [http://localhost/admin/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 18:46:14) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;36;1mCategory Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Completed in 111ms (View: 95, DB: 4) | 200 OK [http://localhost/admin/categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 18:46:16) [GET]
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.6ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 37ms (View: 16, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 18:46:17) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 19ms (View: 7, DB: 2) | 200 OK [http://localhost/admin/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#edit (for 127.0.0.1 at 2010-03-05 18:46:20) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/admin
+Rendering admin/users/edit
+Completed in 19ms (View: 8, DB: 3) | 200 OK [http://localhost/admin/users/2/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#update (for 127.0.0.1 at 2010-03-05 18:46:30) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"89UPRD8IC/s2YylQyh1jz/xojjUgwMpbvdtp9m+u+sU=", "id"=>"2", "user"=>{"login"=>"equaliser", "email"=>"steve.paperjam@gmail.com"}}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'equaliser' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'steve.paperjam@gmail.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-03-05 18:46:30', `email` = 'steve.paperjam@gmail.com' WHERE `id` = 2[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users/2
+Completed in 22ms (DB: 5) | 302 Found [http://localhost/admin/users/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#show (for 127.0.0.1 at 2010-03-05 18:46:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/admin
+Rendering admin/users/show
+Completed in 15ms (View: 4, DB: 2) | 200 OK [http://localhost/admin/users/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 18:46:33) [GET]
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 20ms (View: 7, DB: 3) | 200 OK [http://localhost/admin/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 18:46:34) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.2ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 116ms (View: 17, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 18:46:36) [GET]
+  [4;35;1mUser Columns (13.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mAudience Load (0.3ms)[0m   [0mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;36;1mAudience Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+Completed in 46ms (View: 18, DB: 16) | 200 OK [http://localhost/admin/audiences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 18:46:36) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;36;1mLicence Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+Completed in 28ms (View: 12, DB: 4) | 200 OK [http://localhost/admin/licences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 18:46:51) [GET]
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;36;1mCategory Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Completed in 30ms (View: 13, DB: 4) | 200 OK [http://localhost/admin/categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-05 18:46:53) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;36;1mLanguage Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 85ms (View: 69, DB: 4) | 200 OK [http://localhost/admin/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 18:46:54) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 19ms (View: 7, DB: 2) | 200 OK [http://localhost/admin/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#new (for 127.0.0.1 at 2010-03-05 18:46:56) [GET]
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/users/new
+Completed in 18ms (View: 6, DB: 2) | 200 OK [http://localhost/admin/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-05 18:47:32) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"89UPRD8IC/s2YylQyh1jz/xojjUgwMpbvdtp9m+u+sU=", "user"=>{"password_confirmation"=>"rafraf", "password"=>"rafraf", "login"=>"gudrunesslin", "email"=>"raf@warwickshire.gov.uk"}}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (41.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'gudrunesslin') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'raf@warwickshire.gov.uk') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`salt`, `created_at`, `crypted_password`, `remember_token_expires_at`, `updated_at`, `remember_token`, `login`, `email`) VALUES('6490b287cae44009f6be43d90b4854d1aa04c787', '2010-03-05 18:47:32', '92409d8f6c0276ce6bb425091717e861c6cc3905', NULL, '2010-03-05 18:47:32', NULL, 'gudrunesslin', 'raf@warwickshire.gov.uk')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 58ms (DB: 45) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 18:47:32) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;36;1mUser Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Completed in 15ms (View: 9, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 18:47:34) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Completed in 92ms (View: 87, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 19:03:10) [GET]
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 37ms (View: 16, DB: 6) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 19:03:12) [GET]
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mAudience Load (0.3ms)[0m   [0;1mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;35;1mAudience Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+Completed in 35ms (View: 18, DB: 4) | 200 OK [http://localhost/admin/audiences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 19:03:13) [GET]
+  [4;36;1mUser Columns (23.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;35;1mLicence Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+Completed in 133ms (View: 12, DB: 26) | 200 OK [http://localhost/admin/licences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 19:03:17) [GET]
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mDataset Load (0.9ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 37ms (View: 17, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-05 19:03:19) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;35;1mLanguage Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 168ms (View: 152, DB: 4) | 200 OK [http://localhost/admin/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 19:03:20) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/admin/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 19:03:23) [GET]
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mAudience Load (0.3ms)[0m   [0mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;36;1mAudience Columns (9.3ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+Completed in 42ms (View: 18, DB: 12) | 200 OK [http://localhost/admin/audiences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 19:03:24) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 21ms (View: 10, DB: 2) | 200 OK [http://localhost/admin/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#new (for 127.0.0.1 at 2010-03-05 19:03:27) [GET]
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/users/new
+ERROR: compiling _run_erb_app47views47admin47users47new46html46erb RAISED compile error
+/Users/equaliser/ruby/opendata/app/views/admin/users/new.html.erb:7: syntax error, unexpected ',', expecting kEND
+;  form_for([:admin, @user]), :url => users_path do |f| 
+                             ^
+Function body:           def _run_erb_app47views47admin47users47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<header id=\"page\">\n\t<h1>"
+; @output_buffer.concat(( h @title ).to_s); @output_buffer.concat "</h1>\n</header>\n\n\n"
+
+
+
+; @output_buffer.concat(( error_messages_for :user ).to_s); @output_buffer.concat "\n"
+;  form_for([:admin, @user]), :url => users_path do |f| 
+@output_buffer.concat "<p><label for=\"login\">Login</label><br/>\n"
+; @output_buffer.concat(( f.text_field :login ).to_s); @output_buffer.concat "</p>\n\n<p><label for=\"email\">Email</label><br/>\n"
+
+
+; @output_buffer.concat(( f.text_field :email ).to_s); @output_buffer.concat "</p>\n\n<p><label for=\"password\">Password</label><br/>\n"
+
+
+; @output_buffer.concat(( f.password_field :password ).to_s); @output_buffer.concat "</p>\n\n<p><label for=\"password_confirmation\">Confirm Password</label><br/>\n"
+
+
+; @output_buffer.concat(( f.password_field :password_confirmation ).to_s); @output_buffer.concat "</p>\n\n<p>"
+
+; @output_buffer.concat(( submit_tag 'Sign up' ).to_s); @output_buffer.concat "</p>\n"
+;  end 
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/equaliser/ruby/opendata/app/views/admin/users/new.html.erb:25:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/equaliser/ruby/opendata/app/controllers/admin/users_controller.rb:40:in `new'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/equaliser/ruby/opendata/app/views/admin/users/new.html.erb:7: syntax error, unexpected ',', expecting kEND
+;  form_for([:admin, @user]), :url => users_path do |f| 
+                             ^) on line #7 of app/views/admin/users/new.html.erb:
+4: 
+5: 
+6: <%= error_messages_for :user %>
+7: <% form_for([:admin, @user]), :url => users_path do |f| -%>
+8: <p><label for="login">Login</label><br/>
+9: <%= f.text_field :login %></p>
+10: 
+
+    app/views/admin/users/new.html.erb:25:in `compile!'
+    app/controllers/admin/users_controller.rb:40:in `new'
+
+Rendered rescues/_trace (45.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#new (for 127.0.0.1 at 2010-03-05 19:03:47) [GET]
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/users/new
+ERROR: compiling _run_erb_app47views47admin47users47new46html46erb RAISED compile error
+/Users/equaliser/ruby/opendata/app/views/admin/users/new.html.erb:22: syntax error, unexpected tIVAR, expecting ')'
+Function body:           def _run_erb_app47views47admin47users47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<header id=\"page\">\n\t<h1>"
+; @output_buffer.concat(( h @title ).to_s); @output_buffer.concat "</h1>\n</header>\n\n\n"
+
+
+
+; @output_buffer.concat(( error_messages_for :user ).to_s); @output_buffer.concat "\n"
+;  form_for([:admin, @user], :url => users_path do |f| 
+@output_buffer.concat "<p><label for=\"login\">Login</label><br/>\n"
+; @output_buffer.concat(( f.text_field :login ).to_s); @output_buffer.concat "</p>\n\n<p><label for=\"email\">Email</label><br/>\n"
+
+
+; @output_buffer.concat(( f.text_field :email ).to_s); @output_buffer.concat "</p>\n\n<p><label for=\"password\">Password</label><br/>\n"
+
+
+; @output_buffer.concat(( f.password_field :password ).to_s); @output_buffer.concat "</p>\n\n<p><label for=\"password_confirmation\">Confirm Password</label><br/>\n"
+
+
+; @output_buffer.concat(( f.password_field :password_confirmation ).to_s); @output_buffer.concat "</p>\n\n<p>"
+
+; @output_buffer.concat(( submit_tag 'Sign up' ).to_s); @output_buffer.concat "</p>\n"
+;  end 
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/equaliser/ruby/opendata/app/views/admin/users/new.html.erb:25:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/equaliser/ruby/opendata/app/controllers/admin/users_controller.rb:40:in `new'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/equaliser/ruby/opendata/app/views/admin/users/new.html.erb:22: syntax error, unexpected tIVAR, expecting ')') on line #22 of app/views/admin/users/new.html.erb:
+19: 
+20: <p><%= submit_tag 'Sign up' %></p>
+21: <% end -%>
+
+    app/views/admin/users/new.html.erb:25:in `compile!'
+    app/controllers/admin/users_controller.rb:40:in `new'
+
+Rendered rescues/_trace (46.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#new (for 127.0.0.1 at 2010-03-05 19:04:23) [GET]
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/users/new
+Completed in 22ms (View: 10, DB: 2) | 200 OK [http://localhost/admin/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-05 19:04:43) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"89UPRD8IC/s2YylQyh1jz/xojjUgwMpbvdtp9m+u+sU=", "user"=>{"password_confirmation"=>"lemons", "password"=>"lemons", "login"=>"captaindisco", "email"=>"captaindisco@madeofstring.co.uk"}}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'captaindisco') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'captaindisco@madeofstring.co.uk') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`salt`, `created_at`, `crypted_password`, `remember_token_expires_at`, `updated_at`, `remember_token`, `login`, `email`) VALUES('f3e0acfd658525f1398a6ff0249721cf7cf3fc0b', '2010-03-05 19:04:43', '16523ab50bfd66c46c3505f99a7980ddd2476484', NULL, '2010-03-05 19:04:43', NULL, 'captaindisco', 'captaindisco@madeofstring.co.uk')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 3) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 19:04:43) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+Completed in 13ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 19:04:57) [GET]
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.2ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 36ms (View: 16, DB: 6) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 19:05:05) [GET]
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 25ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#new (for 127.0.0.1 at 2010-03-05 19:05:08) [GET]
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/users/new
+Completed in 18ms (View: 7, DB: 2) | 200 OK [http://localhost/admin/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#new (for 127.0.0.1 at 2010-03-05 19:05:42) [GET]
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/users/new
+Completed in 23ms (View: 11, DB: 3) | 200 OK [http://localhost/admin/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#create (for 127.0.0.1 at 2010-03-05 19:06:25) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"89UPRD8IC/s2YylQyh1jz/xojjUgwMpbvdtp9m+u+sU=", "user"=>{"password_confirmation"=>"lemons", "password"=>"lemons", "login"=>"captainfishy", "email"=>"captainfishy@madeofstring.co.uk"}}
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'captainfishy') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'captainfishy@madeofstring.co.uk') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO `users` (`salt`, `created_at`, `crypted_password`, `remember_token_expires_at`, `updated_at`, `remember_token`, `login`, `email`) VALUES('592fbcafe9d03dfc015de5dfa78ff01526c3f904', '2010-03-05 19:06:25', '54524c6f862d1c6b99538c467ee7d41d5f139937', NULL, '2010-03-05 19:06:25', NULL, 'captainfishy', 'captainfishy@madeofstring.co.uk')[0m
+  [4;35;1mSQL (29.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users/5
+Completed in 47ms (DB: 33) | 302 Found [http://localhost/admin/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#show (for 127.0.0.1 at 2010-03-05 19:06:26) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mUser Columns (37.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+Rendering template within layouts/admin
+Rendering admin/users/show
+Completed in 52ms (View: 4, DB: 38) | 200 OK [http://localhost/admin/users/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#show (for 127.0.0.1 at 2010-03-05 19:06:30) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+Rendering template within layouts/admin
+Rendering admin/users/show
+Completed in 16ms (View: 4, DB: 3) | 200 OK [http://localhost/admin/users/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#show (for 127.0.0.1 at 2010-03-05 19:06:32) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+Rendering template within layouts/admin
+Rendering admin/users/show
+Completed in 16ms (View: 4, DB: 3) | 200 OK [http://localhost/admin/users/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 19:06:36) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 28ms (View: 16, DB: 2) | 200 OK [http://localhost/admin/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 19:06:39) [GET]
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 28ms (View: 16, DB: 2) | 200 OK [http://localhost/admin/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 19:06:58) [GET]
+  [4;35;1mUser Columns (10.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 41ms (View: 20, DB: 11) | 200 OK [http://localhost/admin/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 19:07:05) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+  [4;36;1mDataset Load (0.8ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 118ms (View: 97, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 19:07:07) [GET]
+  [4;36;1mUser Columns (19.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 46ms (View: 16, DB: 21) | 200 OK [http://localhost/admin/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2010-03-05 19:13:11) [GET]
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 13ms (DB: 3) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 19:13:11) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:13:15) [GET]
+Rendering template within layouts/public
+Rendering session/new
+Completed in 90ms (View: 88, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:13:31) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 19:13:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/authentication.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:13:53) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:15:45) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:15:51) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:15:54) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:15:55) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:16:00) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:16:04) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:16:09) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:16:50) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:16:59) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:17:14) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:19:15) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:19:17) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:19:27) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:19:41) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:19:49) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:22:02) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:22:37) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:23:05) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:23:51) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:23:57) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:24:03) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:24:17) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:24:29) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:24:32) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:26:43) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:26:56) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:27:12) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:27:26) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:27:26) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:27:29) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:27:33) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:27:42) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 19:28:39) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"39sZFV8SWU5y7ZqaO22aNiCx5JYzvYZi+azaaE9Ir5g=", "login"=>"equaliser", "password"=>"lemony"}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 15ms (View: 3, DB: 2) | 200 OK [http://localhost/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 19:28:45) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"39sZFV8SWU5y7ZqaO22aNiCx5JYzvYZi+azaaE9Ir5g=", "login"=>"equaliser", "password"=>"lemons"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 12ms (DB: 2) | 302 Found [http://localhost/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 19:28:45) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Completed in 13ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 19:28:55) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Completed in 13ms (View: 9, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostsController#index (for 127.0.0.1 at 2010-03-05 19:29:02) [GET]
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mBlogpost Load (64.8ms)[0m   [0mSELECT * FROM `blogposts` [0m
+Rendering template within layouts/public
+Rendering blogposts/index
+  [4;36;1mBlogpost Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Completed in 152ms (View: 34, DB: 71) | 200 OK [http://localhost/blogposts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 19:29:14) [GET]
+  [4;35;1mUser Columns (27.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.8ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 63ms (View: 16, DB: 32) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 19:29:16) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mAudience Load (0.2ms)[0m   [0mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;36;1mAudience Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+Completed in 33ms (View: 17, DB: 4) | 200 OK [http://localhost/admin/audiences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 19:29:17) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;36;1mLicence Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+Completed in 28ms (View: 12, DB: 4) | 200 OK [http://localhost/admin/licences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 19:29:18) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;36;1mCategory Columns (7.8ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Completed in 34ms (View: 12, DB: 10) | 200 OK [http://localhost/admin/categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-05 19:29:19) [GET]
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;36;1mLanguage Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 165ms (View: 149, DB: 4) | 200 OK [http://localhost/admin/languages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 19:29:20) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 30ms (View: 17, DB: 2) | 200 OK [http://localhost/admin/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-05 19:29:23) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;35;1mLanguage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 81ms (View: 65, DB: 4) | 200 OK [http://localhost/admin/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 19:29:24) [GET]
+  [4;36;1mUser Columns (8.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;35;1mCategory Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Completed in 35ms (View: 12, DB: 10) | 200 OK [http://localhost/admin/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 19:29:25) [GET]
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;35;1mLicence Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+Completed in 28ms (View: 12, DB: 4) | 200 OK [http://localhost/admin/licences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 19:29:26) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mAudience Load (0.2ms)[0m   [0;1mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;35;1mAudience Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+Completed in 33ms (View: 17, DB: 4) | 200 OK [http://localhost/admin/audiences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 19:29:27) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.4ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 38ms (View: 16, DB: 6) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 19:29:27) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.6ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 40ms (View: 17, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2010-03-05 19:31:34) [GET]
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 14ms (DB: 3) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 19:31:35) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:31:37) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 19:34:37) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"c/2RNU+RUJ7BBy94VB+GcMF3ef4J/fJx2ZP+UQoD04s=", "login"=>"equaliser", "password"=>"lemons"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 12ms (DB: 3) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 19:34:37) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Completed in 13ms (View: 9, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 19:34:41) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Completed in 14ms (View: 9, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 19:34:46) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mDataset Load (0.8ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.4ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 36ms (View: 16, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 19:35:02) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mAudience Load (0.3ms)[0m   [0;1mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;35;1mAudience Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+Completed in 33ms (View: 17, DB: 4) | 200 OK [http://localhost/admin/audiences]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 19:35:03) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;35;1mLicence Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+Completed in 28ms (View: 12, DB: 4) | 200 OK [http://localhost/admin/licences]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 19:35:04) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;35;1mCategory Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Completed in 27ms (View: 11, DB: 4) | 200 OK [http://localhost/admin/categories]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-05 19:35:05) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;35;1mLanguage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 160ms (View: 145, DB: 4) | 200 OK [http://localhost/admin/languages]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 19:35:06) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 27ms (View: 16, DB: 2) | 200 OK [http://localhost/admin/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 19:35:26) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;36;1mCategory Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Completed in 26ms (View: 11, DB: 4) | 200 OK [http://localhost/admin/categories]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 19:35:27) [GET]
+  [4;35;1mUser Columns (167.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;36;1mLicence Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+Completed in 277ms (View: 13, DB: 170) | 200 OK [http://localhost/admin/licences]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 19:35:28) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mAudience Load (0.3ms)[0m   [0mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;36;1mAudience Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+Completed in 33ms (View: 17, DB: 4) | 200 OK [http://localhost/admin/audiences]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#show (for 127.0.0.1 at 2010-03-05 19:35:35) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mAudience Columns (16.3ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mAudience Load (0.2ms)[0m   [0;1mSELECT * FROM `audiences` WHERE (`audiences`.`id` = 4) [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/show
+Completed in 36ms (View: 5, DB: 19) | 200 OK [http://localhost/admin/audiences/4]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 19:35:37) [GET]
+  [4;35;1mUser Columns (18.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.5ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 134ms (View: 93, DB: 24) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 19:35:38) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;36;1mLicence Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+Completed in 37ms (View: 12, DB: 13) | 200 OK [http://localhost/admin/licences]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 19:35:39) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;36;1mCategory Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Completed in 27ms (View: 11, DB: 4) | 200 OK [http://localhost/admin/categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-05 19:35:40) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;36;1mLanguage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+Completed in 162ms (View: 146, DB: 4) | 200 OK [http://localhost/admin/languages]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 19:35:42) [GET]
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 26ms (View: 15, DB: 3) | 200 OK [http://localhost/admin/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 19:35:45) [GET]
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mAudience Load (0.3ms)[0m   [0;1mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;35;1mAudience Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+Completed in 32ms (View: 17, DB: 4) | 200 OK [http://localhost/admin/audiences]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 19:35:46) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.2ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 38ms (View: 17, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 19:35:47) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;35;1mCategory Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Completed in 27ms (View: 11, DB: 5) | 200 OK [http://localhost/admin/categories]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-05 19:35:48) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (5.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;35;1mLanguage Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 168ms (View: 144, DB: 11) | 200 OK [http://localhost/admin/languages]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 19:35:52) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;35;1mCategory Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Completed in 27ms (View: 11, DB: 4) | 200 OK [http://localhost/admin/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 19:35:53) [GET]
+  [4;36;1mUser Columns (13.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;35;1mLicence Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+Completed in 39ms (View: 11, DB: 16) | 200 OK [http://localhost/admin/licences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 19:35:54) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mAudience Load (0.3ms)[0m   [0;1mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;35;1mAudience Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+Completed in 114ms (View: 18, DB: 4) | 200 OK [http://localhost/admin/audiences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 19:35:54) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mDataset Load (0.7ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.4ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 36ms (View: 16, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 19:54:58) [GET]
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mAudience Load (0.2ms)[0m   [0;1mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;35;1mAudience Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+Completed in 33ms (View: 17, DB: 5) | 200 OK [http://localhost/admin/audiences]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2010-03-05 19:55:01) [GET]
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 14ms (DB: 3) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 19:55:01) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 19:55:04) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:00:33) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:00:36) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:00:41) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:00:42) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:51:00) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:51:18) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:51:28) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:51:52) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:52:04) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:52:11) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:52:31) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:52:56) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:53:07) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:53:24) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:53:36) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:54:44) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:55:02) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:55:20) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:55:27) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:55:46) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 20:56:49) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:03:56) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"ZPQ/c9XF2V4xjlWRNoW9xpwjbPyQcG1IUoqMmPRylms=", "login"=>"", "password"=>""}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = '') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 14ms (View: 3, DB: 3) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:03:58) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"ZPQ/c9XF2V4xjlWRNoW9xpwjbPyQcG1IUoqMmPRylms=", "login"=>"", "password"=>""}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = '') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 13ms (View: 3, DB: 2) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:07:43) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"ZPQ/c9XF2V4xjlWRNoW9xpwjbPyQcG1IUoqMmPRylms=", "login"=>"", "password"=>""}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = '') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 14ms (View: 3, DB: 3) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#show (for 127.0.0.1 at 2010-03-05 21:07:46) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 21:07:50) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 21:08:04) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 21:08:21) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 21:08:22) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 21:08:26) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 21:08:46) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:12:15) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"ZPQ/c9XF2V4xjlWRNoW9xpwjbPyQcG1IUoqMmPRylms=", "login"=>"fucksticks", "password"=>"myarse"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'fucksticks') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 14ms (View: 3, DB: 3) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:14:29) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"ZPQ/c9XF2V4xjlWRNoW9xpwjbPyQcG1IUoqMmPRylms=", "login"=>"fucksticks", "password"=>"myarse"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'fucksticks') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 97ms (View: 8, DB: 3) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#show (for 127.0.0.1 at 2010-03-05 21:15:46) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 21:16:01) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:16:05) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"rV8Zo8aQTzVTPa3bl/HlMX93FfTJlbGXFMQPh55FWSA=", "login"=>"equaliser", "password"=>"lemons"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 12ms (DB: 2) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 21:16:05) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Completed in 94ms (View: 89, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2010-03-05 21:16:11) [GET]
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 13ms (DB: 2) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 21:16:11) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 21:16:14) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:16:29) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Y0/OXVuv21bCH6kZGKMp7Ns0o9jE5y7CPPlNgItyigM=", "login"=>"equaliser", "password"=>"fucksticks"}
+  [4;36;1mUser Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 21ms (View: 4, DB: 5) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:20:56) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Y0/OXVuv21bCH6kZGKMp7Ns0o9jE5y7CPPlNgItyigM=", "login"=>"equaliser", "password"=>"fucksticks"}
+  [4;36;1mUser Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 21ms (View: 3, DB: 4) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:21:09) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Y0/OXVuv21bCH6kZGKMp7Ns0o9jE5y7CPPlNgItyigM=", "login"=>"equaliser", "password"=>"fucksticks"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 19ms (View: 3, DB: 3) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:21:29) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Y0/OXVuv21bCH6kZGKMp7Ns0o9jE5y7CPPlNgItyigM=", "login"=>"equaliser", "password"=>"fucksticks"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 19ms (View: 3, DB: 3) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:21:38) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Y0/OXVuv21bCH6kZGKMp7Ns0o9jE5y7CPPlNgItyigM=", "login"=>"equaliser", "password"=>"fucksticks"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 106ms (View: 3, DB: 2) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:21:46) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Y0/OXVuv21bCH6kZGKMp7Ns0o9jE5y7CPPlNgItyigM=", "login"=>"equaliser", "password"=>"fucksticks"}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 20ms (View: 3, DB: 4) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:22:02) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Y0/OXVuv21bCH6kZGKMp7Ns0o9jE5y7CPPlNgItyigM=", "login"=>"equaliser", "password"=>"fucksticks"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 19ms (View: 3, DB: 4) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:22:32) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Y0/OXVuv21bCH6kZGKMp7Ns0o9jE5y7CPPlNgItyigM=", "login"=>"equaliser", "password"=>"fucksticks"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 20ms (View: 5, DB: 3) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:22:46) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Y0/OXVuv21bCH6kZGKMp7Ns0o9jE5y7CPPlNgItyigM=", "login"=>"equaliser", "password"=>"fucksticks"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 15ms (View: 3, DB: 2) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:22:55) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Y0/OXVuv21bCH6kZGKMp7Ns0o9jE5y7CPPlNgItyigM=", "login"=>"equaliser", "password"=>"lemons"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 12ms (DB: 2) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 21:22:55) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Completed in 13ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 21:23:50) [GET]
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.7ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 133ms (View: 93, DB: 8) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 21:23:52) [GET]
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mAudience Load (0.3ms)[0m   [0;1mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;35;1mAudience Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+Completed in 34ms (View: 18, DB: 4) | 200 OK [http://localhost/admin/audiences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 21:23:53) [GET]
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;35;1mLicence Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+Completed in 27ms (View: 12, DB: 4) | 200 OK [http://localhost/admin/licences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 21:23:54) [GET]
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;35;1mCategory Columns (11.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Completed in 117ms (View: 92, DB: 14) | 200 OK [http://localhost/admin/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-05 21:23:55) [GET]
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;35;1mLanguage Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 82ms (View: 66, DB: 4) | 200 OK [http://localhost/admin/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-05 21:23:56) [GET]
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 29ms (View: 17, DB: 3) | 200 OK [http://localhost/admin/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 21:24:01) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.6ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.5ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 37ms (View: 16, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 21:24:27) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.5ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.5ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 36ms (View: 16, DB: 6) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2010-03-05 21:24:30) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 13ms (DB: 2) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 21:24:30) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-05 21:24:33) [GET]
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:24:35) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"ET7E11ZszZMpSIHBFqT/VAdvOGeFubIF6AMyYdpXt7s=", "login"=>"equaliser", "password"=>"lemons"}
+  [4;35;1mUser Columns (22.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Redirected to http://localhost:3000/admin/datasets
+Completed in 33ms (DB: 23) | 302 Found [http://localhost/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 21:24:35) [GET]
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (18.9ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 136ms (View: 97, DB: 24) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 21:25:28) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.2ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 35ms (View: 16, DB: 6) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 21:25:31) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mAudience Load (0.3ms)[0m   [0mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;36;1mAudience Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+Completed in 33ms (View: 17, DB: 4) | 200 OK [http://localhost/admin/audiences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 21:25:33) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;36;1mLicence Columns (19.4ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+Completed in 127ms (View: 13, DB: 22) | 200 OK [http://localhost/admin/licences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-05 21:25:37) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;36;1mCategory Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Completed in 28ms (View: 12, DB: 4) | 200 OK [http://localhost/admin/categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 21:25:52) [GET]
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLicence Load (0.4ms)[0m   [0mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;36;1mLicence Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+Completed in 35ms (View: 17, DB: 5) | 200 OK [http://localhost/admin/licences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#show (for 127.0.0.1 at 2010-03-05 21:26:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLicence Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/licences/show
+Completed in 107ms (View: 10, DB: 5) | 200 OK [http://localhost/admin/licences/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-05 21:26:18) [GET]
+  [4;35;1mUser Columns (10.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;36;1mLicence Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+Completed in 37ms (View: 12, DB: 13) | 200 OK [http://localhost/admin/licences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-05 21:26:21) [GET]
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mAudience Load (0.3ms)[0m   [0mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;36;1mAudience Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+Completed in 34ms (View: 17, DB: 4) | 200 OK [http://localhost/admin/audiences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 21:26:22) [GET]
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 119ms (View: 18, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2010-03-05 21:27:08) [GET]
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 14ms (DB: 3) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 21:27:08) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:31:33) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"ZPQ/c9XF2V4xjlWRNoW9xpwjbPyQcG1IUoqMmPRylms=", "login"=>"fucksticks", "password"=>"myarse"}
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'fucksticks') LIMIT 1[0m
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 13ms (View: 3, DB: 3) | 200 OK [http://localhost/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-05 21:31:45) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"ZPQ/c9XF2V4xjlWRNoW9xpwjbPyQcG1IUoqMmPRylms=", "login"=>"equaliser", "password"=>"lemons"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Redirected to http://localhost:3000/admin/datasets
+Completed in 12ms (DB: 2) | 302 Found [http://localhost/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 21:31:45) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.2ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 1) [0m
+Completed in 37ms (View: 17, DB: 6) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2010-03-05 21:31:47) [GET]
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/loggedout
+Completed in 13ms (DB: 3) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#loggedout (for 127.0.0.1 at 2010-03-05 21:31:48) [GET]
+
+ActionController::UnknownAction (No action responded to loggedout. Actions: create, destroy, logout, and new):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#loggedout (for 127.0.0.1 at 2010-03-05 21:33:50) [GET]
+Rendering template within layouts/authentication
+Rendering session/loggedout
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/loggedout]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#loggedout (for 127.0.0.1 at 2010-03-05 21:34:04) [GET]
+Rendering template within layouts/authentication
+Rendering session/loggedout
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/loggedout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#loggedout (for 127.0.0.1 at 2010-03-05 21:34:05) [GET]
+Rendering template within layouts/authentication
+Rendering session/loggedout
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/loggedout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 21:34:12) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-05 21:34:20) [GET]
+Rendering template within layouts/public
+Rendering users/new
+Completed in 36ms (View: 33, DB: 0) | 200 OK [http://localhost/signup]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-05 21:34:49) [GET]
+Rendering template within layouts/public
+Rendering users/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/users/new]
