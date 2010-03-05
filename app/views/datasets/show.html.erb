@@ -1,0 +1,98 @@
+<p>
+  <b>Name:</b>
+  <%=h @dataset.name %>
+</p>
+
+<p>
+  <b>Audience:</b>
+  <%=h @dataset.audience_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @dataset.description %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%=h @dataset.version %>
+</p>
+
+<p>
+  <b>Display title:</b>
+  <%=h @dataset.display_title %>
+</p>
+
+<p>
+  <b>Info url:</b>
+  <%=h @dataset.info_url %>
+</p>
+
+<p>
+  <b>Xml url:</b>
+  <%=h @dataset.xml_url %>
+</p>
+
+<p>
+  <b>Csv url:</b>
+  <%=h @dataset.csv_url %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%=h @dataset.language_id %>
+</p>
+
+<p>
+  <b>Geo extent:</b>
+  <%=h @dataset.geo_extent %>
+</p>
+
+<p>
+  <b>Maintainer:</b>
+  <%=h @dataset.maintainer %>
+</p>
+
+<p>
+  <b>Contact email:</b>
+  <%=h @dataset.contact_email %>
+</p>
+
+<p>
+  <b>Update frequency:</b>
+  <%=h @dataset.update_frequency %>
+</p>
+
+<p>
+  <b>Date range start:</b>
+  <%=h @dataset.date_range_start %>
+</p>
+
+<p>
+  <b>Date range end:</b>
+  <%=h @dataset.date_range_end %>
+</p>
+
+<p>
+  <b>Publish date:</b>
+  <%=h @dataset.publish_date %>
+</p>
+
+<p>
+  <b>Metadata date:</b>
+  <%=h @dataset.metadata_date %>
+</p>
+
+<p>
+  <b>Licence:</b>
+  <%=h @dataset.licence_id %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%=h @dataset.category_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_dataset_path(@dataset) %> |
+<%= link_to 'Back', datasets_path %>

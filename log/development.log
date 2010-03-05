@@ -6349,3 +6349,817 @@ Migrating to CreateThemes (20100304215712)
   [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
   [4;35;1mSQL (2.3ms)[0m   [0mdescribe `users`[0m
   [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (8.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDatasets (20100301214544)
+Migrating to CreateBlogposts (20100303132134)
+Migrating to BlogPostContent (20100303145129)
+Migrating to CreatePeople (20100303160243)
+Migrating to CreateAudiences (20100303173250)
+Migrating to CreateLanguages (20100303174430)
+Migrating to CreateUsers (20100303213834)
+Migrating to CreateLicences (20100304171609)
+Migrating to CreateThemes (20100304215712)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (12.4ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `audiences`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `audiences`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `blogposts`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `blogposts`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `datasets`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW KEYS FROM `datasets`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `languages`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `languages`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `licences`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `licences`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `themes`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `themes`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `themes`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (38.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBlogposts (20100303132134)
+Migrating to BlogPostContent (20100303145129)
+Migrating to CreatePeople (20100303160243)
+Migrating to CreateAudiences (20100303173250)
+Migrating to CreateLanguages (20100303174430)
+Migrating to CreateUsers (20100303213834)
+Migrating to CreateLicences (20100304171609)
+Migrating to CreateThemes (20100304215712)
+Migrating to CreateDatasets (20100304231108)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'datasets' already exists: CREATE TABLE `datasets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `audience_id` int(11), `description` text, `version` int(11), `display_title` varchar(255), `info_url` varchar(255), `xml_url` varchar(255), `csv_url` varchar(255), `language_id` int(11), `geo_extent` varchar(255), `maintainer` varchar(255), `contact_email` varchar(255), `update_frequency` varchar(255), `date_range_start` datetime, `date_range_end` datetime, `publish_date` date, `metadata_date` date, `licence_id` int(11), `category_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBlogposts (20100303132134)
+Migrating to BlogPostContent (20100303145129)
+Migrating to CreatePeople (20100303160243)
+Migrating to CreateAudiences (20100303173250)
+Migrating to CreateLanguages (20100303174430)
+Migrating to CreateUsers (20100303213834)
+Migrating to CreateLicences (20100304171609)
+Migrating to CreateThemes (20100304215712)
+Migrating to CreateDatasets (20100304231108)
+  [4;36;1mSQL (178.5ms)[0m   [0;1mCREATE TABLE `datasets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `audience_id` int(11), `description` text, `version` int(11), `display_title` varchar(255), `info_url` varchar(255), `xml_url` varchar(255), `csv_url` varchar(255), `language_id` int(11), `geo_extent` varchar(255), `maintainer` varchar(255), `contact_email` varchar(255), `update_frequency` varchar(255), `date_range_start` datetime, `date_range_end` datetime, `publish_date` date, `metadata_date` date, `licence_id` int(11), `category_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100304231108')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (42.7ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `audiences`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `audiences`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `blogposts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `blogposts`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mdescribe `datasets`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `datasets`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `languages`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `languages`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `licences`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `licences`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `themes`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `themes`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `themes`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:14:05) [GET]
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 96ms (View: 90, DB: 1) | 200 OK [http://localhost/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:17:55) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/datasets]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:50:04) [GET]
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:50:19) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:50:23) [GET]
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 43ms (View: 2, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:50:32) [GET]
+  [4;36;1mDataset Load (0.5ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:51:33) [GET]
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:51:41) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:51:44) [GET]
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:51:44) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:51:53) [GET]
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 63ms (View: 58, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:52:34) [GET]
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 75ms (View: 70, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:52:38) [GET]
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#new (for 127.0.0.1 at 2010-03-04 23:52:39) [GET]
+  [4;36;1mDataset Columns (22.3ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+Rendering template within layouts/datasets
+Rendering datasets/new
+Completed in 234ms (View: 205, DB: 23) | 200 OK [http://localhost/datasets/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:52:55) [GET]
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:53:22) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:53:22) [GET]
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:53:23) [GET]
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#new (for 127.0.0.1 at 2010-03-04 23:53:27) [GET]
+  [4;35;1mDataset Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+Rendering template within layouts/datasets
+Rendering datasets/new
+Completed in 51ms (View: 37, DB: 7) | 200 OK [http://localhost/datasets/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:54:29) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetController#index (for 127.0.0.1 at 2010-03-04 23:54:32) [GET]
+Rendering admin/dataset/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #12 of app/views/admin/dataset/index.html.erb:
+9:     <th>Publish date</th>
+10:   </tr>
+11: 
+12: <% @datasets.each do |dataset| %>
+13:   <tr>
+14:     <td><%=h dataset.name %></td>
+15:     <td><%=h dataset.maintainer %></td>
+
+    app/views/admin/dataset/index.html.erb:12
+
+Rendered rescues/_trace (109.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:54:34) [GET]
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 23:54:37) [GET]
+
+ActionController::RoutingError (No route matches "/admin" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-04 23:54:39) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#new (for 127.0.0.1 at 2010-03-04 23:54:41) [GET]
+  [4;35;1mDataset Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+Rendering template within layouts/datasets
+Rendering datasets/new
+Completed in 112ms (View: 36, DB: 3) | 200 OK [http://localhost/datasets/new]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 09:17:25) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;36;1mUser Columns (75.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (20.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Completed in 1114ms (View: 962, DB: 98) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:17:30) [GET]
+  [4;36;1mDataset Load (128.9ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 429ms (View: 97, DB: 129) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#new (for 127.0.0.1 at 2010-03-05 09:17:45) [GET]
+  [4;35;1mDataset Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+Rendering template within layouts/datasets
+Rendering datasets/new
+Completed in 867ms (View: 844, DB: 3) | 200 OK [http://localhost/admin/datasets/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:20:41) [GET]
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 55ms (View: 50, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:24:17) [GET]
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 72ms (View: 67, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:25:53) [GET]
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 87ms (View: 81, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:25:56) [GET]
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:26:23) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+
+ActionView::TemplateError (undefined local variable or method `new_dataset_path' for #<ActionView::Base:0x103370060>) on line #28 of app/views/datasets/index.html.erb:
+25: 
+26: <br />
+27: 
+28: <%= link_to 'New dataset', new_dataset_path %>
+
+    app/views/datasets/index.html.erb:28
+    app/controllers/datasets_controller.rb:7:in `index'
+
+Rendered rescues/_trace (115.1ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:28:11) [GET]
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 76ms (View: 70, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:31:47) [GET]
+  [4;35;1mDataset Load (0.6ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 35ms (View: 16, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:33:06) [GET]
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:33:11) [GET]
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:33:12) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 09:33:46) [GET]
+
+ActionController::RoutingError (No route matches "/admin/datasets" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetController#index (for 127.0.0.1 at 2010-03-05 09:33:49) [GET]
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering admin/dataset/index
+Completed in 128ms (View: 122, DB: 1) | 200 OK [http://localhost/admin/dataset]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 09:33:59) [GET]
+
+ActionController::RoutingError (No route matches "/admin/themes" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 09:34:01) [GET]
+
+ActionController::RoutingError (No route matches "/admin/theme" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 09:34:05) [GET]
+
+ActionController::RoutingError (No route matches "/theme" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ThemesController#index (for 127.0.0.1 at 2010-03-05 09:34:07) [GET]
+  [4;36;1mTheme Load (72.0ms)[0m   [0;1mSELECT * FROM `themes` [0m
+Rendering template within layouts/themes
+Rendering themes/index
+Completed in 174ms (View: 77, DB: 72) | 200 OK [http://localhost/themes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-05 09:34:09) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;35;1mUser Columns (36.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Completed in 482ms (View: 444, DB: 37) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:34:35) [GET]
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 54ms (View: 49, DB: 1) | 200 OK [http://localhost/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:50:06) [GET]
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/datasets
+Rendering datasets/index
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:50:11) [GET]
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:53:04) [GET]
+  [4;36;1mDataset Load (0.6ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (2.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:53:05) [GET]
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:53:05) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:53:06) [GET]
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:53:06) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:53:07) [GET]
+  [4;35;1mDataset Load (0.5ms)[0m   [0mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:53:20) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#new (for 127.0.0.1 at 2010-03-05 09:56:33) [GET]
+  [4;35;1mDataset Columns (69.5ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/new.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:32:in `new'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#show (for 127.0.0.1 at 2010-03-05 09:56:36) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mDataset Columns (50.5ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mDataset Load (31.9ms)[0m   [0mSELECT * FROM `datasets` WHERE (`datasets`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Dataset with ID=index):
+  app/controllers/admin/datasets_controller.rb:19:in `show'
+
+Rendered rescues/_trace (38.6ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:56:41) [GET]
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#new (for 127.0.0.1 at 2010-03-05 09:58:02) [GET]
+  [4;35;1mDataset Columns (23.1ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/new.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:32:in `new'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#show (for 127.0.0.1 at 2010-03-05 09:58:09) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mDataset Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` WHERE (`datasets`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Dataset with ID=show):
+  app/controllers/admin/datasets_controller.rb:19:in `show'
+
+Rendered rescues/_trace (38.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#show (for 127.0.0.1 at 2010-03-05 09:58:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDataset Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` WHERE (`datasets`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Dataset with ID=1):
+  app/controllers/admin/datasets_controller.rb:19:in `show'
+
+Rendered rescues/_trace (36.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 09:58:14) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 10:01:41) [GET]
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 10:01:43) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 10:01:44) [GET]
+  [4;35;1mDataset Load (3.1ms)[0m   [0mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 10:01:44) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 10:01:45) [GET]
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 10:01:45) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 10:01:46) [GET]
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+
+ActionView::MissingTemplate (Missing template admin/datasets/index.erb in view path app/views):
+  app/controllers/admin/datasets_controller.rb:10:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-05 10:02:14) [GET]
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+Completed in 64ms (View: 59, DB: 1) | 200 OK [http://localhost/admin/datasets]

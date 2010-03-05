@@ -1,4 +1,7 @@
-class DatasetsController < ApplicationController
+class Admin::DatasetsController < ApplicationController
+
+  layout "admin"
+
   # GET /datasets
   # GET /datasets.xml
   def index
@@ -45,7 +48,7 @@ class DatasetsController < ApplicationController
     respond_to do |format|
       if @dataset.save
         flash[:notice] = 'Dataset was successfully created.'
-        format.html { redirect_to(@dataset) }
+        format.html { redirect_to(:admin, @dataset) }
         format.xml  { render :xml => @dataset, :status => :created, :location => @dataset }
       else
         format.html { render :action => "new" }
@@ -62,7 +65,7 @@ class DatasetsController < ApplicationController
     respond_to do |format|
       if @dataset.update_attributes(params[:dataset])
         flash[:notice] = 'Dataset was successfully updated.'
-        format.html { redirect_to(@dataset) }
+        format.html { redirect_to(:admin, @dataset) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -78,8 +81,12 @@ class DatasetsController < ApplicationController
     @dataset.destroy
 
     respond_to do |format|
-      format.html { redirect_to(datasets_url) }
+      format.html { redirect_to(:admin, datasets_url) }
       format.xml  { head :ok }
     end
   end
+
+
+
+
 end

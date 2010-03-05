@@ -1,8 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
+
+  map.namespace :admin do |admin|
+     admin.resources :datasets
+   end
+
+  map.resources :datasets
   map.resources :themes
-
   map.resources :licences
-
   map.resources :users
 
   map.resource :session, :controller => 'session'
@@ -14,6 +18,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :audiences
   map.resources :people
   map.resources :blogposts
+
   
   # The priority is based upon order of creation: first created -> highest priority.
 
