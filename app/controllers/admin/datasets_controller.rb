@@ -1,6 +1,12 @@
 class Admin::DatasetsController < ApplicationController
-
+  include AuthenticatedSystem
+  before_filter :login_required
   layout "admin"
+  current_tab :datasets
+  
+  def initialize
+     @title = "Datasets"
+   end
 
   # GET /datasets
   # GET /datasets.xml
@@ -37,7 +43,9 @@ class Admin::DatasetsController < ApplicationController
 
   # GET /datasets/1/edit
   def edit
+    # @dataset = Dataset.find(params[:id])
     @dataset = Dataset.find(params[:id])
+  
   end
 
   # POST /datasets
@@ -48,7 +56,7 @@ class Admin::DatasetsController < ApplicationController
     respond_to do |format|
       if @dataset.save
         flash[:notice] = 'Dataset was successfully created.'
-        format.html { redirect_to(:admin, @dataset) }
+        format.html { redirect_to([:admin, @dataset]) }
         format.xml  { render :xml => @dataset, :status => :created, :location => @dataset }
       else
         format.html { render :action => "new" }
@@ -65,7 +73,7 @@ class Admin::DatasetsController < ApplicationController
     respond_to do |format|
       if @dataset.update_attributes(params[:dataset])
         flash[:notice] = 'Dataset was successfully updated.'
-        format.html { redirect_to(:admin, @dataset) }
+        format.html { redirect_to([:admin, @dataset]) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -81,12 +89,11 @@ class Admin::DatasetsController < ApplicationController
     @dataset.destroy
 
     respond_to do |format|
-      format.html { redirect_to(:admin, datasets_url) }
+      format.html { redirect_to(admin_datasets_url) }
       format.xml  { head :ok }
     end
   end
 
-
-
+  private
 
 end

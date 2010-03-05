@@ -14,30 +14,46 @@
 	</head>
 <body>
 	<div id="pageContainer">
-		<header id="main" class="clearfix">
-		
-		<nav id="main-navbar">
-			<ul>   
-				 <li></li>
-			</ul>
-		</nav>
-		
-		<h1 id="pageHeader"><a href="/">Warwickshire Open Data Admin</a></h1>
-	</header>
+		<header id="site">	
+			<h1 id="pageHeader"><a href="/">Warwickshire Open Data Admin</a></h1>
+			<div id="userStatus">
+				<% if current_user %>
+					Hello <%= h current_user.login %> | <%= link_to "logout", logout_path %>
+				<% end %>
+			</div>
+			<nav id="main-nav" class="clearfix">
+				<%= navigation [{:datasets => admin_datasets_path}, 
+								{:audiences => admin_audiences_path},
+								{:licences => admin_licences_path},
+								{:categories => admin_categories_path},
+								{:languages => admin_languages_path} ]%>
+				
+				<!--<ul>   
+					<li><%= link_to 'Datasets', admin_datasets_path %></li>
+					<li><%= link_to 'Audiences', admin_audiences_path %></li>
+					<li><%= link_to 'Licences', admin_licences_path %></li>
+					<li><%= link_to 'Categories', admin_categories_path %></li>
+					<li><%= link_to 'Languages', admin_languages_path %></li>
+					<li>Admins</li>
+				</ul>-->
+			</nav>
+		</header>
 	
-	<div id="home" class="pageContent clearfix">
-		<div id="mainCol">
-			<% if flash[:notice] %>
-				<p id="flashNotice"><%= flash[:notice] -%></p>
-			<% end %>
-			<% if flash[:error] %>
-				<p id="flashError"><%= flash[:error] -%></p>
-			<% end %>
-			<%= yield %>
-		</div>
-	</div>
+		<div id="home" class="pageContent clearfix">
+			<div id="mainCol">
+				<% if flash[:notice] %>
+					<p id="flashNotice"><%= flash[:notice] -%></p>
+				<% end %>
+				<% if flash[:error] %>
+					<p id="flashError"><%= flash[:error] -%></p>
+				<% end %>
+				<%= yield %>
+			</div>
+		</div>	
 		
-		
+		<footer id="site">
+			Live site
+		</footer>
 	</div>
 </body>
 </html>

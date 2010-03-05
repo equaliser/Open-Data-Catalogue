@@ -1,12 +1,19 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :categories
+
 
   map.namespace :admin do |admin|
      admin.resources :datasets
+     admin.resources :categories
+     admin.resources :languages
+     admin.resources :licences
+     admin.resources :audiences
    end
 
-  map.resources :datasets
-  map.resources :themes
+  map.resources :datasets 
+  
   map.resources :licences
+  
   map.resources :users
 
   map.resource :session, :controller => 'session'

@@ -1,0 +1,2 @@
+module Admin::AudiencesHelper
+end

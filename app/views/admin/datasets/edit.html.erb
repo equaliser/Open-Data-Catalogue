@@ -1,6 +1,6 @@
 <h1>Editing dataset</h1>
 
-<% form_for(@dataset) do |f| %>
+<% form_for([:admin, @dataset]) do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -9,7 +9,9 @@
   </p>
   <p>
     <%= f.label :audience_id %><br />
-    <%= f.text_field :audience_id %>
+	<%= f.select :audience_id, Audience.find(:all).collect {|s|
+		[s.name, s.id]
+	} %>
   </p>
   <p>
     <%= f.label :description %><br />
@@ -37,7 +39,9 @@
   </p>
   <p>
     <%= f.label :language_id %><br />
-    <%= f.text_field :language_id %>
+	<%= f.select :language_id, Language.find(:all).collect {|s|
+		[s.name, s.id]
+	} %>
   </p>
   <p>
     <%= f.label :geo_extent %><br />
@@ -73,16 +77,20 @@
   </p>
   <p>
     <%= f.label :licence_id %><br />
-    <%= f.text_field :licence_id %>
+	<%= f.select :licence_id, Licence.find(:all).collect {|s|
+		[s.name, s.id]
+	} %>
   </p>
   <p>
-    <%= f.label :category_id %><br />
-    <%= f.text_field :category_id %>
+	<%= f.label :category_id %><br />
+	<%= f.select :category_id, Category.find(:all).collect {|s|
+		[s.name, s.id]
+	} %>
   </p>
   <p>
     <%= f.submit 'Update' %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @dataset %> |
-<%= link_to 'Back', datasets_path %>
+<%= link_to 'Show', [:admin, @dataset] %> |
+<%= link_to 'Back', admin_datasets_path %>

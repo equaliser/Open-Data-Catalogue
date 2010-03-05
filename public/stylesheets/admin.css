@@ -1,0 +1,148 @@
+/* admin stylesheet */
+
+/* structure */
+body
+	{
+		font-family: Helvetica, Arial, Sans-serif;
+		font-size: 76%;
+		margin: 0;
+		padding:0;
+		text-align: center;
+		background-color:#222;
+	}
+
+#pageContainer
+	{
+		width:960px;
+		margin:0 auto;
+		text-align:left;
+	}
+
+
+/* header */
+
+header#site
+	{
+		background-color:#222;
+		display:block;
+		margin:0;
+		color:white;
+		
+	}
+
+header#site h1
+	{
+		font-weight:normal;
+		padding-top:7px;
+		margin:5px 0 14px 6px;
+		font-size:1.6em;
+		float:left;
+	}
+	
+#userStatus
+	{
+		margin:15px 0 14px 6px;
+		float:right;
+		width:200px;
+		text-align:right;
+	}
+
+header#site h1 a
+	{
+		text-decoration:none;
+		color:white;
+	}
+
+/* main nav */
+
+nav#main-nav
+	{
+		font-size:1.2em;
+		display:block;
+		margin:0;
+		clear:both;
+	}
+
+nav#main-nav ul
+	{
+		list-style:none;
+		margin:0 0 0 0;
+		padding:0;
+		display:block;
+	}
+
+nav#main-nav li
+	{
+		margin-right:1px;
+		float:left;
+		display:block;
+	}
+	
+nav#main-nav a:link, nav#main-nav a:visited, nav#main-nav a:hover, nav#main-nav a:active 
+	{
+		display:block;
+		padding:6px 4px 7px 8px;
+		background-color:#004A99;
+		color:white;
+		font-weight:bold;
+		text-decoration:none;
+		width:7em;
+	}
+	
+nav#main-nav a:hover
+	{
+		background-color:#508EC3;
+	}
+	
+nav#main-nav li.current a
+	{
+		background-color:white;
+		color:#004A99;
+	}
+	
+	
+/* footer */
+
+footer
+	{
+		display:block;
+		padding:6px 12px;
+	}
+
+
+/* main content */
+
+#mainCol
+	{
+		float:left;
+		width:100%;
+	}
+
+#mainCol, .pageContent, footer
+	{
+		margin:0;
+		background-color:white;
+	}
+
+.pageContent
+	{
+		margin:0;
+		padding:0 12px 20px;
+		
+	}
+
+
+/* the clearfix */
+
+.clearfix:after 
+	{
+	    content: "."; 
+	    display: block; 
+	    height: 0; 
+	    clear: both; 
+	    visibility: hidden;
+	}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */

@@ -1,0 +1,20 @@
+<h1>Audiences</h1>
+
+<%= link_to 'New audience', new_admin_audience_path, :class => "newItem" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% @audiences.each do |audience| %>
+  <tr>
+    <td><%= link_to audience.name, [:admin, audience] %></td>
+    <td><%= link_to 'Edit', edit_admin_audience_path(audience) %></td>
+    <td><%= link_to 'Destroy', [:admin, audience], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

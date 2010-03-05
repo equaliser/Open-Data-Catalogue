@@ -1,4 +1,6 @@
-<h1>Listing datasets</h1>
+<h1>Datasets</h1>
+
+<%= link_to 'New dataset', new_admin_dataset_path, :class => "newItem"  %>
 
 <table>
   <tr>
@@ -6,6 +8,7 @@
     <th>Maintainer</th>
     <th>Date range start</th>
     <th>Date range end</th>
+	<th>Licence</th>
     <th>Publish date</th>
   </tr>
 
@@ -15,14 +18,11 @@
     <td><%=h dataset.maintainer %></td>
     <td><%=h dataset.date_range_start %></td>
     <td><%=h dataset.date_range_end %></td>
+	<td><%=h dataset.licence.name %></td>
     <td><%=h dataset.publish_date %></td>
-    <td><%= link_to 'Show', dataset %></td>
-    <td><%= link_to 'Edit', edit_dataset_path(dataset) %></td>
-    <td><%= link_to 'Destroy', dataset, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', [:admin, dataset] %></td>
+    <td><%= link_to 'Edit', edit_admin_dataset_path(dataset) %></td>
+    <td><%= link_to 'Destroy', [:admin, dataset], :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New dataset', new_dataset_path %>
