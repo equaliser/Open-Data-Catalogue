@@ -16,17 +16,8 @@
 	<div id="login">
 		<div id="container">
 			<div id="main">
-				<h1>Warwickshire Open Data</h1>	
-
-				<% if flash[:notice] %>
-					<p id="flashNotice"><%= flash[:notice] -%></p>
-				<% end %>
-				<% if flash[:error] %>
-					<p id="flashError"><%= flash[:error] -%></p>
-				<% end %>
-				
+				<h1>Warwickshire Open Data</h1>					
 				<%= yield %>
-	
 			</div>
 		</div>
 	</div>

@@ -3,28 +3,70 @@
 <% form_for([:admin, @dataset]) do |f| %>
   <%= f.error_messages %>
 
+<h2>Info</h2>
+
   <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>
+
+  <p>
+    <%= f.label :display_title %><br />
+    <%= f.text_field :display_title %>
+  </p>
+
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+
+<h2>Categories</h2>
+
   <p>
     <%= f.label :audience_id %><br />
 	<%= f.select :audience_id, Audience.find(:all).collect {|s|
 		[s.name, s.id]
 	} %>
   </p>
+
   <p>
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
+    <%= f.label :licence_id %><br />
+	<%= f.select :licence_id, Licence.find(:all).collect {|s|
+		[s.name, s.id]
+	} %>
   </p>
+  <p>
+    <%= f.label :category_id %><br />
+	<%= f.select :category_id, Category.find(:all).collect {|s|
+		[s.name, s.id]
+	} %>
+  </p>
+
+<p>
+  <%= f.label 'Tag List (Delimiter is ,)' %><br />
+  <%= f.text_field :tag_list %>
+</p>
+
+
   <p>
     <%= f.label :version %><br />
     <%= f.text_field :version %>
   </p>
+
   <p>
-    <%= f.label :display_title %><br />
-    <%= f.text_field :display_title %>
+    <%= f.label :language_id %><br />
+	<%= f.select :language_id, Language.find(:all).collect {|s|
+		[s.name, s.id]
+	} %>
   </p>
+  <p>
+    <%= f.label :geo_extent %><br />
+    <%= f.text_field :geo_extent %>
+  </p>
+
+
+<h2>Links to data</h2>
+
   <p>
     <%= f.label :info_url %><br />
     <%= f.text_field :info_url %>
@@ -37,16 +79,11 @@
     <%= f.label :csv_url %><br />
     <%= f.text_field :csv_url %>
   </p>
-  <p>
-    <%= f.label :language_id %><br />
-	<%= f.select :language_id, Language.find(:all).collect {|s|
-		[s.name, s.id]
-	} %>
-  </p>
-  <p>
-    <%= f.label :geo_extent %><br />
-    <%= f.text_field :geo_extent %>
-  </p>
+
+
+
+<h2>Maintenance</h2>
+
   <p>
     <%= f.label :maintainer %><br />
     <%= f.text_field :maintainer %>
@@ -75,18 +112,8 @@
     <%= f.label :metadata_date %><br />
     <%= f.date_select :metadata_date %>
   </p>
-  <p>
-    <%= f.label :licence_id %><br />
-	<%= f.select :licence_id, Licence.find(:all).collect {|s|
-		[s.name, s.id]
-	} %>
-  </p>
-  <p>
-    <%= f.label :category_id %><br />
-	<%= f.select :category_id, Category.find(:all).collect {|s|
-		[s.name, s.id]
-	} %>
-  </p>
+
+
   <p>
     <%= f.submit 'Create' %>
   </p>

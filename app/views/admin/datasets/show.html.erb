@@ -97,6 +97,9 @@
   <%=h @dataset.category.name %>
 </p>
 
+<p><strong>Tags</strong>: <% for tag in @dataset.tags %> 
+<%= link_to tag.name, admin_dataset_path(:view =>'tag', :tag => tag.name) %><% end %>
+</p>
 
 <%= link_to 'Edit', edit_admin_dataset_path(@dataset) %> |
 <%= link_to 'Back', admin_dataset_path %>

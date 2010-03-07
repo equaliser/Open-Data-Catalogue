@@ -1,22 +1,22 @@
 <h1>Licences</h1>
 
-<%= link_to 'New licence', new_admin_licence_path, :class => "newItem"  %>
+<%= link_to 'New licence', new_admin_licence_path, :class => "niceButton newItem"   %>
 
 <table>
   <tr>
-    <th>Name</th>
+    <th class="mainName">Name</th>
     <th>Description</th>
     <th>Link</th>
+	<th colspan="2"></th>
   </tr>
 
 <% @licences.each do |licence| %>
   <tr>
-    <td><%=h licence.name %></td>
+    <td class="mainName"><%= link_to h(licence.name), [:admin, licence] %></td>
     <td><%=h licence.description %></td>
     <td><%=h licence.link %></td>
-    <td><%= link_to 'Show', [:admin, licence] %></td>
-    <td><%= link_to 'Edit', edit_admin_licence_path(licence) %></td>
-    <td><%= link_to 'Destroy', [:admin, licence], :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Edit', edit_admin_licence_path(licence), :class => "niceButton editItem"  %></td>
+    <td><%= link_to 'Destroy', [:admin, licence], :confirm => 'Are you sure?', :method => :delete, :class => "niceButton destroyItem"  %></td>
   </tr>
 <% end %>
 </table>

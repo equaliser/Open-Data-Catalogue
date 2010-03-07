@@ -1,28 +1,28 @@
 <h1>Datasets</h1>
 
-<%= link_to 'New dataset', new_admin_dataset_path, :class => "newItem"  %>
+<%= link_to 'New dataset', new_admin_dataset_path, :class => "niceButton newItem"  %>
 
 <table>
   <tr>
-    <th>Name</th>
+    <th class="mainName">Name</th>
     <th>Maintainer</th>
     <th>Date range start</th>
     <th>Date range end</th>
 	<th>Licence</th>
     <th>Publish date</th>
+	<th colspan="2"></th>
   </tr>
 
 <% @datasets.each do |dataset| %>
   <tr>
-    <td><%=h dataset.name %></td>
+    <td class="mainName"><%= link_to h(dataset.name), [:admin, dataset] %></td>
     <td><%=h dataset.maintainer %></td>
     <td><%=h dataset.date_range_start %></td>
     <td><%=h dataset.date_range_end %></td>
 	<td><%=h dataset.licence.name %></td>
     <td><%=h dataset.publish_date %></td>
-    <td><%= link_to 'Show', [:admin, dataset] %></td>
-    <td><%= link_to 'Edit', edit_admin_dataset_path(dataset) %></td>
-    <td><%= link_to 'Destroy', [:admin, dataset], :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Edit', edit_admin_dataset_path(dataset), :class => "niceButton editItem"  %></td>
+    <td><%= link_to 'Destroy', [:admin, dataset], :confirm => 'Are you sure?', :method => :delete, :class => "niceButton destroyItem"  %></td>
   </tr>
 <% end %>
 </table>

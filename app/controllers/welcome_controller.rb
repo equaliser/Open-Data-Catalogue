@@ -1,5 +1,4 @@
 class WelcomeController < ApplicationController
-  include AuthenticatedSystem
 
   layout "public"
 

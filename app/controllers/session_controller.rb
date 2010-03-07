@@ -26,7 +26,7 @@ class SessionController < ApplicationController
       redirect_back_or_default('/admin/datasets')
       flash[:notice] = "Logged in successfully"
     else
-      flash[:error] = "It don't work"
+      flash[:error] = "Oh dear. Wrong username or password, or both"
       render :action => 'new'
     end
   end
@@ -35,7 +35,7 @@ class SessionController < ApplicationController
     self.current_user.forget_me if logged_in?
     cookies.delete :auth_token
     reset_session
-    flash[:notice] = "You have been logged out."
+    #flash[:notice] = "You have been logged out."
     redirect_back_or_default('/loggedout')
   end
 end

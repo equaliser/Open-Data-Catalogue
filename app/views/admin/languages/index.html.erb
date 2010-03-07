@@ -1,18 +1,18 @@
 <h1>Languages</h1>
 
-<%= link_to 'New language', new_admin_language_path, :class => "newItem"  %>
+<%= link_to 'New language', new_admin_language_path, :class => "niceButton newItem"   %>
 
 <table>
   <tr>
-    <th>Name</th>
+    <th class="mainName">Name</th>
+	<th colspan="2"></th>
   </tr>
 
 <% @languages.each do |language| %>
   <tr>
-    <td><%=h language.name %></td>
-    <td><%= link_to 'Show', [:admin, language] %></td>
-    <td><%= link_to 'Edit', edit_admin_language_path(language) %></td>
-    <td><%= link_to 'Destroy', [:admin, language], :confirm => 'Are you sure?', :method => :delete %></td>
+    <td class="mainName"><%= link_to h(language.name), [:admin, language] %></td>
+    <td><%= link_to 'Edit', edit_admin_language_path(language), :class => "niceButton editItem"  %></td>
+    <td><%= link_to 'Destroy', [:admin, language], :confirm => 'Are you sure?', :method => :delete, :class => "niceButton destroyItem"  %></td>
   </tr>
 <% end %>
 </table>

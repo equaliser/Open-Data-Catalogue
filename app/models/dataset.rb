@@ -1,5 +1,6 @@
 class Dataset < ActiveRecord::Base
   require 'validates_existence'
+  acts_as_taggable_on :tags
   
   belongs_to :licence
   validates_existence_of :licence

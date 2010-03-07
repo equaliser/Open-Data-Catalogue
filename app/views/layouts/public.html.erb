@@ -50,6 +50,8 @@
 		<div id="home" class="pageContent clearfix">
 			<nav id="pageNav">
 				<ul>
+					<%= navigation [{:datasets => datasets_path}, 
+									{:categories => categories_path}]%>					
 					<li><a href="#">Categories</a></li>
 					<li><a href="#">Tags</a></li>
 					<li><a href="#">Thing</a></li>

@@ -10,6 +10,8 @@ ActionController::Routing::Routes.draw do |map|
      admin.resources :audiences
      admin.resources :users
    end
+   
+  map.resources :admin, :controller => 'admin/datasets' # default mapping for /admin
 
   map.resources :datasets 
   

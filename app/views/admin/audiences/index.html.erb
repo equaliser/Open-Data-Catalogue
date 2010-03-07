@@ -1,17 +1,18 @@
 <h1>Audiences</h1>
 
-<%= link_to 'New audience', new_admin_audience_path, :class => "newItem" %>
+<%= link_to 'New audience', new_admin_audience_path, :class => "niceButton newItem" %>
 
 <table>
   <tr>
-    <th>Name</th>
+    <th class="mainName">Name</th>
+	<th colspan="2"></th>
   </tr>
 
 <% @audiences.each do |audience| %>
   <tr>
-    <td><%= link_to audience.name, [:admin, audience] %></td>
-    <td><%= link_to 'Edit', edit_admin_audience_path(audience) %></td>
-    <td><%= link_to 'Destroy', [:admin, audience], :confirm => 'Are you sure?', :method => :delete %></td>
+    <td class="mainName"><%= link_to audience.name, [:admin, audience] %></td>
+    <td><%= link_to 'Edit', edit_admin_audience_path(audience), :class => "niceButton editItem" %></td>
+    <td><%= link_to 'Destroy', [:admin, audience], :confirm => 'Are you sure?', :method => :delete, :class => "niceButton destroyItem" %></td>
   </tr>
 <% end %>
 </table>

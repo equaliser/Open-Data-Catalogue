@@ -1,19 +1,21 @@
 <h1>Categories</h1>
 
+<%= link_to 'New category', new_admin_category_path, :class => "niceButton newItem"   %>
+
 <table>
   <tr>
-    <th>Name</th>
+    <th class="mainName">Name</th>
+	<th colspan="2"></th>
   </tr>
 
 <% @categories.each do |category| %>
   <tr>
-    <td><%= link_to category.name, [:admin, category] %></td>
-    <td><%= link_to 'Edit', edit_admin_category_path(category) %></td>
-    <td><%= link_to 'Destroy', [:admin, category], :confirm => 'Are you sure?', :method => :delete %></td>
+    <td class="mainName"><%= link_to category.name, [:admin, category] %></td>
+    <td><%= link_to 'Edit', edit_admin_category_path(category), :class => "niceButton editItem"  %></td>
+    <td><%= link_to 'Destroy', [:admin, category], :confirm => 'Are you sure?', :method => :delete, :class => "niceButton destroyItem"  %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New category', new_admin_category_path, :class => "newItem"  %>

@@ -108,10 +108,10 @@ form {
 /******************/
 /*  logout mess   */
 
-#logoutMessage {
-	height:110px;
+#loggedOut {
 	line-height:160%;
-	padding:0 22px;
+	padding:0 10px;
+	font-size:1.3em;
 }
 
 
