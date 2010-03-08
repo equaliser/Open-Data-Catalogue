@@ -26227,3 +26227,31 @@ Processing WelcomeController#index (for 127.0.0.1 at 2010-03-06 13:28:39) [GET]
 Rendering template within layouts/public
 Rendering welcome/index
 Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (13.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-08 21:10:52) [GET]
+  [4;35;1mDataset Load (16.8ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;36;1mDataset Columns (23.4ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+Completed in 198ms (View: 82, DB: 54) | 200 OK [http://localhost/datasets]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-08 21:50:21) [GET]
+Rendering template within layouts/public
+Rendering welcome/index
+Completed in 209ms (View: 207, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-08 21:50:23) [GET]
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;35;1mDataset Columns (47.4ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+Completed in 436ms (View: 271, DB: 48) | 200 OK [http://localhost/datasets]
