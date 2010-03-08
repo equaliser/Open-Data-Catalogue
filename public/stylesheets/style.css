@@ -198,6 +198,12 @@ h1#pageHeader  a:link, h1#pageHeader  a:visited, h1#pageHeader  a:hover, h1#page
 		color:#777;
 	}
 
+article h1
+	{
+		margin:0;
+	}
+
+
 	
 /** Content nav **/
 

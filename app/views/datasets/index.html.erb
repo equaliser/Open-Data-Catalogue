@@ -1,28 +1,26 @@
-<h1>Listing datasets</h1>
+<article id="datasetList">
+	<header>
+		<h1>Datasets</h1>
+	</header>
+	
+	<table>
+	  <tr>
+	    <th class="mainName">Name</th>
+	    <th>Maintainer</th>
+	    <th>Date range start</th>
+	    <th>Date range end</th>
+		<th>Licence</th>
+	    <th>Publish date</th>
+	  </tr>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Maintainer</th>
-    <th>Date range start</th>
-    <th>Date range end</th>
-    <th>Publish date</th>
-  </tr>
-
-<% @datasets.each do |dataset| %>
-  <tr>
-    <td><%=h dataset.name %></td>
-    <td><%=h dataset.maintainer %></td>
-    <td><%=h dataset.date_range_start %></td>
-    <td><%=h dataset.date_range_end %></td>
-    <td><%=h dataset.publish_date %></td>
-    <td><%= link_to 'Show', dataset %></td>
-    <td><%= link_to 'Edit', edit_dataset_path(dataset) %></td>
-    <td><%= link_to 'Destroy', dataset, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New dataset', new_dataset_path %>
+	<% @datasets.each do |dataset| %>
+	  <tr>
+	    <td class="mainName"><%= link_to h(dataset.name), dataset %></td>
+	    <td><%=h dataset.maintainer %></td>
+	    <td><%=h dataset.date_range_start %></td>
+	    <td><%=h dataset.date_range_end %></td>
+		<td><%=h dataset.licence.name %></td>
+	    <td><%=h dataset.publish_date %></td>
+	<% end %>
+	</table>
+</article>

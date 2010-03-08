@@ -18,6 +18,7 @@ role :web, location
 role :db,  location, :primary => true
 
 set :deploy_to, "/home/stephen/ruby/#{application}"
+set :deploy_via, :remote_cache
 
 #role :web, "your web-server here"                          # Your HTTP server, Apache/etc
 #role :app, "your app-server here"                          # This may be the same as your `Web` server
