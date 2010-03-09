@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :categories
+
 
 
   map.namespace :admin do |admin|
@@ -14,9 +14,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :admin, :controller => 'admin/datasets' # default mapping for /admin
 
   map.resources :datasets 
-  
   map.resources :licences
-  
+  map.resources :categories
   map.resources :users
 
   map.resource :session, :controller => 'session'

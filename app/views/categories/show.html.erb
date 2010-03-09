@@ -1,0 +1,13 @@
+<article id="categoryShow">
+	<header id="page">
+	<h1><%= h @title %> : <%=h @category.name %></h1>
+</header>
+
+
+<p>
+  <b>Name:</b>
+  <%=h @category.name %>
+</p>
+
+
+<%= link_to 'Back', categories_path %></article>
