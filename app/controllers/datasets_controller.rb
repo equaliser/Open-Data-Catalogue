@@ -1,6 +1,10 @@
 class DatasetsController < ApplicationController
   layout "public"
   
+  def initialize
+    @title = "Datasets"
+  end
+  
   # GET /datasets
   # GET /datasets.xml
   def index
@@ -16,7 +20,7 @@ class DatasetsController < ApplicationController
   # GET /datasets/1.xml
   def show
     @dataset = Dataset.find(params[:id])
-
+    @title = @dataset.name + " : " + @title
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @dataset }

@@ -1,4 +1,3 @@
-uh! nah!
 <article id="datasetList">
 	<header>
 		<h1>Datasets</h1>
@@ -8,8 +7,6 @@ uh! nah!
 	  <tr>
 	    <th class="mainName">Name</th>
 	    <th>Maintainer</th>
-	    <th>Date range start</th>
-	    <th>Date range end</th>
 		<th>Licence</th>
 	    <th>Publish date</th>
 	  </tr>
@@ -18,8 +15,6 @@ uh! nah!
 	  <tr>
 	    <td class="mainName"><%= link_to h(dataset.name), dataset %></td>
 	    <td><%=h dataset.maintainer %></td>
-	    <td><%=h dataset.date_range_start %></td>
-	    <td><%=h dataset.date_range_end %></td>
 		<td><%=h dataset.licence.name %></td>
 	    <td><%=h dataset.publish_date %></td>
 	<% end %>
