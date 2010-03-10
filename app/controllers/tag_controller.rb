@@ -9,7 +9,9 @@ class TagController < ApplicationController
    # GET /datasets
    # GET /datasets.xml
    def index
-     @tags = Dataset.tags
+     
+     
+     @tags = Dataset.all
 
      respond_to do |format|
        format.html # index.html.erb

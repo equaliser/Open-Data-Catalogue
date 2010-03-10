@@ -39507,3 +39507,505 @@ Rendering datasets/index
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
   [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
 Completed in 37ms (View: 15, DB: 8) | 200 OK [http://localhost/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-10 22:42:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;35;1mPage Columns (16.4ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 41ms (View: 17, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:42:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (1.2ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (7.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 159ms (View: 98, DB: 14) | 200 OK [http://localhost/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2010-03-10 22:42:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering categories/index
+  [4;35;1mCategory Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 20ms (View: 7, DB: 4) | 200 OK [http://localhost/categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:43:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 36ms (View: 15, DB: 8) | 200 OK [http://localhost/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:44:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;36;1mDataset Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 111ms (View: 16, DB: 10) | 200 OK [http://localhost/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:44:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;35;1mDataset Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.6ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 37ms (View: 16, DB: 8) | 200 OK [http://localhost/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:44:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;36;1mDataset Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 106ms (View: 16, DB: 8) | 200 OK [http://localhost/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:44:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;35;1mPage Load (0.5ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.6ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;35;1mDataset Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 37ms (View: 15, DB: 8) | 200 OK [http://localhost/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:45:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 37ms (View: 16, DB: 8) | 200 OK [http://localhost/datasets]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2010-03-10 22:45:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mPage Load (0.5ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering categories/index
+  [4;35;1mCategory Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 20ms (View: 7, DB: 4) | 200 OK [http://localhost/categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:45:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;35;1mDataset Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.2ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 37ms (View: 15, DB: 7) | 200 OK [http://localhost/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:45:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (6.8ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (5.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 121ms (View: 21, DB: 16) | 200 OK [http://localhost/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:45:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;35;1mDataset Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 36ms (View: 15, DB: 7) | 200 OK [http://localhost/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:45:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (9.1ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (5.3ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 122ms (View: 85, DB: 18) | 200 OK [http://localhost/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:46:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;35;1mDataset Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.6ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 39ms (View: 17, DB: 8) | 200 OK [http://localhost/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:46:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;36;1mDataset Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 35ms (View: 15, DB: 7) | 200 OK [http://localhost/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:46:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.2ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 36ms (View: 16, DB: 7) | 200 OK [http://localhost/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:46:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;36;1mDataset Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (35.8ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 74ms (View: 15, DB: 46) | 200 OK [http://localhost/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:47:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 37ms (View: 15, DB: 8) | 200 OK [http://localhost/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:47:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;36;1mDataset Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (1.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 36ms (View: 15, DB: 8) | 200 OK [http://localhost/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:47:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 109ms (View: 15, DB: 8) | 200 OK [http://localhost/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2010-03-10 22:47:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering categories/index
+  [4;36;1mCategory Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 19ms (View: 6, DB: 4) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2010-03-10 22:47:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering categories/index
+  [4;36;1mCategory Columns (40.5ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mPage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 58ms (View: 6, DB: 43) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:47:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;36;1mDataset Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.6ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 108ms (View: 16, DB: 8) | 200 OK [http://localhost/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2010-03-10 22:47:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering categories/index
+  [4;35;1mCategory Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 54ms (View: 7, DB: 39) | 200 OK [http://localhost/categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 22:48:01) [GET]
+
+ActionController::RoutingError (No route matches "/tags" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 22:48:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tags"}
+
+NameError (uninitialized constant TagsController):
+  
+
+Rendered rescues/_trace (30.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TagController#index (for 127.0.0.1 at 2010-03-10 22:48:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tag"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering tag/index
+  [4;35;1mPage Columns (397.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 593ms (View: 68, DB: 511) | 200 OK [http://localhost/tag]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:48:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.2ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 36ms (View: 15, DB: 7) | 200 OK [http://localhost/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2010-03-10 22:48:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering categories/index
+  [4;35;1mCategory Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 20ms (View: 7, DB: 4) | 200 OK [http://localhost/categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 22:48:38) [GET]
+
+ActionController::RoutingError (No route matches "/p" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 22:48:57) [GET]
+
+ActionController::RoutingError (No route matches "/p" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:49:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (5.8ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 71ms (View: 16, DB: 41) | 200 OK [http://localhost/datasets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#show (for 127.0.0.1 at 2010-03-10 22:49:02) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"datasets"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` WHERE (`datasets`.`id` = 1) [0m
+Rendering template within layouts/public
+Rendering datasets/show
+  [4;35;1mAudience Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mAudience Load (0.2ms)[0m   [0;1mSELECT * FROM `audiences` WHERE (`audiences`.`id` = 4) [0m
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` WHERE (`languages`.`id` = 5) [0m
+  [4;35;1mLicence Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.2ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCategory Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_id = 1) AND (`taggings`.taggable_type = 'Dataset') AND ((taggings.context = 'tags'))) [0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 123ms (View: 94, DB: 12) | 200 OK [http://localhost/datasets/1]

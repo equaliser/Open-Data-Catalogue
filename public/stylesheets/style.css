@@ -224,17 +224,29 @@ nav#pageNav li a
 	{
 		text-decoration:none;
 		display:block;
-		font-size:2em;
-		width:180px;
+		font-size:1.3em;
+		width:120px;
 		padding:8px 8px 8px 18px;
 		background-image:url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/Dotted+Line/$file/dotted_line.gif);
 		background-repeat:repeat-x;
 		background-position:top left;
 	}
 	
+nav#pageNav li a:link, nav#pageNav li a:hover, nav#pageNav li a:visited, nav#pageNav li a:active 
+	{
+		color:#444;
+	}	
+	
+nav#pageNav li a:hover
+	{
+		color:white;
+		background-color:green;
+	}
+	
+	
 nav#pageNav li.last
 	{
-		width:206px;
+		width:146px;
 	background-image:url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/Dotted+Line/$file/dotted_line.gif);
 		background-repeat:repeat-x;
 		background-position:bottom left;
@@ -246,6 +258,7 @@ nav#pageNav li.last
 	{
 		float:left;
 		width:514px;
+		font-size:1.2em;
 	}
 	
 
