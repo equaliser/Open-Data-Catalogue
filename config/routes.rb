@@ -27,10 +27,7 @@ ActionController::Routing::Routes.draw do |map|
   map.loggedout '/loggedout', :controller => 'session', :action => 'loggedout'
 
   map.resources :languages
-  map.resources :audiences
-  map.resources :people
-  map.resources :blogposts
-
+  map.resources :audiences  
   
   # The priority is based upon order of creation: first created -> highest priority.
 

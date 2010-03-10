@@ -37345,3 +37345,112 @@ The error occurred while evaluating nil.each) on line #12 of app/views/categorie
 Rendered rescues/_trace (42.7ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (17.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBlogposts (20100303132134)
+Migrating to BlogPostContent (20100303145129)
+Migrating to CreateAudiences (20100303173250)
+Migrating to CreateLanguages (20100303174430)
+Migrating to CreateUsers (20100303213834)
+Migrating to CreateLicences (20100304171609)
+Migrating to CreateDatasets (20100304231108)
+Migrating to CreateCategories (20100305101835)
+Migrating to ActsAsTaggableOnMigration (20100305221157)
+Migrating to AddFullnamesToUser (20100310093433)
+Migrating to CreatePages (20100310114543)
+Migrating to CreateSessions (20100310133643)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `audiences`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `audiences`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `blogposts`[0m
+  [4;36;1mSQL (26.2ms)[0m   [0;1mSHOW KEYS FROM `blogposts`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mSQL (10.6ms)[0m   [0mdescribe `datasets`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW KEYS FROM `datasets`[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `languages`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `languages`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mdescribe `licences`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `licences`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mSQL (9.7ms)[0m   [0;1mdescribe `pages`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `pages`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `taggings`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `taggings`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `taggings`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mSHOW FIELDS FROM `themes`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `themes`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `themes`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to BlogPostContent (20100303145129)
+Migrating to CreateAudiences (20100303173250)
+Migrating to CreateLanguages (20100303174430)
+Migrating to CreateUsers (20100303213834)
+Migrating to CreateLicences (20100304171609)
+Migrating to CreateDatasets (20100304231108)
+Migrating to CreateCategories (20100305101835)
+Migrating to ActsAsTaggableOnMigration (20100305221157)
+Migrating to AddFullnamesToUser (20100310093433)
+Migrating to CreatePages (20100310114543)
+Migrating to CreateSessions (20100310133643)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `audiences`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `audiences`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `blogposts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `blogposts`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mdescribe `datasets`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `datasets`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `languages`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `languages`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `licences`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `licences`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `pages`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `pages`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `taggings`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `taggings`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `taggings`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `themes`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `themes`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `themes`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
