@@ -1,0 +1,23 @@
+<%=h @testme %> ahhhh
+<article id="datasetList">
+	<header>
+		<h1>Datasets</h1>
+	</header>
+	
+	<table>
+	  <tr>
+	    <th class="mainName">Name</th>
+	    <th>Maintainer</th>
+		<th>Licence</th>
+	    <th>Publish date</th>
+	  </tr>
+
+	<% @datasets.each do |dataset| %>
+	  <tr>
+	    <td class="mainName"><%= link_to h(dataset.name), dataset %></td>
+	    <td><%=h dataset.maintainer %></td>
+		<td><%=h dataset.licence.name %></td>
+	    <td><%=h dataset.publish_date %></td>
+	<% end %>
+	</table>
+</article>

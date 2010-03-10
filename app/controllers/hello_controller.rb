@@ -1,4 +1,4 @@
-class HelloController < ApplicationController
+class HelloController < PublicController
   def index
     @title = "Hello"
   end

@@ -1,4 +1,5 @@
-class DatasetsController < PublicController
+class DataController < PublicController
+  
   before_filter :start
 
    # GET /datasets
@@ -30,5 +31,6 @@ class DatasetsController < PublicController
     def start
       @title = "Datasets"
     end
+  
   
 end

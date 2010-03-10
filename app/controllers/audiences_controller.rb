@@ -1,4 +1,4 @@
-class AudiencesController < ApplicationController
+class AudiencesController < PublicController
   
   def index
     
