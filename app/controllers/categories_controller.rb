@@ -1,4 +1,7 @@
-class CategoryController < PublicController
+class CategoriesController < ApplicationController
+  layout :public_layout
+  before_filter :public_start
+ 
  
   def initialize
      @title = "Categories"

@@ -16,7 +16,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :data
   map.resources :licences
   map.resources :hello
-  map.resources :category, :singular => :category_instance
+  map.resources :categories
   map.resources :users
   map.resources :pages
   map.resources :testing
