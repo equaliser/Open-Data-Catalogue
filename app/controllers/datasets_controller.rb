@@ -1,5 +1,4 @@
-class DatasetsController < ApplicationController
-  layout "public"
+class DatasetsController < PublicController
   
   def initialize
     @title = "Datasets"

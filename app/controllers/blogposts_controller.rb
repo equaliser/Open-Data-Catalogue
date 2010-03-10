@@ -1,9 +1,5 @@
 class BlogpostsController < ApplicationController
-  layout "public"
-  include AuthenticatedSystem
-  
-  before_filter :login_required
-  
+
   
   def index
     @title = "Blog"

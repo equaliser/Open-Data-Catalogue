@@ -8,7 +8,6 @@ class SessionController < ApplicationController
     @title = "Login"
   end
   
-  
   # render new.rhtml
   def new
   end

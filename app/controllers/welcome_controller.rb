@@ -1,7 +1,4 @@
-class WelcomeController < ApplicationController
-
-  layout "public"
-
+class WelcomeController < PublicController
   def index 
     @title = "Welcome"
   end

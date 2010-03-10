@@ -1,4 +1,4 @@
-class LicencesController < ApplicationController
+class LicencesController < PublicController
 
   def index
     

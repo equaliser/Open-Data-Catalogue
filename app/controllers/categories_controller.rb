@@ -1,6 +1,5 @@
-class CategoriesController < ApplicationController
-  layout "public"
-  
+class CategoriesController < PublicController
+ 
   def initialize
      @title = "Categories"
    end
