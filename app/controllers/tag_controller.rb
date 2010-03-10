@@ -1,4 +1,7 @@
-class TagController < PublicController
+class TagController < ApplicationController
+  layout :public_layout
+  before_filter :public_start
+  
   def initialize
     @title = "Tags"
   end

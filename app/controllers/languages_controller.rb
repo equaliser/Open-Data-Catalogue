@@ -1,5 +1,6 @@
-class LanguagesController < PublicController
-  
+class LanguagesController < ApplicationController
+  layout :public_layout
+  before_filter :public_start
   def index 
     
     
