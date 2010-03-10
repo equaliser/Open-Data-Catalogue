@@ -37454,3 +37454,1828 @@ Migrating to CreateSessions (20100310133643)
   [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
   [4;35;1mSQL (1.4ms)[0m   [0mdescribe `users`[0m
   [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2010-03-10 17:44:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/categories
+Rendering categories/index
+  [4;35;1mCategory Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Completed in 53ms (View: 5, DB: 3) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 17:44:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 17:45:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+
+ActionView::MissingTemplate (Missing template category/index.erb in view path app/views):
+  app/controllers/category_controller.rb:13:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 17:45:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;36;1mCategory Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mPage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+
+ActionView::TemplateError (undefined local variable or method `categories_path' for #<ActionView::Base:0x1035ac1a8>) on line #54 of app/views/layouts/public.html.erb:
+51: 			<nav id="pageNav">
+52: 				<ul>
+53: 					<%= navigation [{:data => data_path}, 
+54: 									{:categories => categories_path}]%>	
+55: 									
+56: 					<%# @pages.each do |page| %>
+57: 						<li><a href="#"><%#= h(page.title) %></a></li>
+
+    app/views/layouts/public.html.erb:54
+    app/controllers/category_controller.rb:13:in `index'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 17:45:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;36;1mCategory Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+
+ActionView::TemplateError (category_url failed to generate from {:controller=>"category", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["category", :id] - are they all satisfied?) on line #54 of app/views/layouts/public.html.erb:
+51: 			<nav id="pageNav">
+52: 				<ul>
+53: 					<%= navigation [{:data => data_path}, 
+54: 									{:category => category_path}]%>	
+55: 									
+56: 					<%# @pages.each do |page| %>
+57: 						<li><a href="#"><%#= h(page.title) %></a></li>
+
+    (eval):16:in `category_path'
+    app/views/layouts/public.html.erb:54
+    app/controllers/category_controller.rb:13:in `index'
+
+Rendered rescues/_trace (51.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 17:48:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;35;1mCategory Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+
+ActionView::TemplateError (category_url failed to generate from {:controller=>"category", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["category", :id] - are they all satisfied?) on line #54 of app/views/layouts/public.html.erb:
+51: 			<nav id="pageNav">
+52: 				<ul>
+53: 					<%= navigation [{:data => data_path}, 
+54: 									{:category => category_path}]%>	
+55: 									
+56: 					<%# @pages.each do |page| %>
+57: 						<li><a href="#"><%#= h(page.title) %></a></li>
+
+    (eval):16:in `category_path'
+    app/views/layouts/public.html.erb:54
+    app/controllers/category_controller.rb:13:in `index'
+
+Rendered rescues/_trace (51.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#show (for 127.0.0.1 at 2010-03-10 17:49:01) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+Rendering template within layouts/public
+Rendering category/show
+  [4;35;1mPage Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+
+ActionView::TemplateError (undefined local variable or method `categories_path' for #<ActionView::Base:0x1031696e0>) on line #13 of app/views/category/show.html.erb:
+10: </p>
+11: 
+12: 
+13: <%= link_to 'Back', categories_path %></article>
+
+    app/views/category/show.html.erb:13
+    app/controllers/category_controller.rb:26:in `show'
+
+Rendered rescues/_trace (47.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#show (for 127.0.0.1 at 2010-03-10 17:49:18) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+Rendering template within layouts/public
+Rendering category/show
+Completed in 20ms (View: 8, DB: 3) | 200 OK [http://localhost/category/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 17:49:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;35;1mPage Load (10.2ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;35;1mCategory Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+
+ActionView::TemplateError (category_url failed to generate from {:controller=>"category", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["category", :id] - are they all satisfied?) on line #54 of app/views/layouts/public.html.erb:
+51: 			<nav id="pageNav">
+52: 				<ul>
+53: 					<%= navigation [{:data => data_path}, 
+54: 									{:category => category_path}]%>	
+55: 									
+56: 					<%# @pages.each do |page| %>
+57: 						<li><a href="#"><%#= h(page.title) %></a></li>
+
+    (eval):16:in `category_path'
+    app/views/layouts/public.html.erb:54
+    app/controllers/category_controller.rb:13:in `index'
+
+Rendered rescues/_trace (52.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 17:49:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;36;1mCategory Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mPage Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+
+ActionView::TemplateError (undefined local variable or method `categories_path' for #<ActionView::Base:0x103162fc0>) on line #54 of app/views/layouts/public.html.erb:
+51: 			<nav id="pageNav">
+52: 				<ul>
+53: 					<%= navigation [{:data => data_path}, 
+54: 									{:category => categories_path}]%>	
+55: 									
+56: 					<%# @pages.each do |page| %>
+57: 						<li><a href="#"><%#= h(page.title) %></a></li>
+
+    app/views/layouts/public.html.erb:54
+    app/controllers/category_controller.rb:13:in `index'
+
+Rendered rescues/_trace (54.3ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 17:49:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;36;1mCategory Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mPage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+
+ActionView::TemplateError (undefined local variable or method `categories_path' for #<ActionView::Base:0x103221218>) on line #54 of app/views/layouts/public.html.erb:
+51: 			<nav id="pageNav">
+52: 				<ul>
+53: 					<%= navigation [{:data => data_path}, 
+54: 									{:category => categories_path}]%>	
+55: 									
+56: 					<%# @pages.each do |page| %>
+57: 						<li><a href="#"><%#= h(page.title) %></a></li>
+
+    app/views/layouts/public.html.erb:54
+    app/controllers/category_controller.rb:13:in `index'
+
+Rendered rescues/_trace (129.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 17:52:16) [GET]
+
+ActionController::RoutingError (No route matches "/category" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 17:52:17) [GET]
+
+ActionController::RoutingError (No route matches "/category" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#show (for 127.0.0.1 at 2010-03-10 17:54:44) [GET]
+  Parameters: {"action"=>"show", "controller"=>"category"}
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Category without an ID):
+  app/controllers/category_controller.rb:24:in `show'
+
+Rendered rescues/_trace (38.2ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#show (for 127.0.0.1 at 2010-03-10 17:55:04) [GET]
+  Parameters: {"action"=>"show", "controller"=>"category"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Category without an ID):
+  app/controllers/category_controller.rb:24:in `show'
+
+Rendered rescues/_trace (34.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#show (for 127.0.0.1 at 2010-03-10 17:55:12) [GET]
+  Parameters: {"action"=>"show", "controller"=>"category"}
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Category without an ID):
+  app/controllers/category_controller.rb:24:in `show'
+
+Rendered rescues/_trace (39.7ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#show (for 127.0.0.1 at 2010-03-10 17:55:13) [GET]
+  Parameters: {"action"=>"show", "controller"=>"category"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Category without an ID):
+  app/controllers/category_controller.rb:24:in `show'
+
+Rendered rescues/_trace (113.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#show (for 127.0.0.1 at 2010-03-10 17:55:14) [GET]
+  Parameters: {"action"=>"show", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Category without an ID):
+  app/controllers/category_controller.rb:24:in `show'
+
+Rendered rescues/_trace (38.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 17:57:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;36;1mCategory Columns (56.9ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+
+ActionView::TemplateError (category_url failed to generate from {:controller=>"category", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["category", :id] - are they all satisfied?) on line #54 of app/views/layouts/public.html.erb:
+51: 			<nav id="pageNav">
+52: 				<ul>
+53: 					<%= navigation [{:data => data_path}, 
+54: 									{:category => category_path}]%>	
+55: 									
+56: 					<%# @pages.each do |page| %>
+57: 						<li><a href="#"><%#= h(page.title) %></a></li>
+
+    (eval):16:in `category_path'
+    app/views/layouts/public.html.erb:54
+    app/controllers/category_controller.rb:13:in `index'
+
+Rendered rescues/_trace (127.3ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 18:00:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;35;1mPage Load (0.6ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;35;1mCategory Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Completed in 19ms (View: 5, DB: 4) | 200 OK [http://localhost/category]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index to #<category:0x10347dd18> (for 127.0.0.1 at 2010-03-10 18:00:20) [GET]
+  Parameters: {"format"=>"#<category:0x10347dd18>", "action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Completed in 10ms (View: 1, DB: 1) | 406 Not Acceptable [http://localhost/category.%23%3Ccategory:0x10347dd18%3E]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 18:14:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;36;1mCategory Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mPage Columns (18.2ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+
+ActionView::TemplateError (undefined local variable or method `category_instance' for #<ActionView::Base:0x1031e2b80>) on line #14 of app/views/category/index.html.erb:
+11: 	<% 
+12: 		@categories.each do |category| %>
+13: 	  <tr>
+14: 	    <td class="mainName"><%= link_to category.name, category_instance %></td>
+15: 	  </tr>
+16: 	<% end
+17: 	  
+
+    app/views/category/index.html.erb:14
+    app/views/category/index.html.erb:12:in `each'
+    app/views/category/index.html.erb:12
+    app/controllers/category_controller.rb:13:in `index'
+
+Rendered rescues/_trace (47.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 18:15:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;36;1mCategory Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Completed in 20ms (View: 9, DB: 3) | 200 OK [http://localhost/category]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:15:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+
+ActionView::TemplateError (undefined method `dataset_path' for #<ActionView::Base:0x103585008>) on line #16 of app/views/data/index.html.erb:
+13: 
+14: 	<% @datasets.each do |dataset| %>
+15: 	  <tr>
+16: 	    <td class="mainName"><%= link_to h(dataset.name), dataset %></td>
+17: 	    <td><%=h dataset.maintainer %></td>
+18: 		<td><%=h dataset.licence.name %></td>
+19: 	    <td><%=h dataset.publish_date %></td>
+
+    app/views/data/index.html.erb:16
+    app/views/data/index.html.erb:14:in `each'
+    app/views/data/index.html.erb:14
+    app/controllers/data_controller.rb:10:in `index'
+
+Rendered rescues/_trace (52.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:15:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+
+ActionView::TemplateError (undefined method `dataset_path' for #<ActionView::Base:0x10356b630>) on line #16 of app/views/data/index.html.erb:
+13: 
+14: 	<% @datasets.each do |dataset| %>
+15: 	  <tr>
+16: 	    <td class="mainName"><%= link_to h(dataset.name), dataset %></td>
+17: 	    <td><%=h dataset.maintainer %></td>
+18: 		<td><%=h dataset.licence.name %></td>
+19: 	    <td><%=h dataset.publish_date %></td>
+
+    app/views/data/index.html.erb:16
+    app/views/data/index.html.erb:14:in `each'
+    app/views/data/index.html.erb:14
+    app/controllers/data_controller.rb:10:in `index'
+
+Rendered rescues/_trace (55.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:18:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+
+ActionView::TemplateError (undefined method `dataset_path' for #<ActionView::Base:0x1035a4570>) on line #16 of app/views/data/index.html.erb:
+13: 
+14: 	<% @datasets.each do |dataset| %>
+15: 	  <tr>
+16: 	    <td class="mainName"><%= link_to h(dataset.name), dataset %></td>
+17: 	    <td><%=h dataset.maintainer %></td>
+18: 		<td><%=h dataset.licence.name %></td>
+19: 	    <td><%=h dataset.publish_date %></td>
+
+    app/views/data/index.html.erb:16
+    app/views/data/index.html.erb:14:in `each'
+    app/views/data/index.html.erb:14
+    app/controllers/data_controller.rb:10:in `index'
+
+Rendered rescues/_trace (53.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:18:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (35.1ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+
+ActionView::TemplateError (undefined method `dataset_path' for #<ActionView::Base:0x103544ee0>) on line #16 of app/views/data/index.html.erb:
+13: 
+14: 	<% @datasets.each do |dataset| %>
+15: 	  <tr>
+16: 	    <td class="mainName"><%= link_to h(dataset.name), dataset %></td>
+17: 	    <td><%=h dataset.maintainer %></td>
+18: 		<td><%=h dataset.licence.name %></td>
+19: 	    <td><%=h dataset.publish_date %></td>
+
+    app/views/data/index.html.erb:16
+    app/views/data/index.html.erb:14:in `each'
+    app/views/data/index.html.erb:14
+    app/controllers/data_controller.rb:10:in `index'
+
+Rendered rescues/_trace (126.4ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:18:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+
+ActionView::TemplateError (undefined method `dataset_path' for #<ActionView::Base:0x103458ef0>) on line #16 of app/views/data/index.html.erb:
+13: 
+14: 	<% @datasets.each do |dataset| %>
+15: 	  <tr>
+16: 	    <td class="mainName"><%= link_to h(dataset.name), dataset %></td>
+17: 	    <td><%=h dataset.maintainer %></td>
+18: 		<td><%=h dataset.licence.name %></td>
+19: 	    <td><%=h dataset.publish_date %></td>
+
+    app/views/data/index.html.erb:16
+    app/views/data/index.html.erb:14:in `each'
+    app/views/data/index.html.erb:14
+    app/controllers/data_controller.rb:10:in `index'
+
+Rendered rescues/_trace (128.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:21:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mDataset Load (0.5ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+
+ActionView::TemplateError (undefined local variable or method `data' for #<ActionView::Base:0x103544ee0>) on line #16 of app/views/data/index.html.erb:
+13: 
+14: 	<% @datasets.each do |dataset| %>
+15: 	  <tr>
+16: 	    <td class="mainName"><%= link_to h(dataset.name), data %></td>
+17: 	    <td><%=h dataset.maintainer %></td>
+18: 		<td><%=h dataset.licence.name %></td>
+19: 	    <td><%=h dataset.publish_date %></td>
+
+    app/views/data/index.html.erb:16
+    app/views/data/index.html.erb:14:in `each'
+    app/views/data/index.html.erb:14
+    app/controllers/data_controller.rb:10:in `index'
+
+Rendered rescues/_trace (125.1ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:21:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+
+ActionView::TemplateError (undefined local variable or method `data_instance' for #<ActionView::Base:0x10349bf70>) on line #16 of app/views/data/index.html.erb:
+13: 
+14: 	<% @datasets.each do |dataset| %>
+15: 	  <tr>
+16: 	    <td class="mainName"><%= link_to h(dataset.name), data_instance %></td>
+17: 	    <td><%=h dataset.maintainer %></td>
+18: 		<td><%=h dataset.licence.name %></td>
+19: 	    <td><%=h dataset.publish_date %></td>
+
+    app/views/data/index.html.erb:16
+    app/views/data/index.html.erb:14:in `each'
+    app/views/data/index.html.erb:14
+    app/controllers/data_controller.rb:10:in `index'
+
+Rendered rescues/_trace (124.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:21:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+
+ActionView::TemplateError (undefined local variable or method `datum' for #<ActionView::Base:0x1034f7500>) on line #16 of app/views/data/index.html.erb:
+13: 
+14: 	<% @datasets.each do |dataset| %>
+15: 	  <tr>
+16: 	    <td class="mainName"><%= link_to h(dataset.name), datum %></td>
+17: 	    <td><%=h dataset.maintainer %></td>
+18: 		<td><%=h dataset.licence.name %></td>
+19: 	    <td><%=h dataset.publish_date %></td>
+
+    app/views/data/index.html.erb:16
+    app/views/data/index.html.erb:14:in `each'
+    app/views/data/index.html.erb:14
+    app/controllers/data_controller.rb:10:in `index'
+
+Rendered rescues/_trace (128.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:21:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mDataset Load (0.5ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+
+ActionView::TemplateError (undefined local variable or method `datum' for #<ActionView::Base:0x103554ca0>) on line #16 of app/views/data/index.html.erb:
+13: 
+14: 	<% @datasets.each do |dataset| %>
+15: 	  <tr>
+16: 	    <td class="mainName"><%= link_to h(dataset.name), datum %></td>
+17: 	    <td><%=h dataset.maintainer %></td>
+18: 		<td><%=h dataset.licence.name %></td>
+19: 	    <td><%=h dataset.publish_date %></td>
+
+    app/views/data/index.html.erb:16
+    app/views/data/index.html.erb:14:in `each'
+    app/views/data/index.html.erb:14
+    app/controllers/data_controller.rb:10:in `index'
+
+Rendered rescues/_trace (49.7ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:28:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (10.7ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+Completed in 104ms (View: 80, DB: 14) | 200 OK [http://localhost/data]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:28:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+
+ActionView::TemplateError (undefined method `dataset_path' for #<ActionView::Base:0x103264158>) on line #16 of app/views/data/index.html.erb:
+13: 
+14: 	<% @datasets.each do |dataset| %>
+15: 	  <tr>
+16: 	    <td class="mainName"><%= link_to h(dataset.name), dataset %></td>
+17: 	    <td><%=h dataset.maintainer %></td>
+18: 		<td><%=h dataset.licence.name %></td>
+19: 	    <td><%=h dataset.publish_date %></td>
+
+    app/views/data/index.html.erb:16
+    app/views/data/index.html.erb:14:in `each'
+    app/views/data/index.html.erb:14
+    app/controllers/data_controller.rb:10:in `index'
+
+Rendered rescues/_trace (49.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:29:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+
+ActionView::TemplateError (undefined method `profile_path' for #<ActionView::Base:0x103157328>) on line #16 of app/views/data/index.html.erb:
+13: 
+14: 	<% @datasets.each do |dataset| %>
+15: 	  <tr>
+16: 	    <td class="mainName"><%= link_to h(dataset.name), profile_path(dataset) %></td>
+17: 	    <td><%=h dataset.maintainer %></td>
+18: 		<td><%=h dataset.licence.name %></td>
+19: 	    <td><%=h dataset.publish_date %></td>
+
+    app/views/data/index.html.erb:16
+    app/views/data/index.html.erb:14:in `each'
+    app/views/data/index.html.erb:14
+    app/controllers/data_controller.rb:10:in `index'
+
+Rendered rescues/_trace (50.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:29:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mDataset Load (0.5ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+Completed in 34ms (View: 17, DB: 5) | 200 OK [http://localhost/data]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index to #<dataset:0x103166a80> (for 127.0.0.1 at 2010-03-10 18:29:35) [GET]
+  Parameters: {"format"=>"#<dataset:0x103166a80>", "action"=>"index", "controller"=>"data"}
+  [4;36;1mDataset Load (0.5ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Completed in 13ms (View: 1, DB: 1) | 406 Not Acceptable [http://localhost/data.%23%3Cdataset:0x103166a80%3E]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index to #<dataset:0x1031669b8> (for 127.0.0.1 at 2010-03-10 18:29:41) [GET]
+  Parameters: {"format"=>"#<dataset:0x1031669b8>", "action"=>"index", "controller"=>"data"}
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Completed in 12ms (View: 1, DB: 1) | 406 Not Acceptable [http://localhost/data.%23%3Cdataset:0x1031669b8%3E]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:30:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+
+ActionView::TemplateError (undefined method `dataset_path' for #<ActionView::Base:0x1031f7c10>) on line #16 of app/views/data/index.html.erb:
+13: 
+14: 	<% @datasets.each do |dataset| %>
+15: 	  <tr>
+16: 	    <td class="mainName"><%= link_to h(dataset.name), dataset_path(dataset) %></td>
+17: 	    <td><%=h dataset.maintainer %></td>
+18: 		<td><%=h dataset.licence.name %></td>
+19: 	    <td><%=h dataset.publish_date %></td>
+
+    app/views/data/index.html.erb:16
+    app/views/data/index.html.erb:14:in `each'
+    app/views/data/index.html.erb:14
+    app/controllers/data_controller.rb:10:in `index'
+
+Rendered rescues/_trace (49.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:30:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.2ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+Completed in 116ms (View: 99, DB: 5) | 200 OK [http://localhost/data]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:31:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.2ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+Completed in 36ms (View: 19, DB: 5) | 200 OK [http://localhost/data]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#show (for 127.0.0.1 at 2010-03-10 18:31:30) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"data"}
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` WHERE (`datasets`.`id` = 2) [0m
+
+ActionView::MissingTemplate (Missing template data/show.erb in view path app/views):
+  app/controllers/data_controller.rb:21:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:33:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #56 of app/views/layouts/public.html.erb:
+53: 					<%= navigation [{:data => data_path}, 
+54: 									{:category => category_path}]%>	
+55: 									
+56: 					<% @pages.each do |page| %>
+57: 						<li><a href="#"><%= h(page.title) %></a></li>
+58: 					<% end %>								
+59: 				<!--	<li><a href="#">Categories</a></li>
+
+    app/views/layouts/public.html.erb:56
+    app/controllers/data_controller.rb:10:in `index'
+
+Rendered rescues/_trace (47.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-10 18:34:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;36;1mPage Columns (37.4ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 66ms (View: 13, DB: 47) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-10 18:34:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;36;1mPage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 12ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:34:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (3.7ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #56 of app/views/layouts/public.html.erb:
+53: 					<%= navigation [{:data => data_path}, 
+54: 									{:category => category_path}]%>	
+55: 									
+56: 					<% @pages.each do |page| %>
+57: 						<li><a href="#"><%= h(page.title) %></a></li>
+58: 					<% end %>								
+59: 				<!--	<li><a href="#">Categories</a></li>
+
+    app/views/layouts/public.html.erb:56
+    app/controllers/data_controller.rb:10:in `index'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:34:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.2ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 35ms (View: 15, DB: 7) | 200 OK [http://localhost/data]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#show (for 127.0.0.1 at 2010-03-10 18:35:17) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"data"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` WHERE (`datasets`.`id` = 1) [0m
+Rendering template within layouts/public
+Rendering data/show
+  [4;36;1mAudience Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+  [4;35;1mAudience Load (0.2ms)[0m   [0mSELECT * FROM `audiences` WHERE (`audiences`.`id` = 4) [0m
+  [4;36;1mLanguage Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mLanguage Load (0.3ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 5) [0m
+  [4;36;1mLicence Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (14.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCategory Columns (7.1ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mTagging Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `taggings`[0m
+  [4;35;1mTag Load (6.4ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_id = 1) AND (`taggings`.taggable_type = 'Dataset') AND ((taggings.context = 'tags'))) [0m
+  [4;36;1mTag Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mPage Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+
+ActionView::TemplateError (undefined method `dataset_path' for #<ActionView::Base:0x10367da50>) on line #99 of app/views/data/show.html.erb:
+96: </p>
+97: 
+98: <p><strong>Tags</strong>: <% for tag in @dataset.tags %> 
+99: <%= link_to tag.name, dataset_path(:view =>'tag', :tag => tag.name) %><% end %>
+100: </p>
+101: 
+102: <%= link_to 'Back', datasets_path %></article>
+
+    app/views/data/show.html.erb:99
+    app/views/data/show.html.erb:98
+    app/controllers/data_controller.rb:23:in `show'
+
+Rendered rescues/_trace (121.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-10 18:38:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;35;1mPage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 12ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 18:38:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;36;1mCategory Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mPage Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 94ms (View: 13, DB: 4) | 200 OK [http://localhost/category]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:38:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.4ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.8ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 38ms (View: 16, DB: 7) | 200 OK [http://localhost/data]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 18:38:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;35;1mCategory Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 19ms (View: 6, DB: 4) | 200 OK [http://localhost/category]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:38:13) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.9ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 36ms (View: 15, DB: 7) | 200 OK [http://localhost/data]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#show (for 127.0.0.1 at 2010-03-10 18:38:14) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"data"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` WHERE (`datasets`.`id` = 1) [0m
+Rendering template within layouts/public
+Rendering data/show
+  [4;35;1mAudience Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mAudience Load (0.2ms)[0m   [0;1mSELECT * FROM `audiences` WHERE (`audiences`.`id` = 4) [0m
+  [4;35;1mLanguage Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mLanguage Load (0.2ms)[0m   [0;1mSELECT * FROM `languages` WHERE (`languages`.`id` = 5) [0m
+  [4;35;1mLicence Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCategory Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_id = 1) AND (`taggings`.taggable_type = 'Dataset') AND ((taggings.context = 'tags'))) [0m
+  [4;36;1mPage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+
+ActionView::TemplateError (undefined method `dataset_path' for #<ActionView::Base:0x10335f918>) on line #99 of app/views/data/show.html.erb:
+96: </p>
+97: 
+98: <p><strong>Tags</strong>: <% for tag in @dataset.tags %> 
+99: <%= link_to tag.name, dataset_path(:view =>'tag', :tag => tag.name) %><% end %>
+100: </p>
+101: 
+102: <%= link_to 'Back', datasets_path %></article>
+
+    app/views/data/show.html.erb:99
+    app/views/data/show.html.erb:98
+    app/controllers/data_controller.rb:23:in `show'
+
+Rendered rescues/_trace (53.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TagController#index (for 127.0.0.1 at 2010-03-10 18:38:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tag"}
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TagController#index (for 127.0.0.1 at 2010-03-10 18:39:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tag"}
+Rendering tag/index
+Completed in 95ms (View: 92, DB: 0) | 200 OK [http://localhost/tag]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TagController#index (for 127.0.0.1 at 2010-03-10 18:39:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tag"}
+  [4;35;1mPage Load (0.7ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+Rendering template within layouts/public
+Rendering tag/index
+  [4;36;1mPage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 12ms (View: 4, DB: 3) | 200 OK [http://localhost/tag]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:39:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 36ms (View: 15, DB: 7) | 200 OK [http://localhost/data]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 18:39:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;36;1mCategory Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mPage Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 93ms (View: 7, DB: 4) | 200 OK [http://localhost/category]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 18:39:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;36;1mCategory Columns (33.0ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 100ms (View: 7, DB: 83) | 200 OK [http://localhost/category]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:39:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.2ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 37ms (View: 16, DB: 7) | 200 OK [http://localhost/data]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 18:39:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;35;1mCategory Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 20ms (View: 7, DB: 4) | 200 OK [http://localhost/category]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 18:39:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mPage Load (0.7ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 36ms (View: 15, DB: 8) | 200 OK [http://localhost/data]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TagController#index (for 127.0.0.1 at 2010-03-10 18:41:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tag"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mSQL (194.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mDataset Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+
+NoMethodError (undefined method `tags' for #<Class:0x1031aec90>):
+  app/controllers/tag_controller.rb:9:in `index'
+
+Rendered rescues/_trace (35.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TagController#index (for 127.0.0.1 at 2010-03-10 21:50:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tag"}
+  [4;35;1mPage Load (0.7ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mSQL (170.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mDataset Columns (36.2ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+
+NoMethodError (undefined method `tags' for #<Class:0x103302fd8>):
+  app/controllers/tag_controller.rb:9:in `index'
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-10 21:50:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;35;1mPage Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 33ms (View: 25, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 21:50:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.2ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 42ms (View: 15, DB: 14) | 200 OK [http://localhost/data]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 21:50:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;35;1mCategory Columns (6.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mPage Columns (19.2ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 126ms (View: 73, DB: 27) | 200 OK [http://localhost/category]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-10 21:50:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/datasets"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#new (for 127.0.0.1 at 2010-03-10 21:50:34) [GET]
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering template within layouts/authentication
+Rendering session/new
+Completed in 88ms (View: 84, DB: 1) | 200 OK [http://localhost/session/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionController#create (for 127.0.0.1 at 2010-03-10 21:50:43) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"WTeQxcQ+I8t/wfG+gLuER0CHw12+0dtNJo/MGDNkrOc=", "controller"=>"session", "login"=>"equaliser", "password"=>"[FILTERED]"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'equaliser') LIMIT 1[0m
+Redirected to http://localhost:3000/admin/datasets
+Completed in 115ms (DB: 3) | 302 Found [http://localhost/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-10 21:50:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/datasets"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (1.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+Completed in 151ms (View: 125, DB: 8) | 200 OK [http://localhost/admin/datasets]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-10 21:50:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/datasets"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.2ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+Completed in 46ms (View: 21, DB: 8) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-03-10 21:50:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM `pages` [0m
+Rendering template within layouts/admin
+Rendering admin/pages/index
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 84ms (View: 66, DB: 5) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-10 21:50:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/audiences"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mAudience Load (0.3ms)[0m   [0mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;36;1mAudience Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+Completed in 119ms (View: 48, DB: 5) | 200 OK [http://localhost/admin/audiences]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-03-10 21:50:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM `pages` [0m
+Rendering template within layouts/admin
+Rendering admin/pages/index
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 31ms (View: 14, DB: 4) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-03-10 21:50:53) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mPage Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.7ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+
+ActionView::MissingTemplate (Missing template pages/show.erb in view path app/views):
+  app/controllers/pages_controller.rb:8:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-03-10 21:51:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM `pages` [0m
+Rendering template within layouts/admin
+Rendering admin/pages/index
+  [4;35;1mPage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 35ms (View: 18, DB: 5) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#show (for 127.0.0.1 at 2010-03-10 21:51:28) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"admin/pages"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mPage Columns (23.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.5ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/pages/show
+Completed in 91ms (View: 46, DB: 28) | 200 OK [http://localhost/admin/pages/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-03-10 21:51:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM `pages` [0m
+Rendering template within layouts/admin
+Rendering admin/pages/index
+  [4;35;1mPage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 31ms (View: 14, DB: 5) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-10 21:51:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/datasets"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.2ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+Completed in 116ms (View: 90, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-03-10 21:51:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM `pages` [0m
+Rendering template within layouts/admin
+Rendering admin/pages/index
+  [4;36;1mPage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 31ms (View: 14, DB: 5) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-03-10 21:51:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/users"}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 97ms (View: 84, DB: 3) | 200 OK [http://localhost/admin/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LanguagesController#index (for 127.0.0.1 at 2010-03-10 21:51:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/languages"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLanguage Load (0.3ms)[0m   [0;1mSELECT * FROM `languages` [0m
+Rendering template within layouts/admin
+Rendering admin/languages/index
+  [4;35;1mLanguage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+Completed in 131ms (View: 113, DB: 5) | 200 OK [http://localhost/admin/languages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2010-03-10 21:51:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/categories"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mCategory Load (1.4ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/admin
+Rendering admin/categories/index
+  [4;35;1mCategory Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Completed in 44ms (View: 23, DB: 7) | 200 OK [http://localhost/admin/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LicencesController#index (for 127.0.0.1 at 2010-03-10 21:51:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/licences"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` [0m
+Rendering template within layouts/admin
+Rendering admin/licences/index
+  [4;35;1mLicence Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+Completed in 38ms (View: 20, DB: 5) | 200 OK [http://localhost/admin/licences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AudiencesController#index (for 127.0.0.1 at 2010-03-10 21:51:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/audiences"}
+  [4;36;1mUser Columns (41.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mAudience Load (0.3ms)[0m   [0;1mSELECT * FROM `audiences` [0m
+Rendering template within layouts/admin
+Rendering admin/audiences/index
+  [4;35;1mAudience Columns (13.1ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+Completed in 96ms (View: 21, DB: 56) | 200 OK [http://localhost/admin/audiences]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DatasetsController#index (for 127.0.0.1 at 2010-03-10 21:51:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/datasets"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mDataset Load (0.4ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/admin
+Rendering admin/datasets/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+Completed in 124ms (View: 22, DB: 7) | 200 OK [http://localhost/admin/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-10 21:51:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+Rendering template within layouts/public
+Rendering welcome/index
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 12ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 21:51:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.2ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 35ms (View: 15, DB: 7) | 200 OK [http://localhost/data]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 21:51:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;36;1mCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 19ms (View: 7, DB: 4) | 200 OK [http://localhost/category]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 21:52:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;36;1mCategory Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 64ms (View: 6, DB: 50) | 200 OK [http://localhost/category]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 21:52:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.8ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 102ms (View: 82, DB: 7) | 200 OK [http://localhost/data]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#show (for 127.0.0.1 at 2010-03-10 21:52:03) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"data"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` WHERE (`datasets`.`id` = 1) [0m
+Rendering template within layouts/public
+Rendering data/show
+  [4;36;1mAudience Columns (28.1ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+  [4;35;1mAudience Load (0.2ms)[0m   [0mSELECT * FROM `audiences` WHERE (`audiences`.`id` = 4) [0m
+  [4;36;1mLanguage Columns (5.9ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mLanguage Load (0.2ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 5) [0m
+  [4;36;1mLicence Columns (5.2ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.2ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCategory Columns (6.6ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_id = 1) AND (`taggings`.taggable_type = 'Dataset') AND ((taggings.context = 'tags'))) [0m
+  [4;35;1mPage Columns (7.1ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+
+ActionView::TemplateError (undefined method `dataset_path' for #<ActionView::Base:0x103511bf8>) on line #99 of app/views/data/show.html.erb:
+96: </p>
+97: 
+98: <p><strong>Tags</strong>: <% for tag in @dataset.tags %> 
+99: <%= link_to tag.name, dataset_path(:view =>'tag', :tag => tag.name) %><% end %>
+100: </p>
+101: 
+102: <%= link_to 'Back', datasets_path %></article>
+
+    app/views/data/show.html.erb:99
+    app/views/data/show.html.erb:98
+    app/controllers/data_controller.rb:23:in `show'
+
+Rendered rescues/_trace (124.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#show (for 127.0.0.1 at 2010-03-10 21:52:58) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"data"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` WHERE (`datasets`.`id` = 1) [0m
+Rendering template within layouts/public
+Rendering data/show
+  [4;35;1mAudience Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `audiences`[0m
+  [4;36;1mAudience Load (0.2ms)[0m   [0;1mSELECT * FROM `audiences` WHERE (`audiences`.`id` = 4) [0m
+  [4;35;1mLanguage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mLanguage Load (0.2ms)[0m   [0;1mSELECT * FROM `languages` WHERE (`languages`.`id` = 5) [0m
+  [4;35;1mLicence Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.2ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCategory Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_id = 1) AND (`taggings`.taggable_type = 'Dataset') AND ((taggings.context = 'tags'))) [0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 61ms (View: 31, DB: 12) | 200 OK [http://localhost/data/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 21:53:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 36ms (View: 15, DB: 8) | 200 OK [http://localhost/data]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 21:53:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;36;1mCategory Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 19ms (View: 6, DB: 5) | 200 OK [http://localhost/category]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 21:53:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.3ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 102ms (View: 82, DB: 7) | 200 OK [http://localhost/data]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoryController#index (for 127.0.0.1 at 2010-03-10 21:53:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/public
+Rendering category/index
+  [4;35;1mCategory Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 20ms (View: 6, DB: 4) | 200 OK [http://localhost/category]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 21:53:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (14.4ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 48ms (View: 15, DB: 20) | 200 OK [http://localhost/data]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 21:53:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;36;1mDataset Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.2ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 41ms (View: 19, DB: 8) | 200 OK [http://localhost/data]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataController#index (for 127.0.0.1 at 2010-03-10 21:59:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"data"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Load (0.3ms)[0m   [0;1mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering data/index
+  [4;35;1mDataset Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `datasets`[0m
+  [4;36;1mLicence Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.3ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 98ms (View: 78, DB: 7) | 200 OK [http://localhost/data]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 21:59:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+
+NoMethodError (undefined method `layout' for #<DatasetsController:0x1034eea40>):
+  app/controllers/application_controller.rb:15:in `public_start'
+
+Rendered rescues/_trace (35.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#index (for 127.0.0.1 at 2010-03-10 22:02:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"datasets"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` [0m
+Rendering template within layouts/public
+Rendering datasets/index
+  [4;36;1mDataset Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mLicence Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `licences`[0m
+  [4;36;1mLicence Load (0.2ms)[0m   [0;1mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 114ms (View: 93, DB: 7) | 200 OK [http://localhost/datasets]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DatasetsController#show (for 127.0.0.1 at 2010-03-10 22:02:33) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"datasets"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`status` = 'published') ORDER BY `order` DESC[0m
+  [4;36;1mDataset Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `datasets`[0m
+  [4;35;1mDataset Load (0.3ms)[0m   [0mSELECT * FROM `datasets` WHERE (`datasets`.`id` = 1) [0m
+Rendering template within layouts/public
+Rendering datasets/show
+  [4;36;1mAudience Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `audiences`[0m
+  [4;35;1mAudience Load (0.2ms)[0m   [0mSELECT * FROM `audiences` WHERE (`audiences`.`id` = 4) [0m
+  [4;36;1mLanguage Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mLanguage Load (20.7ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 5) [0m
+  [4;36;1mLicence Columns (5.8ms)[0m   [0;1mSHOW FIELDS FROM `licences`[0m
+  [4;35;1mLicence Load (0.2ms)[0m   [0mSELECT * FROM `licences` WHERE (`licences`.`id` = 2) [0m
+  [4;36;1mCategory Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.id = `taggings`.tag_id WHERE ((`taggings`.taggable_id = 1) AND (`taggings`.taggable_type = 'Dataset') AND ((taggings.context = 'tags'))) [0m
+  [4;35;1mPage Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Completed in 139ms (View: 74, DB: 47) | 200 OK [http://localhost/datasets/1]

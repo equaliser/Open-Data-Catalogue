@@ -9,4 +9,15 @@ class ApplicationController < ActionController::Base
   filter_parameter_logging :password
   
 
+  private
+  
+  def public_start
+    @pages = Page.find(:all, :conditions => {:status => "published"}, :order => "`order` DESC")
+  end
+  
+  def public_layout
+    "public"
+  end
+
+
 end

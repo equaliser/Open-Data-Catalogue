@@ -1,19 +1,16 @@
-class DatasetsController < ApplicationController
-  layout :public_layout
-  before_filter :public_start
-  
+class TagController < PublicController
   def initialize
-    @title = "Datasets"
+    @title = "Tags"
   end
 
    # GET /datasets
    # GET /datasets.xml
    def index
-     @datasets = Dataset.all
+     @tags = Dataset.tags
 
      respond_to do |format|
        format.html # index.html.erb
-       format.xml  { render :xml => @datasets }
+       format.xml  { render :xml => @tags }
      end
    end
 
@@ -27,5 +24,4 @@ class DatasetsController < ApplicationController
        format.xml  { render :xml => @dataset }
      end
    end
-
 end

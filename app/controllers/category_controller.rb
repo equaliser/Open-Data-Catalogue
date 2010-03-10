@@ -1,4 +1,4 @@
-class CategoriesController < PublicController
+class CategoryController < PublicController
  
   def initialize
      @title = "Categories"
@@ -8,18 +8,14 @@ class CategoriesController < PublicController
   # GET /categories.xml
 
   def index
-    
+    @categories = Category.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @categories }
+    end
   end
 
-#  def index
-#    @categories = Category.all
-#
-#    respond_to do |format|
-#      format.html # index.html.erb
-#      format.xml  { render :xml => @categories }
-#    end
-#  end
-#
   
   
   # GET /categories/1

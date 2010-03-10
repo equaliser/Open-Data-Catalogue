@@ -1,0 +1,102 @@
+<article id="dataset">
+	<header>
+		<h1 id="datasetTitle"><%=h @dataset.name %></h1>
+	</header>
+	
+	
+<p>
+  <b>Audience:</b>
+  <%=h @dataset.audience.name %>
+</p>
+
+
+<p>
+  <b>Description:</b>
+  <%=h @dataset.description %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%=h @dataset.version %>
+</p>
+
+<p>
+  <b>Display title:</b>
+  <%=h @dataset.display_title %>
+</p>
+
+<p>
+  <b>Info url:</b>
+  <%=h @dataset.info_url %>
+</p>
+
+<p>
+  <b>Xml url:</b>
+  <%=h @dataset.xml_url %>
+</p>
+
+<p>
+  <b>Csv url:</b>
+  <%=h @dataset.csv_url %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%=h @dataset.language.name %>
+</p>
+
+<p>
+  <b>Geo extent:</b>
+  <%=h @dataset.geo_extent %>
+</p>
+
+<p>
+  <b>Maintainer:</b>
+  <%=h @dataset.maintainer %>
+</p>
+
+<p>
+  <b>Contact email:</b>
+  <%=h @dataset.contact_email %>
+</p>
+
+<p>
+  <b>Update frequency:</b>
+  <%=h @dataset.update_frequency %>
+</p>
+
+<p>
+  <b>Date range start:</b>
+  <%=h @dataset.date_range_start %>
+</p>
+
+<p>
+  <b>Date range end:</b>
+  <%=h @dataset.date_range_end %>
+</p>
+
+<p>
+  <b>Publish date:</b>
+  <%=h @dataset.publish_date %>
+</p>
+
+<p>
+  <b>Metadata date:</b>
+  <%=h @dataset.metadata_date %>
+</p>
+
+<p>
+  <b>Licence:</b>
+  <%=h @dataset.licence.name %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%=h @dataset.category.name %>
+</p>
+
+<p><strong>Tags</strong>: <% for tag in @dataset.tags %> 
+<%= link_to tag.name, data_path(:view =>'tag', :tag => tag.name) %><% end %>
+</p>
+
+<%= link_to 'Back', data_path %></article>

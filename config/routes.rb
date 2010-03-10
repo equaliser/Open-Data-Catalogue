@@ -16,10 +16,11 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :data
   map.resources :licences
   map.resources :hello
-  map.resources :categories
+  map.resources :category, :singular => :category_instance
   map.resources :users
   map.resources :pages
   map.resources :testing
+  map.resources :tag
 
   map.resource :session, :controller => 'session'
   map.login '/login', :controller => 'session', :action => 'new'

@@ -1,6 +1,6 @@
 <article id="datasetList">
 	<header>
-		<h1>Datasets</h1>
+		<h1>Data</h1>
 	</header>
 	
 	<table>
@@ -13,7 +13,7 @@
 
 	<% @datasets.each do |dataset| %>
 	  <tr>
-	    <td class="mainName"><%= link_to h(dataset.name), dataset %></td>
+	    <td class="mainName"><%= link_to h(dataset.name), :controller => "data", :action => "show", :id => dataset %></td>
 	    <td><%=h dataset.maintainer %></td>
 		<td><%=h dataset.licence.name %></td>
 	    <td><%=h dataset.publish_date %></td>

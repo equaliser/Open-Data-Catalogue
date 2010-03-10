@@ -14,7 +14,7 @@
 
 <% @pages.each do |page| %>
   <tr>
-    <td class="mainName"><%= link_to h(page.title), page %></td>
+    <td class="mainName"><%= link_to h(page.title), [:admin, page] %></td>
     <td><%=h page.author %></td>
     <td><%=h page.date %></td>
     <td><%=h page.status %></td>

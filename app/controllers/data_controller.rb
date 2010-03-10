@@ -1,6 +1,8 @@
 class DataController < PublicController
   
-  before_filter :start
+  def initialize
+    @title = "Datasets"
+  end
 
    # GET /datasets
    # GET /datasets.xml
@@ -24,13 +26,4 @@ class DataController < PublicController
      end
    end
 
-
-
-   private
-
-    def start
-      @title = "Datasets"
-    end
-  
-  
 end
