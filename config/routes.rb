@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  
+
 
 
 
@@ -9,6 +11,7 @@ ActionController::Routing::Routes.draw do |map|
      admin.resources :licences
      admin.resources :audiences
      admin.resources :users
+     admin.resources :pages
    end
    
   map.resources :admin, :controller => 'admin/datasets' # default mapping for /admin
@@ -17,6 +20,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :licences
   map.resources :categories
   map.resources :users
+  map.resources :pages
+
 
   map.resource :session, :controller => 'session'
   #map.signup '/signup', :controller => 'users', :action => 'new'

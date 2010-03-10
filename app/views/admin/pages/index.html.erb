@@ -1,0 +1,28 @@
+<h1>Pages</h1>
+
+<%= link_to 'New page', new_admin_page_path, :class => "niceButton newItem" %>
+
+<table>
+  <tr>
+    <th class="mainName">Title</th>
+    <th>Author</th>
+    <th>Date</th>
+    <th>Content</th>
+    <th>Status</th>
+    <th>Order</th>
+	<th colspan="2"></th>
+  </tr>
+
+<% @pages.each do |page| %>
+  <tr>
+    <td class="mainName"><%= link_to h(page.title), page %></td>
+    <td><%=h page.author %></td>
+    <td><%=h page.date %></td>
+    <td><%=h page.content %></td>
+    <td><%=h page.status %></td>
+    <td><%=h page.order %></td>
+    <td><%= link_to 'Edit', edit_admin_page_path(page), :class => "niceButton editItem" %></td>
+    <td><%= link_to 'Destroy', admin_page, :confirm => 'Are you sure?', :method => :delete,  :class => "niceButton destroyItem" %></td>
+  </tr>
+<% end %>
+</table>

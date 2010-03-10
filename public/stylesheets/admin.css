@@ -92,7 +92,7 @@ nav#main-nav a:link, nav#main-nav a:visited, nav#main-nav a:hover, nav#main-nav 
 		color:white;
 		font-weight:bold;
 		text-decoration:none;
-		width:7em;
+		width:6.5em;
 	}
 	
 nav#main-nav a:hover
@@ -217,7 +217,20 @@ label
 		display:block;
 		font-weight:bold;
 	}
+	
+p.radio input
+	{
+		float:left;
+		margin-right:4px;
+		line-height:170%;
+	}
 
+p.radio
+	{
+		margin:20px 0 20px 0;
+		line-height:170%;;
+	}
+	
 
 /* tables */
 

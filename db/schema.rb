@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100310093433) do
+ActiveRecord::Schema.define(:version => 20100310114543) do
 
   create_table "audiences", :force => true do |t|
     t.string   "name"
@@ -68,6 +68,17 @@ ActiveRecord::Schema.define(:version => 20100310093433) do
     t.string   "name"
     t.text     "description"
     t.string   "link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pages", :force => true do |t|
+    t.string   "title"
+    t.integer  "author"
+    t.datetime "date"
+    t.text     "content"
+    t.string   "status",     :limit => 30
+    t.integer  "order"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
