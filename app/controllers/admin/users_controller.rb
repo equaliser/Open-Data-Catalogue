@@ -1,4 +1,4 @@
-class Admin::UsersController < ApplicationController
+class Admin::UsersController < Admin::AdminController
   include AuthenticatedSystem
   before_filter :login_required
   layout "admin"

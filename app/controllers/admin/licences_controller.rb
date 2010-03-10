@@ -1,9 +1,5 @@
-class Admin::LicencesController < ApplicationController
-  include AuthenticatedSystem
-  before_filter :login_required
-  layout "admin"
+class Admin::LicencesController < Admin::AdminController
   current_tab :licences
-
 
   def initialize
      @title = "Licences"
@@ -85,12 +81,16 @@ class Admin::LicencesController < ApplicationController
   # DELETE /licences/1.xml
   def destroy
     @licence = Licence.find(params[:id])
-    @licence.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(admin_licences_url) }
-      format.xml  { head :ok }
-    end
+    
+    if @licence.destroy then
+         respond_to do |format|
+           format.html { redirect_to(admin_licences_url) }
+           format.xml  { head :ok }
+         end
+    else
+         flash[:error] = @licence.errors.on_base
+         redirect_to(admin_licences_url)
+    end   
   end
 
 end

@@ -175,6 +175,19 @@ footer
     color:#666;
 }
 
+/* validation error notice */
+
+.errorExplanation, #flashError
+	{
+		background-color:#FFE8E8;
+    	padding:10px;
+		color:#990000;
+	}
+	
+.errorExplanation h2
+	{
+		margin:0;
+	}
 
 /* main content */
 

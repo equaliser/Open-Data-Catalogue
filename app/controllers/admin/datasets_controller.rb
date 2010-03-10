@@ -1,8 +1,4 @@
-class Admin::DatasetsController < ApplicationController
-  include AuthenticatedSystem
-  
-  before_filter :login_required
-  layout "admin"
+class Admin::DatasetsController < Admin::AdminController
   current_tab :datasets
   
   
@@ -88,12 +84,12 @@ class Admin::DatasetsController < ApplicationController
   # DELETE /datasets/1.xml
   def destroy
     @dataset = Dataset.find(params[:id])
-    @dataset.destroy
 
     respond_to do |format|
       format.html { redirect_to(admin_datasets_url) }
       format.xml  { head :ok }
     end
+ 
   end
 
   private

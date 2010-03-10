@@ -1,7 +1,4 @@
-class Admin::AudiencesController < ApplicationController
-  include AuthenticatedSystem
-  before_filter :login_required
-  layout "admin"
+class Admin::AudiencesController < Admin::AdminController
   current_tab :audiences
 
   def initialize
@@ -84,12 +81,17 @@ class Admin::AudiencesController < ApplicationController
   # DELETE /audiences/1.xml
   def destroy
     @audience = Audience.find(params[:id])
-    @audience.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(admin_audiences_url) }
-      format.xml  { head :ok }
+    if @audience.destroy then
+         respond_to do |format|
+           format.html { redirect_to(admin_audiences_url) }
+           format.xml  { head :ok }
+         end
+    else
+         flash[:error] = @audience.errors.on_base
+         redirect_to(admin_audiences_url)
     end
+      
   end
 
 end

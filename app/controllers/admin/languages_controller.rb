@@ -1,12 +1,10 @@
-class Admin::LanguagesController < ApplicationController
-  include AuthenticatedSystem
-  before_filter :login_required
-  layout "admin"
+class Admin::LanguagesController < Admin::AdminController
+
   current_tab :languages
 
   def initialize
      @title = "Languages"
-   end
+  end
 
   # GET /languages
   # GET /languages.xml
@@ -84,11 +82,15 @@ class Admin::LanguagesController < ApplicationController
   # DELETE /languages/1.xml
   def destroy
     @language = Language.find(params[:id])
-    @language.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(admin_languages_url) }
-      format.xml  { head :ok }
+    if @language.destroy then
+         respond_to do |format|
+           format.html { redirect_to(admin_languages_url) }
+           format.xml  { head :ok }
+         end
+    else
+         flash[:error] = @language.errors.on_base
+         redirect_to(admin_languages_url)
     end
   end
 

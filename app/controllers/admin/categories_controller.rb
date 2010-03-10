@@ -1,7 +1,4 @@
-class Admin::CategoriesController < ApplicationController
-  include AuthenticatedSystem
-  before_filter :login_required
-  layout "admin"
+class Admin::CategoriesController < Admin::AdminController
   current_tab :categories
   
   def initialize
@@ -84,11 +81,15 @@ class Admin::CategoriesController < ApplicationController
   # DELETE /categories/1.xml
   def destroy
     @category = Category.find(params[:id])
-    @category.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(admin_categories_url) }
-      format.xml  { head :ok }
+    
+    if @category.destroy then
+         respond_to do |format|
+           format.html { redirect_to(admin_categories_url) }
+           format.xml  { head :ok }
+         end
+    else
+         flash[:error] = @category.errors.on_base
+         redirect_to(admin_categories_url)
     end
   end
 

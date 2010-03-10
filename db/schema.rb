@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100305221157) do
+ActiveRecord::Schema.define(:version => 20100310093433) do
 
   create_table "audiences", :force => true do |t|
     t.string   "name"
@@ -112,6 +112,8 @@ ActiveRecord::Schema.define(:version => 20100305221157) do
     t.datetime "updated_at"
     t.string   "remember_token"
     t.datetime "remember_token_expires_at"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
 end

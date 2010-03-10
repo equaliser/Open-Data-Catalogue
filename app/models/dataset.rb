@@ -2,6 +2,8 @@ class Dataset < ActiveRecord::Base
   require 'validates_existence'
   acts_as_taggable_on :tags
   
+  validates_presence_of     :name, :description
+  
   belongs_to :licence
   validates_existence_of :licence
   
@@ -13,5 +15,6 @@ class Dataset < ActiveRecord::Base
   
   belongs_to :category
   validates_existence_of  :category
+  
   
 end

@@ -12,3 +12,16 @@
   <b>Email:</b>
   <%=h @user.email %>
 </p>
+
+
+<p>
+    <strong>First name</strong><br />
+    <%=h @user.first_name %>
+  </p>
+
+<p>
+	<strong>Last name</strong><br />
+    <%=h @user.last_name %>
+  </p>
+
+<%= link_to 'Edit', edit_admin_user_path(@user) %> |
