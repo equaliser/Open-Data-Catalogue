@@ -1,11 +1,11 @@
 class CategoriesController < ApplicationController
   layout :public_layout
   before_filter :public_start
- 
+  current_tab :categories
  
   def initialize
      @title = "Categories"
-   end
+  end
 
   # GET /categories
   # GET /categories.xml

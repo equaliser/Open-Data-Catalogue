@@ -261,13 +261,82 @@ nav#pageNav li.last
 		font-size:1.2em;
 	}
 	
+section#pageInfo
+	{
+		color:#999;
+		border-top:1px solid #999;
+		padding-top:10px;
+		margin-top:30px;
+		width:100%;
+		display:block;
+	}
 
+ul#tags
+	{
+		margin:0;
+		padding:0;
+	}
+
+ul#tags li
+	{
+		list-style:none;
+		margin:15px 15px 10px 0px;
+		float:left;
+	}
+	
+ul#tags li a
+	{
+		-moz-border-radius:4px;
+		-webkit-border-radius:4px;
+		padding:4px 6px;
+		background-color:#ddd;
+		color:#333;
+		text-decoration:none;
+	}
+	
+ul#tags li a:hover
+	{
+		background-color:#1757C7;
+		color:white;
+	}	
+	
 /*** forms ***/
 
 label
 	{
 		display:block;
 		font-weight:bold;
+	}
+
+/*** dataset contents ***/
+
+#dataset header h1
+	{
+		margin-bottom:30px;
+	}
+
+#dataset section#description
+	{
+		display:block;
+		border-bottom:1px solid #ccc;
+		padding-bottom:10px;
+	}
+
+#dataset 
+	{
+		line-height:160%;
+	}
+	
+#dataset p strong 
+	{
+		width:160px;
+		display:block;
+		float:left;
+	}
+
+#dataset #info p
+	{
+		clear:both;
 	}
 
 	

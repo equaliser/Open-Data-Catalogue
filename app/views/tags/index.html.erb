@@ -1,0 +1,14 @@
+<article id="tagList">
+	<header>
+		<h1>Tags</h1>
+	</header>
+
+	<ul id="tags">
+	<% @sorted_tags.each do |tag| %>
+		<li><%= link_to tag, {:controller =>"tags", :action => "show", :id => tag.name}, {:title => tag.count.to_s + " items tagged" } %></li>
+	<% end %>
+	</ul>
+	
+
+	
+</article>

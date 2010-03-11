@@ -1,0 +1,27 @@
+<article id="tagSingleList">
+	<header>
+		<h1>Datasets</h1>
+	</header>
+
+<table>
+  <tr>
+    <th class="mainName">Name</th>
+    <th>Maintainer</th>
+    <th>Date range start</th>
+    <th>Date range end</th>
+	<th>Licence</th>
+    <th>Publish date</th>
+  </tr>
+
+<% @datasets.each do |dataset| %>
+  <tr>
+    <td class="mainName"><%= link_to h(dataset.name), dataset %></td>
+    <td><%=h dataset.maintainer %></td>
+    <td><%=h dataset.date_range_start %></td>
+    <td><%=h dataset.date_range_end %></td>
+	<td><%=h dataset.licence.name %></td>
+    <td><%=h dataset.publish_date %></td>
+  </tr>
+<% end %>
+</table>
+</article>

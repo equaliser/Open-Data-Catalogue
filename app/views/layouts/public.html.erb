@@ -51,10 +51,11 @@
 			<nav id="pageNav">
 				<ul>
 					<%= navigation [{:datasets => datasets_path}, 
-									{:categories => categories_path}]%>	
+									{:categories => categories_path},
+									{:tags => tags_path}]%>	
 									
 					<% @pages.each do |page| %>
-						<li><a href="p"><%= h(page.title) %></a></li>
+						<li><%= link_to h(page.title), page %></li>
 					<% end %>								
 				<!--	<li><a href="#">Categories</a></li>
 					<li><a href="#">Tags</a></li>

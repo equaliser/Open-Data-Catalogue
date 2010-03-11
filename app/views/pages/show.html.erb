@@ -1,0 +1,13 @@
+<article id="page">
+	<header>
+		<h1><%=h @page.title %></h1>
+	</header>
+
+	<section id="content">
+		<%=@page.content %>
+	</section>
+  
+	<section id="pageInfo">
+		<span id="updatedAt">Last updated at <%=h(@page.updated_at.strftime('%H:%M')) %> on <%=h(@page.updated_at.strftime('%A %d %B %Y')) %></span>
+	</section>
+</article>

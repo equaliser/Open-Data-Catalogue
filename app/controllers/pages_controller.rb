@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   # GET /pages/1.xml
   def show
     @page = Page.find(params[:id])
-
+    @title = @page.title
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @page }

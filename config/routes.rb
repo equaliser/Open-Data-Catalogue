@@ -20,7 +20,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.resources :pages
   map.resources :testing
-  map.resources :tag
+  map.resources :tags
 
   map.resource :session, :controller => 'session'
   map.login '/login', :controller => 'session', :action => 'new'

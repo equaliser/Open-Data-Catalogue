@@ -3,100 +3,110 @@
 		<h1 id="datasetTitle"><%=h @dataset.name %></h1>
 	</header>
 	
+	<section id="description">
+		<%= @dataset.description %>
+	</section>
+
+<section id="info">
+<p>
+  <strong>Version:</strong>
+  <%=h @dataset.version %>
+</p>
 	
 <p>
-  <b>Audience:</b>
+  <strong>Audience:</strong>
   <%=h @dataset.audience.name %>
 </p>
 
-
+<!--
 <p>
-  <b>Description:</b>
-  <%=h @dataset.description %>
-</p>
-
-<p>
-  <b>Version:</b>
-  <%=h @dataset.version %>
-</p>
-
-<p>
-  <b>Display title:</b>
+  <strong>Display title:</strong>
   <%=h @dataset.display_title %>
 </p>
+-->
 
+<% if @dataset.info_url.empty? == FALSE %>
 <p>
-  <b>Info url:</b>
-  <%=h @dataset.info_url %>
+  <strong>Info url:</strong>
+  <%= link_to @dataset.info_url, @dataset.info_url %>
 </p>
+<% end %>
 
+<% if @dataset.xml_url.empty? == FALSE %>
 <p>
-  <b>Xml url:</b>
-  <%=h @dataset.xml_url %>
+  <strong>Xml url:</strong>
+  <%=link_to @dataset.xml_url, @dataset.xml_url %>
 </p>
+<% end %>
 
+<% if @dataset.csv_url.empty? == FALSE %>
 <p>
-  <b>Csv url:</b>
-  <%=h @dataset.csv_url %>
+  <strong>Csv url:</strong>
+  <%=link_to @dataset.csv_url, @dataset.csv_url %>
 </p>
+<% end %>
 
 <p>
-  <b>Language:</b>
+  <strong>Language:</strong>
   <%=h @dataset.language.name %>
 </p>
 
 <p>
-  <b>Geo extent:</b>
+  <strong>Geo extent:</strong>
   <%=h @dataset.geo_extent %>
 </p>
 
 <p>
-  <b>Maintainer:</b>
+  <strong>Maintainer:</strong>
   <%=h @dataset.maintainer %>
 </p>
 
 <p>
-  <b>Contact email:</b>
+  <strong>Contact email:</strong>
   <%=h @dataset.contact_email %>
 </p>
 
 <p>
-  <b>Update frequency:</b>
+  <strong>Update frequency:</strong>
   <%=h @dataset.update_frequency %>
 </p>
 
 <p>
-  <b>Date range start:</b>
+  <strong>Date range start:</strong>
   <%=h @dataset.date_range_start %>
 </p>
 
 <p>
-  <b>Date range end:</b>
+  <strong>Date range end:</strong>
   <%=h @dataset.date_range_end %>
 </p>
 
 <p>
-  <b>Publish date:</b>
+  <strong>Publish date:</strong>
   <%=h @dataset.publish_date %>
 </p>
 
 <p>
-  <b>Metadata date:</b>
+  <strong>Metadata date:</strong>
   <%=h @dataset.metadata_date %>
 </p>
 
 <p>
-  <b>Licence:</b>
+  <strong>Licence:</strong>
   <%=h @dataset.licence.name %>
 </p>
 
 <p>
-  <b>Category:</b>
+  <strong>Category:</strong>
   <%=h @dataset.category.name %>
 </p>
 
-<p><strong>Tags</strong>: <% for tag in @dataset.tags %> 
-<%= link_to tag.name, dataset_path(:view =>'tag', :tag => tag.name) %><% end %>
-</p>
+<p>
+	<strong>Tags</strong>
+	<ul id="tags">
+	<% for tag in @dataset.tags %> 
+	<li><%= link_to tag.name, {:controller =>"tags", :action => "show", :id => tag.name} %></li>
+	<% end %>
+</p></section>
 
 <%= link_to 'Back', datasets_path %></article>

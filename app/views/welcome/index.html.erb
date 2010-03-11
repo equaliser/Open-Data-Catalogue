@@ -1,3 +1,17 @@
-<h1>Welcome</h1>
+<article id="welcomePage">
+	<header>
+		<h1>Welcome</h1>
+	</header>
 
-<p>Uh</p>
+	<p>This is where we do that open data stuff, in Warwickshire.</p>
+
+	<h2>Posts from the blog</h2>
+
+	<%
+	@rss.items.each do |item| %>
+		<div class="blog">
+				<h3><a href="<%=item.link%>"><%=item.title%></a></h3>
+				<%=item.content_encoded %>
+		</div>
+<% end %>
+</article>
