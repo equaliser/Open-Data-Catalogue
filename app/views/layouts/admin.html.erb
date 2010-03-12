@@ -15,10 +15,10 @@
 <body>
 	<div id="pageContainer">
 		<header id="site">	
-			<h1 id="pageHeader"><a href="/">Warwickshire Open Data Admin</a></h1>
+			<h1 id="pageHeader"><%= link_to "Warwickshire Open Data Admin", '/admin' %></h1>
 			<div id="userStatus">
 				<% if current_user %>
-					Hello <%= h current_user.login %> | <%= link_to "logout", logout_path %>
+					Logged in as <%=h(current_user.first_name + " "  + current_user.last_name) %> | <%= link_to "logout", logout_path %>
 				<% end %>
 			</div>
 			<nav id="main-nav" class="clearfix">

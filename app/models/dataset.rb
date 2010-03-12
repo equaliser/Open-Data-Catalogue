@@ -16,5 +16,8 @@ class Dataset < ActiveRecord::Base
   belongs_to :category
   validates_existence_of  :category
   
+  def self.published
+    Dataset.find(:all, :conditions => {:status => "published"}, :order=> "name ASC")
+  end
   
 end

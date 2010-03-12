@@ -9,7 +9,7 @@ class WelcomeController < ApplicationController
   
   def index 
     @title = "Welcome"
-    source = "http://madeofstring.co.uk/feed/"
+    source = "http://abigbang.wordpress.com/feed/"
     content = ""
     open(source) do |s| content = s.read end
     @rss = SimpleRSS.parse(content)

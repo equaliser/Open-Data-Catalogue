@@ -10,7 +10,7 @@ class DatasetsController < ApplicationController
    # GET /datasets
    # GET /datasets.xml
    def index
-     @datasets = Dataset.all
+     @datasets = Dataset.published
      
      respond_to do |format|
        format.html # index.html.erb
@@ -18,7 +18,7 @@ class DatasetsController < ApplicationController
      end
    end
 
-   
+ 
    def tag_cloud
       @tags = Dataset.tags
    end
@@ -33,5 +33,14 @@ class DatasetsController < ApplicationController
        format.xml  { render :xml => @dataset }
      end
    end
+
+   private
+   
+   def get_format(dataset)
+     
+     
+   end
+
+
 
 end

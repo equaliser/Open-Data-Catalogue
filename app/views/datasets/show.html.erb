@@ -9,12 +9,12 @@
 
 <section id="info">
 <p>
-  <strong>Version:</strong>
+  <strong>Version</strong>
   <%=h @dataset.version %>
 </p>
 	
 <p>
-  <strong>Audience:</strong>
+  <strong>Audience</strong>
   <%=h @dataset.audience.name %>
 </p>
 
@@ -27,77 +27,77 @@
 
 <% if @dataset.info_url.empty? == FALSE %>
 <p>
-  <strong>Info url:</strong>
+  <strong>Info url</strong>
   <%= link_to @dataset.info_url, @dataset.info_url %>
 </p>
 <% end %>
 
 <% if @dataset.xml_url.empty? == FALSE %>
 <p>
-  <strong>Xml url:</strong>
+  <strong>Xml url</strong>
   <%=link_to @dataset.xml_url, @dataset.xml_url %>
 </p>
 <% end %>
 
 <% if @dataset.csv_url.empty? == FALSE %>
 <p>
-  <strong>Csv url:</strong>
+  <strong>Csv url</strong>
   <%=link_to @dataset.csv_url, @dataset.csv_url %>
 </p>
 <% end %>
 
 <p>
-  <strong>Language:</strong>
+  <strong>Language</strong>
   <%=h @dataset.language.name %>
 </p>
 
 <p>
-  <strong>Geo extent:</strong>
+  <strong>Geo extent</strong>
   <%=h @dataset.geo_extent %>
 </p>
 
 <p>
-  <strong>Maintainer:</strong>
+  <strong>Maintainer</strong>
   <%=h @dataset.maintainer %>
 </p>
 
 <p>
-  <strong>Contact email:</strong>
+  <strong>Contact email</strong>
   <%=h @dataset.contact_email %>
 </p>
 
 <p>
-  <strong>Update frequency:</strong>
+  <strong>Update frequency</strong>
   <%=h @dataset.update_frequency %>
 </p>
 
 <p>
-  <strong>Date range start:</strong>
+  <strong>Date range start</strong>
   <%=h @dataset.date_range_start %>
 </p>
 
 <p>
-  <strong>Date range end:</strong>
+  <strong>Date range end</strong>
   <%=h @dataset.date_range_end %>
 </p>
 
 <p>
-  <strong>Publish date:</strong>
+  <strong>Publish date</strong>
   <%=h @dataset.publish_date %>
 </p>
 
 <p>
-  <strong>Metadata date:</strong>
+  <strong>Metadata date</strong>
   <%=h @dataset.metadata_date %>
 </p>
 
 <p>
-  <strong>Licence:</strong>
+  <strong>Licence</strong>
   <%=h @dataset.licence.name %>
 </p>
 
 <p>
-  <strong>Category:</strong>
+  <strong>Category</strong>
   <%=h @dataset.category.name %>
 </p>
 

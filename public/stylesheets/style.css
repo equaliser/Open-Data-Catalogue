@@ -261,6 +261,12 @@ nav#pageNav li.last
 		font-size:1.2em;
 	}
 	
+#mainCol header
+	{
+		display:block;
+		margin-bottom:20px;
+	}
+	
 section#pageInfo
 	{
 		color:#999;
@@ -307,6 +313,42 @@ label
 		display:block;
 		font-weight:bold;
 	}
+
+/*** dataset listing ***/
+
+td.formats
+	{
+		width:90px;
+	}
+	
+td.publishDate
+	{
+		width:80px;
+	}
+
+#datasetList td
+	{
+		padding:5px 0;
+	}
+
+.datasetName
+	{
+		display:block;
+		font-weight:bold;
+		font-size:1.2em;
+	}
+
+.datasetName a
+	{
+		text-decoration:none;
+	}
+
+.datasetShortDescription
+	{
+		color:#666;
+	}
+
+
 
 /*** dataset contents ***/
 

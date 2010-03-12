@@ -1,5 +1,10 @@
-<header id="page">
+<header id="datasetShow" class="item show">
 	<h1><%= h @title %> : <%=h @dataset.name %></h1>
+
+	<nav id="item">
+		<%= link_to 'Edit', edit_admin_dataset_path(@dataset), :class => "niceButton editItem"  %>
+		<%= link_to 'Back', admin_dataset_path, :class => "niceButton" %>
+	</nav>
 </header>
 
 <p>
@@ -8,13 +13,18 @@
 </p>
 
 <p>
-  <b>Audience:</b>
-  <%=h @dataset.audience.name %>
+  <b>Short description:</b>
+  <%=h @dataset.short_description %>
 </p>
 
 <p>
   <b>Description:</b>
   <%=h @dataset.description %>
+</p>
+
+<p>
+  <b>Audience:</b>
+  <%=h @dataset.audience.name %>
 </p>
 
 <p>
@@ -100,6 +110,3 @@
 <p><strong>Tags</strong>: <% for tag in @dataset.tags %> 
 <%= link_to tag.name, admin_dataset_path(:view =>'tag', :tag => tag.name) %><% end %>
 </p>
-
-<%= link_to 'Edit', edit_admin_dataset_path(@dataset) %> |
-<%= link_to 'Back', admin_dataset_path %>

@@ -43,9 +43,8 @@ header#site h1
 	{
 		margin:15px 0 14px 6px;
 		float:right;
-		width:200px;
+		width:300px;
 		text-align:right;
-		#B1C7B2
 	}
 	
 #userStatus a
@@ -129,6 +128,15 @@ nav#main-nav li.current a
 	border-bottom: 1px solid #222;
 	position: relative;
 	cursor: pointer;
+	
+}
+
+.niceButton {
+	background-color:#888;
+}
+
+.niceButton:hover {
+	background-color:#555;
 }
 
 .niceButton.newItem {
@@ -209,6 +217,14 @@ footer
 		padding:0 12px 20px;
 		
 	}
+	
+.item h2
+	{
+		clear:both;
+		border-bottom:1px solid #ccc;
+		padding-bottom:6px;
+		margin:40px 0 15px 0;
+	}
 
 /* forms */
 
@@ -223,14 +239,42 @@ p.radio input
 		float:left;
 		margin-right:4px;
 		line-height:170%;
-	}
 
+	}
+	
 p.radio
 	{
 		margin:20px 0 20px 0;
 		line-height:170%;;
 	}
+
+form p
+	{
+		display:block;
+		clear:both;
+		margin-bottom:20px;
+	}
+
+form input, form textarea, form select
+	{
+		font-size:1.1em;
+	}
 	
+textarea
+	{
+		float:left;
+	}
+	
+.fieldInfo
+	{
+		float:left;
+		text-align:top;
+		margin: 2px 0 0 10px;
+		background-color:#f4f4f5;
+		border:1px solid #e9e9e9;
+		padding:6px 9px;
+		color:#666;
+	}
 
 /* tables */
 
