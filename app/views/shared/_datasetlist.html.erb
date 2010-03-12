@@ -1,0 +1,24 @@
+<table>
+  <tr>
+    <th class="mainName">Name</th>
+	<th class="formats">Formats</th>
+    <th class="publishDate">Publish date</th>
+  </tr>
+
+<% @datasets.each do |dataset| %>
+  <tr>
+    <td class="mainName">
+		<span class="datasetName"><%= link_to h(dataset.name), dataset %></span>
+		<span class="datasetShortDescription"><%=h dataset.short_description %></span>
+	</td>
+	
+	<td class="formats"><% if(dataset.xml_url.empty? == FALSE) %>
+		XML
+		<% end %>
+		<% if(dataset.csv_url.empty? == FALSE) %>
+			CSV
+		<% end %>
+		</td>
+    <td class="publishDate"><%=h dataset.publish_date.strftime("%d/%m/%Y") %></td>
+<% end %>
+</table>

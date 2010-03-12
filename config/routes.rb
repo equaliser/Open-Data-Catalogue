@@ -12,6 +12,12 @@ ActionController::Routing::Routes.draw do |map|
    
   map.resources :admin, :controller => 'admin/datasets' # default mapping for /admin
 
+  map.connect '/datasets/latest.:format', :controller => "datasets", :action => "latest"
+
+   map.resources :datasets do |datasets|
+     datasets.resources :latest
+   end
+  
   map.resources :datasets
   map.resources :data
   map.resources :licences
@@ -21,6 +27,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :pages
   map.resources :testing
   map.resources :tags
+
+  map.home '/home', :controller => "welcome"
 
   map.resource :session, :controller => 'session'
   map.login '/login', :controller => 'session', :action => 'new'

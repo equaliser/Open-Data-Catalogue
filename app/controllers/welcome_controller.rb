@@ -14,8 +14,7 @@ class WelcomeController < ApplicationController
     open(source) do |s| content = s.read end
     @rss = SimpleRSS.parse(content)
   
-
-               
+    @latestDatasets = Dataset.latest(5)
   end
   
 end

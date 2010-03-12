@@ -3,6 +3,7 @@ class DatasetsController < ApplicationController
   before_filter :public_start
   current_tab :datasets
   
+  
   def initialize
     @title = "Datasets"
   end
@@ -13,11 +14,20 @@ class DatasetsController < ApplicationController
      @datasets = Dataset.published
      
      respond_to do |format|
-       format.html # index.html.erb
-       format.xml  { render :xml => @datasets }
-     end
+        format.html # index.html.erb
+        format.xml  { render :xml => @datasets }
+      end
    end
 
+   def latest
+     @datasets = Dataset.latest(10)
+     respond_to do |format| 
+           format.html
+           format.rss { render } 
+           format.xml { render :xml => @datasets }
+         end        
+   end
+ 
  
    def tag_cloud
       @tags = Dataset.tags
@@ -33,14 +43,5 @@ class DatasetsController < ApplicationController
        format.xml  { render :xml => @dataset }
      end
    end
-
-   private
-   
-   def get_format(dataset)
-     
-     
-   end
-
-
 
 end

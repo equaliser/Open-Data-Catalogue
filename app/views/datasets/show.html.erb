@@ -13,17 +13,6 @@
   <%=h @dataset.version %>
 </p>
 	
-<p>
-  <strong>Audience</strong>
-  <%=h @dataset.audience.name %>
-</p>
-
-<!--
-<p>
-  <strong>Display title:</strong>
-  <%=h @dataset.display_title %>
-</p>
--->
 
 <% if @dataset.info_url.empty? == FALSE %>
 <p>
@@ -83,12 +72,12 @@
 
 <p>
   <strong>Publish date</strong>
-  <%=h @dataset.publish_date %>
+  <%=h @dataset.publish_date.strftime("%d/%m/%Y") %>
 </p>
 
 <p>
   <strong>Metadata date</strong>
-  <%=h @dataset.metadata_date %>
+  <%=h @dataset.metadata_date.strftime("%d/%m/%Y") %>
 </p>
 
 <p>

@@ -4,15 +4,31 @@
 	</header>
 
 	<p>This is where we do that open data stuff, in Warwickshire.</p>
+	<section id="latestBlogposts">	
+		<header>
+			<h2>Latest posts from the blog</h2>
+		</header>
 
-	<h2>Latest posts from the blog</h2>
-
-	<%
-	@rss.items[0..2].each do |item| %>
+		<% @rss.items[0..2].each do |item| %>
 		<div class="blog">
 				<h3><a href="<%=item.link%>"><%=item.title%></a></h3>
 				<time datetime="<%=item.pubDate %>" pubdate><%=item.pubDate %></time>
-				<%=item.content_encoded %>
+				
+				<div id="blogIntro">
+					<%=item.description %>
+				</div>
 		</div>
-<% end %>
+		<% end %>
+	</section>
+	
+	<section id="latestDatasets">
+		<header>
+			<h2>Latest datasets</h2>
+		</header>
+		<ul>
+			<% @latestDatasets.each do |dataset| %>
+				<li><%= link_to h(dataset.name), dataset %></li>
+			<% end %>
+		</ul>
+	</section>
 </article>

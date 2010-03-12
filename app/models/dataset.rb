@@ -1,6 +1,7 @@
 class Dataset < ActiveRecord::Base
   require 'validates_existence'
   acts_as_taggable_on :tags
+  has_friendly_id :name, :use_slug => true, :approximate_ascii => true
   
   validates_presence_of     :name, :description
   
@@ -18,6 +19,10 @@ class Dataset < ActiveRecord::Base
   
   def self.published
     Dataset.find(:all, :conditions => {:status => "published"}, :order=> "name ASC")
+  end
+  
+  def self.latest(x)
+    Dataset.find(:all, :conditions => {:status => "published"}, :order=> "publish_date DESC", :limit=> x)
   end
   
 end
