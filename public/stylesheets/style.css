@@ -325,6 +325,37 @@ ul#tags li a:hover
 		background-color:#1757C7;
 		color:white;
 	}	
+
+
+/** homepage blog display **/
+
+.blog
+	{
+		margin-bottom:30px;
+	}
+	
+.blog h3
+	{
+		margin:0 0 0 0;
+		line-height:140%;
+	}
+	
+.blog h3 a
+	{
+		text-decoration:none;
+	}
+	
+.blog h3 a:hover
+	{
+		border-bottom:1px dotted #aaa;
+	}	
+	
+time
+	{
+		display:block;
+		margin:2px 0 10px 0;
+		color:#999;
+	}
 	
 /*** forms ***/
 
@@ -423,9 +454,10 @@ table th
 	
 #dataset p strong 
 	{
-		width:160px;
+		width:130px;
 		display:block;
 		float:left;
+		padding-right:30px;
 	}
 
 #dataset #info p

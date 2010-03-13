@@ -74,6 +74,13 @@
 				<% if flash[:error] %>
 					<p id="flashError"><%= flash[:error] -%></p>
 				<% end %>
+				<% if @breadcrumbs %>
+				  <%= link_to('Home', home_path) %> > 
+				  <% @breadcrumbs[0..-2].each do |txt, path| %>
+				    <%= link_to(h(txt), path) %> >
+				  <% end %>
+				  <%= h(@breadcrumbs.last.first) %>
+				<% end %>
 				<%= yield %>
 			</div>
 		</div>

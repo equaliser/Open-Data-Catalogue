@@ -12,7 +12,7 @@
 		<% @rss.items[0..2].each do |item| %>
 		<div class="blog">
 				<h3><a href="<%=item.link%>"><%=item.title%></a></h3>
-				<time datetime="<%=item.pubDate %>" pubdate><%=item.pubDate %></time>
+				<time datetime="<%=item.pubDate %>" pubdate><%=item.pubDate.strftime("%A #{item.pubDate.day.ordinalize} %B %Y") %></time>
 				
 				<div id="blogIntro">
 					<%=item.description %>
@@ -27,7 +27,7 @@
 		</header>
 		<ul>
 			<% @latestDatasets.each do |dataset| %>
-				<li><%= link_to h(dataset.name), dataset %></li>
+				<li><span class="datasetTitle"><%= link_to h(dataset.name), dataset %></span> <span class="postedAgo">posted <%= time_ago_in_words(dataset.publish_date)%> ago</span></li>
 			<% end %>
 		</ul>
 	</section>

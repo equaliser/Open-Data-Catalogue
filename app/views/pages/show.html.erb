@@ -8,6 +8,6 @@
 	</section>
   
 	<section id="pageInfo">
-		<span id="updatedAt">Last updated at <%=h(@page.updated_at.strftime('%H:%M')) %> on <%=h(@page.updated_at.strftime('%A %d %B %Y')) %></span>
+		<span id="updatedAt">Last updated at <%=h(@page.updated_at.strftime('%H:%M')) %> on <%=h(@page.updated_at.strftime("%A #{@page.updated_at.day.ordinalize}  %B %Y")) %></span>
 	</section>
 </article>

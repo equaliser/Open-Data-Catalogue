@@ -1,13 +1,9 @@
-<article id="categoryShow">
+<article id="categoryShow" class="datasetList">
 	<header id="page">
 	<h1><%= h @title %> : <%=h @category.name %></h1>
 </header>
 
 
-<p>
-  <b>Name:</b>
-  <%=h @category.name %>
-</p>
+<%= render :partial => "shared/datasetlist" %>
 
-
-<%= link_to 'Back', category_path %></article>
+</article>

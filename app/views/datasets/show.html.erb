@@ -4,7 +4,7 @@
 	</header>
 	
 	<section id="description">
-		<%= @dataset.description %>
+		<%= simple_format(@dataset.description) %>
 	</section>
 
 <section id="info">
@@ -87,7 +87,7 @@
 
 <p>
   <strong>Category</strong>
-  <%=h @dataset.category.name %>
+  <%= link_to h(@dataset.category.name), @dataset.category  %>
 </p>
 
 <p>
@@ -98,4 +98,4 @@
 	<% end %>
 </p></section>
 
-<%= link_to 'Back', datasets_path %></article>
+</article>
