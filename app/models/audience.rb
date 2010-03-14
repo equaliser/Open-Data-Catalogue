@@ -1,6 +1,8 @@
 class Audience < ActiveRecord::Base
   has_many :datasets
   before_destroy :no_referenced_datasets
+  validates_uniqueness_of   :name
+  validates_presence_of     :name
   
   private
 

@@ -12,10 +12,10 @@
 		<span class="datasetShortDescription"><%=h dataset.short_description %></span>
 	</td>
 	
-	<td class="formats"><% if(dataset.xml_url.empty? == FALSE) %>
+	<td class="formats"><% if(dataset.xml_url.present?) %>
 		XML
 		<% end %>
-		<% if(dataset.csv_url.empty? == FALSE) %>
+		<% if(dataset.csv_url.present?) %>
 			CSV
 		<% end %>
 		</td>

@@ -3,6 +3,7 @@ class WelcomeController < ApplicationController
   require 'simple-rss'
   require 'open-uri'
 
+  caches_page :index
 
   layout :public_layout
   before_filter :public_start

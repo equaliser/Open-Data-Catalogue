@@ -10,7 +10,8 @@ Rails::Initializer.run do |config|
   
   config.gem "acts-as-taggable-on", :source => "http://gemcutter.org"
   config.gem "friendly_id", :version => ">= 2.3.0"
-  config.gem "simple-rss"
+  config.gem "simple-rss", :version => ">=1.2.2"
+  config.gem "validates_existence", :version => "0.3.2"
   
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers

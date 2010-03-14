@@ -2,6 +2,8 @@ class Category < ActiveRecord::Base
   has_many :datasets
   before_destroy :no_referenced_datasets
   has_friendly_id :name, :use_slug => true, :approximate_ascii => true
+  validates_uniqueness_of   :name
+  validates_presence_of     :name
   
   private
 
