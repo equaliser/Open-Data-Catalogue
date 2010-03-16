@@ -3,7 +3,7 @@ class WelcomeController < ApplicationController
   require 'simple-rss'
   require 'open-uri'
 
-  caches_page :index
+  caches_page :index # :expires_in option is memcached only, btw
 
   layout :public_layout
   before_filter :public_start

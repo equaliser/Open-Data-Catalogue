@@ -365,7 +365,7 @@ label
 		font-weight:bold;
 	}
 
-/*** dataset listing ***/
+/*** dataset/category listing ***/
 
 table
 	{
@@ -396,18 +396,14 @@ table th
 		width:110px;
 	}
 
-.datasetList td
+.datasetList td, #categoryList td
 	{
 		padding:15px 4px;
 		border-bottom:1px solid #ccc;
-	}
-
-.datasetList td
-	{
 		vertical-align:top;
 	}
 
-.datasetName
+.datasetName, .categoryName
 	{
 		display:block;
 		font-weight:bold;
@@ -415,7 +411,7 @@ table th
 		margin-bottom:3px;
 	}
 
-.datasetName a
+.datasetName a, .categoryName a
 	{
 		text-decoration:none;
 	}

@@ -9,13 +9,13 @@ class Dataset < ActiveRecord::Base
   belongs_to :licence
   validates_existence_of :licence
   
-  belongs_to :language
+  belongs_to :language, :foreign_key => 'language_id'
   validates_existence_of :language
   
   belongs_to :audience
   validates_existence_of  :audience
   
-  belongs_to :category
+  belongs_to :category, :foreign_key => 'category_id'
   validates_existence_of  :category
   
   def self.published

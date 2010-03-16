@@ -2,7 +2,7 @@ class DatasetsController < ApplicationController
   layout :public_layout
   before_filter :public_start
   current_tab :datasets
-  caches_page :index
+  #caches_page :index
   
   def initialize
     @title = "Datasets"
