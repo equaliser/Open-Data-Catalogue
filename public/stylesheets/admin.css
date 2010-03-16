@@ -62,7 +62,7 @@ header#site h1 a
 
 nav#main-nav
 	{
-		font-size:1.2em;
+		font-size:1.15em;
 		display:block;
 		margin:0;
 		clear:both;
@@ -91,7 +91,7 @@ nav#main-nav a:link, nav#main-nav a:visited, nav#main-nav a:hover, nav#main-nav 
 		color:white;
 		font-weight:bold;
 		text-decoration:none;
-		width:6.5em;
+		width:7.3em;
 	}
 	
 nav#main-nav a:hover
@@ -275,6 +275,19 @@ textarea
 		padding:6px 9px;
 		color:#666;
 	}
+
+/* inputrow, used on the formats on the datasets page */
+
+.inputrow label, .inputrow select, .inputrow input
+	{
+		display:inline;
+	}
+	
+.inputrow select
+	{
+		margin-right:20px;
+	}
+
 
 /* tables */
 

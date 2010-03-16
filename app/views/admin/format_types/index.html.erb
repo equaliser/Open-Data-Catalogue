@@ -1,0 +1,19 @@
+<h1>Format types</h1>
+
+<%= link_to 'New format type', new_admin_format_type_path, :class => "niceButton newItem"   %>
+
+<table>
+  <tr>
+    <th class="mainName">Name</th>
+	<th colspan="2"></th>
+  </tr>
+
+<% @format_types.each do |format_type| %>
+  <tr>
+    <td class="mainName"><%= link_to format_type.name, [:admin, format_type] %></td>
+    <td><%= link_to 'Edit', edit_admin_format_type_path(format_type), :class => "niceButton editItem"  %></td>
+    <td><%= link_to 'Destroy', [:admin, format_type], :confirm => 'Are you sure?', :method => :delete, :class => "niceButton destroyItem"  %></td>
+  </tr>
+<% end %>
+</table>
+

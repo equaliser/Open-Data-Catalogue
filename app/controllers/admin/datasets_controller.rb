@@ -33,6 +33,8 @@ class Admin::DatasetsController < Admin::AdminController
   def new
     @dataset = Dataset.new
 
+    3.times { @dataset.format_urls.build }
+
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @dataset }
@@ -41,7 +43,6 @@ class Admin::DatasetsController < Admin::AdminController
 
   # GET /datasets/1/edit
   def edit
-    # @dataset = Dataset.find(params[:id])
     @dataset = Dataset.find(params[:id])
   
   end
@@ -84,12 +85,15 @@ class Admin::DatasetsController < Admin::AdminController
   # DELETE /datasets/1.xml
   def destroy
     @dataset = Dataset.find(params[:id])
-
-    respond_to do |format|
-      format.html { redirect_to(admin_datasets_url) }
-      format.xml  { head :ok }
-    end
- 
+      if @dataset.destroy then
+           respond_to do |format|
+             format.html { redirect_to(admin_datasets_url) }
+             format.xml  { head :ok }
+           end
+      else
+           flash[:error] = @dataset.errors.on_base
+           redirect_to(admin_datasets_url)
+      end 
   end
 
   private

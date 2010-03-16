@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100312182404) do
+ActiveRecord::Schema.define(:version => 20100316120821) do
 
   create_table "audiences", :force => true do |t|
     t.string   "name"
@@ -49,6 +49,21 @@ ActiveRecord::Schema.define(:version => 20100312182404) do
     t.string   "short_description"
     t.string   "status",            :limit => 30
     t.string   "cached_slug"
+  end
+
+  create_table "format_types", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "format_urls", :force => true do |t|
+    t.integer  "format_type_id"
+    t.string   "url"
+    t.integer  "dataset_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "languages", :force => true do |t|

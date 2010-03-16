@@ -6,6 +6,9 @@
 <% form_for([:admin, @dataset]) do |f| %>
   <%= f.error_messages %>
 
+
+  <h2>Info</h2>
+
   <p>
     <%= f.label :name %>
     <%= f.text_field :name %>
@@ -42,6 +45,18 @@
     <%= f.label :display_title %>
     <%= f.text_field :display_title %>
   </p>
+
+
+  <h2>Formats</h2>
+	
+  <% f.fields_for :format_urls do |builder| %>
+		<%= render 'format_url_fields', :f => builder %>
+  <% end %>
+  <p><%= link_to_add_fields "Add format", f, :format_urls %></p>
+
+
+
+
   <p>
     <%= f.label :info_url %>
     <%= f.text_field :info_url %>
@@ -117,3 +132,7 @@
 
 <%= link_to 'Show', [:admin, @dataset] %> |
 <%= link_to 'Back', admin_datasets_path %></article>
+
+<div id="jstemplates">
+  <%= yield :jstemplates %>
+</div

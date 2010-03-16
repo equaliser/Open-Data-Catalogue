@@ -10,7 +10,7 @@
 	<![endif]-->
 	
 	<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>-->
-	<%= javascript_include_tag 'jquery', 'application' %>
+	<%= javascript_include_tag :defaults %>
 	</head>
 <body>
 	<div id="pageContainer">
@@ -27,6 +27,7 @@
 								{:licences => admin_licences_path},
 								{:categories => admin_categories_path},
 								{:languages => admin_languages_path},
+								{:format_types => admin_format_types_path},
 								{:users => admin_users_path}, 
 								{:pages => admin_pages_path} ] 
 								%>

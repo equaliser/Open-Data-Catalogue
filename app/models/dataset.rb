@@ -18,6 +18,12 @@ class Dataset < ActiveRecord::Base
   belongs_to :category, :foreign_key => 'category_id'
   validates_existence_of  :category
   
+  has_many :format_urls, :dependent => :destroy
+  accepts_nested_attributes_for :format_urls, :reject_if => lambda { |a| a[:url].blank? }, :allow_destroy => true
+  
+#  has_many :format_types, :through => :format_urls
+  
+  
   def self.published
     Dataset.find(:all, :conditions => {:status => "published"}, :order=> "name ASC")
   end

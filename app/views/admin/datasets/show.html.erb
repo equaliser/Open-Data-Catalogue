@@ -7,6 +7,16 @@
 	</nav>
 </header>
 
+<h3>Formats</h3>
+
+<p>
+	<% for format_url in @dataset.format_urls %>
+		<li><%=h format_url.url %></li>
+	<% end %>
+</p>
+
+<h3>Info</h3>
+
 <p>
   <b>Name:</b>
   <%=h @dataset.name %>
