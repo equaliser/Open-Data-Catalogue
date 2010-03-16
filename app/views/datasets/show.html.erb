@@ -14,24 +14,10 @@
 </p>
 	
 
-<% if @dataset.info_url.present? %>
+<% for format_url in @dataset.format_urls %>
 <p>
-  <strong>Info url</strong>
-  <%= link_to @dataset.info_url, @dataset.info_url %>
-</p>
-<% end %>
-
-<% if @dataset.xml_url.present? %>
-<p>
-  <strong>Xml url</strong>
-  <%=link_to @dataset.xml_url, @dataset.xml_url %>
-</p>
-<% end %>
-
-<% if @dataset.csv_url.present? %>
-<p>
-  <strong>Csv url</strong>
-  <%=link_to @dataset.csv_url, @dataset.csv_url %>
+	<strong><%=h format_url.format_type.name %></strong>
+	<%=h format_url.url%>
 </p>
 <% end %>
 

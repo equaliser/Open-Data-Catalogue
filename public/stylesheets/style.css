@@ -314,6 +314,7 @@ ul#tags li a
 	{
 		-moz-border-radius:4px;
 		-webkit-border-radius:4px;
+		border-radius:4px;
 		padding:4px 6px;
 		background-color:#ddd;
 		color:#333;
@@ -387,7 +388,7 @@ table th
 .formats
 	{
 		text-align:center;
-		width:110px;
+		width:80px;
 	}
 	
 .publishDate
@@ -421,6 +422,19 @@ table th
 		color:#666;
 	}
 
+.formatType
+	{
+		margin-right:4px;
+		float:left;
+		-moz-border-radius:4px;
+		-webkit-border-radius:4px;
+		border-radius:4px;
+		background-color:green;
+		padding:1px 3px;
+		color:white;
+		font-size:0.8em;
+		margin-bottom:6px;
+	}
 
 
 /*** dataset contents ***/

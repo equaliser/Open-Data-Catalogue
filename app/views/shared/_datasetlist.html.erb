@@ -12,11 +12,9 @@
 		<span class="datasetShortDescription"><%=h dataset.short_description %></span>
 	</td>
 	
-	<td class="formats"><% if(dataset.xml_url.present?) %>
-		XML
-		<% end %>
-		<% if(dataset.csv_url.present?) %>
-			CSV
+	<td class="formats">
+		<% for format_url in dataset.format_urls %>
+			<span class="formatType"><%=h format_url.format_type.name %></span>
 		<% end %>
 		</td>
     <td class="publishDate"><%=h dataset.publish_date.strftime("%d/%m/%Y") %></td>
