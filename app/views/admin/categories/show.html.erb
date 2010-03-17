@@ -1,13 +1,14 @@
-<header id="page">
-	<h1><%= h @title %> : <%=h @category.name %></h1>
-</header>
+<article id="categoryShow" class="item show">
+	<header id="page" class="clearfix">
+		<h1><%= link_to h(@title), admin_categories_path %> : <%=h @category.name %></h1>
+		<nav id="item">
+			<%= link_to 'Edit', edit_admin_category_path(@category), :class => "niceButton editItem"  %>
+		</nav>
+	</header>
 
+	<p>
+	  <b>Name:</b>
+	  <%=h @category.name %>
+	</p>
 
-<p>
-  <b>Name:</b>
-  <%=h @category.name %>
-</p>
-
-
-<%= link_to 'Edit', edit_admin_category_path(@category) %> |
-<%= link_to 'Back', admin_categories_path %>
+</article>

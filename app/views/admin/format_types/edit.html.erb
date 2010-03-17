@@ -4,17 +4,8 @@
 	</header>
 
 <% form_for([:admin, @format_type]) do |f| %>
-  <%= f.error_messages %>
 
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
-
-   <p>
-    <%= f.label :description %>
-    <%= f.text_area :description %>
-  </p>
+  <%= render "form", :f => f %>
 
   <p>
     <%= f.submit 'Update' %>

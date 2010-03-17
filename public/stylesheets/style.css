@@ -203,7 +203,6 @@ article h1
 		margin:0;
 	}
 
-
 	
 /** Content nav **/
 
@@ -475,6 +474,17 @@ table th
 		clear:both;
 	}
 
+.datasetShow
+	{
+		border:1px solid red;
+	}
+
+
+article#datasetShow b
+	{
+	clear:both;
+	display:block;
+	}
 	
 /***** Content ends *****/	
 	

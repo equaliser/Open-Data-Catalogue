@@ -1,6 +1,10 @@
-<h1>Categories</h1>
-
-<%= link_to 'New category', new_admin_category_path, :class => "niceButton newItem"   %>
+<article id="categoryList" class="list">
+	<header class="clearfix">
+		<h1>Categories</h1>
+		<nav>
+			<%= link_to 'New category', new_admin_category_path, :class => "niceButton newItem"   %>
+		</nav>
+	</header>
 
 <table>
   <tr>
@@ -17,5 +21,4 @@
 <% end %>
 </table>
 
-<br />
-
+</article>

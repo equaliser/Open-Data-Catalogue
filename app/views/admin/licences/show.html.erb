@@ -1,23 +1,23 @@
-<header id="page">
-	<h1><%= h @title %> : <%=h @licence.name %></h1>
-</header>
+<article id="licenceShow" class="item show">
+	<header class="clearfix">
+		<h1><%= link_to h(@title), admin_licences_path %> : <%=h @licence.name %></h1>
+		<nav>
+			<%= link_to 'Edit', edit_admin_licence_path(@licence), :class => "niceButton editItem"  %>
+		</nav>
+	</header>
+	
+	<p>
+	  <b>Name:</b>
+	  <%=h @licence.name %>
+	</p>
 
+	<p>
+	  <b>Description:</b>
+	  <%=h @licence.description %>
+	</p>
 
-<p>
-  <b>Name:</b>
-  <%=h @licence.name %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%=h @licence.description %>
-</p>
-
-<p>
-  <b>Link:</b>
-  <%=h @licence.link %>
-</p>
-
-
-<%= link_to 'Edit', edit_admin_licence_path(@licence) %> |
-<%= link_to 'Back', admin_licences_path %>
+	<p>
+	  <b>Link:</b>
+	  <%=h @licence.link %>
+	</p>
+</article>

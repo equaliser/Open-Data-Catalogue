@@ -1,20 +1,12 @@
-<h1>Editing licence</h1>
+<article id="licenceEdit" class="item edit">
+	<header>
+		<h1>Editing licence</h1>
+	</header>
 
 <% form_for([:admin, @licence]) do |f| %>
-  <%= f.error_messages %>
 
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
-  </p>
-  <p>
-    <%= f.label :link %><br />
-    <%= f.text_field :link %>
-  </p>
+  <%= render "form", :f => f %>
+
   <p>
     <%= f.submit 'Update' %>
   </p>
@@ -22,3 +14,5 @@
 
 <%= link_to 'Show', [:admin, @licence] %> |
 <%= link_to 'Back', admin_licences_path %>
+
+</article>

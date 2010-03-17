@@ -1,12 +1,9 @@
 <h1>Editing category</h1>
 
 <% form_for([:admin, @category]) do |f| %>
-  <%= f.error_messages %>
 
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
+  <%= render "form", :f => f %>
+
   <p>
     <%= f.submit 'Update' %>
   </p>

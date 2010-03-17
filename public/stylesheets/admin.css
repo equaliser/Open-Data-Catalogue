@@ -16,6 +16,7 @@ body
 		width:960px;
 		margin:0 auto 50px auto;
 		text-align:left;
+		background-color:#222;
 	}
 
 
@@ -57,6 +58,7 @@ header#site h1 a
 		text-decoration:none;
 		color:white;
 	}
+
 
 /* main nav */
 
@@ -105,6 +107,47 @@ nav#main-nav li.current a
 		color:#004A99;
 	}
 	
+
+/* article headers */
+
+article header
+	{
+		display:block;
+		clear:both;
+	}
+
+article header h1
+	{
+		width:400px;
+		float:left;
+	}
+	
+article header h1 a
+	{
+		text-decoration:none;
+	}
+	
+article header nav
+	{
+		display:block;
+		margin-top:15px;
+		float:right;
+	}
+	
+#mainCol article header nav a.niceButton
+	{
+		padding:8px 40px;
+		font-size:1.2em;
+	}
+
+.item.show ul
+	{
+		line-height:150%;
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+
 
 /* buttons and other furniture */
 
@@ -289,6 +332,35 @@ textarea
 	}
 
 
+.item.show p b
+	{
+		clear:both;
+		display:block;
+		margin-bottom:0px;
+		font-size:0.9em;
+	}
+
+.item.show p
+	{
+		line-height:150%;
+		font-size:1.1em;
+		margin-bottom:20px;
+		display:block;
+	}
+
+#data li
+	{
+		margin-bottom:5px;
+	}
+
+.formatType
+	{
+		font-weight:bold;
+		width:50px;
+		display:block;
+		float:left;
+	}
+
 /* tables */
 
 table
@@ -320,6 +392,7 @@ td.mainName
 		font-weight:bold;
 		font-size:1.2em;
 		line-height:200%;
+		min-width:300px;
 	}
 	
 td.mainName a

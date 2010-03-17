@@ -1,122 +1,116 @@
-<header id="datasetShow" class="item show">
-	<h1><%= h @title %> : <%=h @dataset.name %></h1>
+<article id="datasetShow" class="item show">
+	<header class="clearfix">
+		<h1><%= link_to h(@title), admin_datasets_path %> : <%=h @dataset.name %></h1>
 
-	<nav id="item">
-		<%= link_to 'Edit', edit_admin_dataset_path(@dataset), :class => "niceButton editItem"  %>
-		<%= link_to 'Back', admin_dataset_path, :class => "niceButton" %>
-	</nav>
-</header>
+		<nav id="item">
+			<%= link_to 'Edit', edit_admin_dataset_path(@dataset), :class => "niceButton editItem"  %>
+		</nav>
+	</header>
 
-<h3>Formats</h3>
 
-<p>
-	<% for format_url in @dataset.format_urls %>
-		<li><%=h format_url.url %></li>
-	<% end %>
-</p>
-
-<h3>Info</h3>
+<h2>Info</h2>
 
 <p>
-  <b>Name:</b>
+  <b>Name</b>
   <%=h @dataset.name %>
 </p>
 
 <p>
-  <b>Short description:</b>
+  <b>Short description</b>
   <%=h @dataset.short_description %>
 </p>
 
 <p>
-  <b>Description:</b>
+  <b>Description</b>
   <%=h @dataset.description %>
 </p>
 
 <p>
-  <b>Audience:</b>
+  <b>Audience</b>
   <%=h @dataset.audience.name %>
 </p>
 
 <p>
-  <b>Version:</b>
+  <b>Version</b>
   <%=h @dataset.version %>
 </p>
 
 <p>
-  <b>Display title:</b>
+  <b>Display title</b>
   <%=h @dataset.display_title %>
 </p>
 
 <p>
-  <b>Info url:</b>
-  <%=h @dataset.info_url %>
-</p>
-
-<p>
-  <b>Xml url:</b>
-  <%=h @dataset.xml_url %>
-</p>
-
-<p>
-  <b>Csv url:</b>
-  <%=h @dataset.csv_url %>
-</p>
-
-<p>
-  <b>Language:</b>
+  <b>Language</b>
   <%=h @dataset.language.name %>
 </p>
 
 <p>
-  <b>Geo extent:</b>
+  <b>Geographical extent</b>
   <%=h @dataset.geo_extent %>
 </p>
 
 <p>
-  <b>Maintainer:</b>
+  <b>Maintainer</b>
   <%=h @dataset.maintainer %>
 </p>
 
 <p>
-  <b>Contact email:</b>
+  <b>Contact email</b>
   <%=h @dataset.contact_email %>
 </p>
 
+
+<h2>Data</h2>
+
 <p>
-  <b>Update frequency:</b>
+	<ul id="data">
+	<% for format_url in @dataset.format_urls %>
+		<li><span class="formatType"><%=h format_url.format_type.name %></span> <%=h format_url.url %></li>
+	<% end %>
+	</ul>
+</p>
+
+<h2>Dates</h2>
+
+<p>
+  <b>Update frequency</b>
   <%=h @dataset.update_frequency %>
 </p>
 
 <p>
-  <b>Date range start:</b>
+  <b>Date range start</b>
   <%=h @dataset.date_range_start %>
 </p>
 
 <p>
-  <b>Date range end:</b>
+  <b>Date range end</b>
   <%=h @dataset.date_range_end %>
 </p>
 
 <p>
-  <b>Publish date:</b>
+  <b>Publish date</b>
   <%=h @dataset.publish_date %>
 </p>
 
 <p>
-  <b>Metadata date:</b>
+  <b>Metadata date</b>
   <%=h @dataset.metadata_date %>
 </p>
 
+<h2>Categories</h2>
+
 <p>
-  <b>Licence:</b>
+  <b>Licence</b>
   <%=h @dataset.licence.name %>
 </p>
 
 <p>
-  <b>Category:</b>
+  <b>Category</b>
   <%=h @dataset.category.name %>
 </p>
 
 <p><strong>Tags</strong>: <% for tag in @dataset.tags %> 
 <%= link_to tag.name, admin_dataset_path(:view =>'tag', :tag => tag.name) %><% end %>
 </p>
+</article>

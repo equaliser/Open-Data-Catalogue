@@ -1,18 +1,19 @@
-<header id="page">
-	<h1><%= h @title %> : <%=h @format_type.name %></h1>
-</header>
+<article id="formatTypeShow" class="item show">
+	<header id="page" class="clearfix">
+		<h1><%= link_to h(@title), admin_format_types_path %> : <%=h @format_type.name %></h1>
+	
+		<nav id="item">
+			<%= link_to 'Edit', edit_admin_format_type_path(@format_type), :class => "niceButton editItem"  %>
+		</nav>
+	</header>
 
+	<p>
+	  <b>Name</b>
+	  <%=h @format_type.name %>
+	</p>
 
-<p>
-  <b>Name</b>
-  <%=h @format_type.name %>
-</p>
-
-<p>
-  <b>Description</b>
-  <%=h @format_type.description %>
-</p>
-
-
-<%= link_to 'Edit', edit_admin_format_type_path(@format_type) %> |
-<%= link_to 'Back', admin_format_types_path %>
+	<p>
+	  <b>Description</b>
+	  <%=h @format_type.description %>
+	</p>
+</article>

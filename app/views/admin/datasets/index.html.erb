@@ -1,16 +1,16 @@
 <article id="datasetList">
-	<header>
+	<header class="clearfix">
 		<h1>Datasets</h1>
+		<nav>
+			<%= link_to 'New dataset', new_admin_dataset_path, :class => "niceButton newItem"  %>
+		</nav>
 	</header>
-
-<%= link_to 'New dataset', new_admin_dataset_path, :class => "niceButton newItem"  %>
 
 <table>
   <tr>
     <th class="mainName">Name</th>
+	<th class="publishStatus">Status</th>
     <th>Maintainer</th>
-    <th>Date range start</th>
-    <th>Date range end</th>
 	<th>Licence</th>
     <th>Publish date</th>
 	<th colspan="2"></th>
@@ -19,9 +19,8 @@
 <% @datasets.each do |dataset| %>
   <tr>
     <td class="mainName"><%= link_to h(dataset.name), [:admin, dataset] %></td>
+	<td class="publishStatus"><%=h dataset.status %></td>
     <td><%=h dataset.maintainer %></td>
-    <td><%=h dataset.date_range_start %></td>
-    <td><%=h dataset.date_range_end %></td>
 	<td><%=h dataset.licence.name %></td>
     <td><%=h dataset.publish_date %></td>
     <td><%= link_to 'Edit', edit_admin_dataset_path(dataset), :class => "niceButton editItem"  %></td>

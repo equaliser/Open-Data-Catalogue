@@ -1,12 +1,12 @@
-<h1>Editing language</h1>
+<article id="languageEdit" class="item edit">
+	<header>
+		<h1>Editing language</h1>
+	</header>
 
 <% form_for([:admin, @language]) do |f| %>
-  <%= f.error_messages %>
 
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
+  <%= render "form", :f => f %>
+
   <p>
     <%= f.submit 'Update' %>
   </p>
@@ -14,3 +14,5 @@
 
 <%= link_to 'Show', [:admin, @language] %> |
 <%= link_to 'Back', admin_languages_path %>
+
+</article>

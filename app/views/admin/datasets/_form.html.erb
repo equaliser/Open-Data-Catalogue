@@ -1,0 +1,109 @@
+<%= f.error_messages %>
+
+<h2>Info</h2>
+
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :display_title %>
+    <%= f.text_field :display_title %>
+  </p>
+
+  <p>
+    <%= f.label :status %>
+    <%= f.select(:status, ["Draft", "Published"])%>
+  </p>
+
+  <p>
+    <%= f.label :short_description %>
+    <%= f.text_area :short_description %>
+  </p>
+
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </p>
+
+<h2>Categories</h2>
+
+  <p>
+    <%= f.label :audience_id %>
+	<%= f.select :audience_id, Audience.find(:all).collect {|s|
+		[s.name, s.id]
+	} %>
+  </p>
+
+  <p>
+    <%= f.label :licence_id %>
+	<%= f.select :licence_id, Licence.find(:all).collect {|s|
+		[s.name, s.id]
+	} %>
+  </p>
+  <p>
+    <%= f.label :category_id %>
+	<%= f.select :category_id, Category.find(:all).collect {|s|
+		[s.name, s.id]
+	} %>
+  </p>
+
+<p>
+  <%= f.label 'Tag List (Delimiter is ,)' %>
+  <%= f.text_field :tag_list %>
+</p>
+
+  <p>
+    <%= f.label :version %>
+    <%= f.text_field :version %>
+  </p>
+
+  <p>
+    <%= f.label :language_id %>
+	<%= f.select :language_id, Language.find(:all).collect {|s|
+		[s.name, s.id]
+	} %>
+  </p>
+  <p>
+    <%= f.label :geo_extent %>
+    <%= f.text_field :geo_extent %>
+  </p>
+
+<h2>Formats</h2>
+
+  <% f.fields_for :format_urls do |builder| %>
+		<%= render 'format_url_fields', :f => builder %>
+  <% end %>
+  <p><%= link_to_add_fields "Add format", f, :format_urls %></p>
+
+<h2>Maintenance</h2>
+
+  <p>
+    <%= f.label :maintainer %>
+    <%= f.text_field :maintainer %>
+  </p>
+  <p>
+    <%= f.label :contact_email %>
+    <%= f.text_field :contact_email %>
+  </p>
+  <p>
+    <%= f.label :update_frequency %>
+    <%= f.text_field :update_frequency %>
+  </p>
+  <p>
+    <%= f.label :date_range_start %>
+    <%= f.datetime_select :date_range_start %>
+  </p>
+  <p>
+    <%= f.label :date_range_end %>
+    <%= f.datetime_select :date_range_end %>
+  </p>
+  <p>
+    <%= f.label :publish_date %>
+    <%= f.date_select :publish_date %>
+  </p>
+  <p>
+    <%= f.label :metadata_date %>
+    <%= f.date_select :metadata_date %>
+  </p>

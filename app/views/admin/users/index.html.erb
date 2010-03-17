@@ -1,8 +1,12 @@
-<header id="page">
-	<h1><%= h @title %></h1>
-</header>
+<article id="pageList" class="list">
+	<header id="page" class="clearfix">
+		<h1><%= h @title %></h1>
+		<nav>
+			<%= link_to 'New user', new_admin_user_path, :class => "niceButton newItem"   %>
+		</nav>
+	</header>
 
-<%= link_to 'New user', new_admin_user_path, :class => "niceButton newItem"   %>
+
 
 <table>
   <tr>
@@ -20,3 +24,4 @@
   </tr>
 <% end %>
 </table>
+</article>

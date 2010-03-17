@@ -1,12 +1,10 @@
 <h1>Editing audience</h1>
 
 <% form_for([:admin, @audience]) do |f| %>
-  <%= f.error_messages %>
+  
 
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
+	<%= render "form", :f => f %>
+
   <p>
     <%= f.submit 'Update' %>
   </p>

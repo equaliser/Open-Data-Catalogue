@@ -1,12 +1,15 @@
-<header id="page">
-	<h1><%= h @title %> : <%=h @language.name %></h1>
-</header>
+<article id="languageShow" class="item show">
+	<header id="page" class="clearfix">
+		<h1><%= link_to h(@title), admin_languages_path %> : <%=h @language.name %></h1>
+	
+		<nav id="item">
+			<%= link_to 'Edit', edit_admin_language_path(@language), :class => "niceButton editItem"  %>
+		</nav>	
+	</header>
 
 <p>
   <b>Name:</b>
   <%=h @language.name %>
 </p>
 
-
-<%= link_to 'Edit', edit_admin_language_path(@language) %> |
-<%= link_to 'Back', admin_languages_path %>
+</article>

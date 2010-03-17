@@ -1,6 +1,10 @@
-<h1>Audiences</h1>
-
-<%= link_to 'New audience', new_admin_audience_path, :class => "niceButton newItem" %>
+<article id="audienceList" class"list">
+	<header class="clearfix">
+		<h1>Audiences</h1>
+		<nav>
+			<%= link_to 'New audience', new_admin_audience_path, :class => "niceButton newItem" %>
+		</nav>
+	</header>
 
 <table>
   <tr>
@@ -16,6 +20,4 @@
   </tr>
 <% end %>
 </table>
-
-<br />
-
+</article>

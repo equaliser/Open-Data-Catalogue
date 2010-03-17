@@ -1,6 +1,11 @@
-<h1>Licences</h1>
+<article id="licenceList" class="list">
+	<header class="clearfix">
+		<h1>Licences</h1>
+		<nav>
+			<%= link_to 'New licence', new_admin_licence_path, :class => "niceButton newItem"   %>
+		</nav>
+	</header>
 
-<%= link_to 'New licence', new_admin_licence_path, :class => "niceButton newItem"   %>
 
 <table>
   <tr>
@@ -19,4 +24,4 @@
     <td><%= link_to 'Destroy', [:admin, licence], :confirm => 'Are you sure?', :method => :delete, :class => "niceButton destroyItem"  %></td>
   </tr>
 <% end %>
-</table>
+</table></article>

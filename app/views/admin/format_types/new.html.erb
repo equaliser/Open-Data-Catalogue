@@ -1,25 +1,17 @@
-<article id="newFormatType" class="item new">
+<article id="formatTypeNew" class="item new">
 	<header>
 		<h1>New format type</h1>
 	</header>
 	
 <% form_for([:admin, @format_type]) do |f| %>
-  <%= f.error_messages %>
 
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
-
-   <p>
-    <%= f.label :description %>
-    <%= f.text_area :description %>
-  </p>
-
+  <%= render "form", :f => f %>
 
   <p>
     <%= f.submit 'Create' %>
   </p>
 <% end %>
 
-<%= link_to 'Back', admin_format_types_path %></article>
+<%= link_to 'Back', admin_format_types_path %>
+
+</article>

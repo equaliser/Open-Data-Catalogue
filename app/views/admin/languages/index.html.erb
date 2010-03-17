@@ -1,6 +1,8 @@
-<h1>Languages</h1>
-
-<%= link_to 'New language', new_admin_language_path, :class => "niceButton newItem"   %>
+<article id="languageList" class="list">
+	<header class="clearfix">
+		<h1>Languages</h1>
+		<nav><%= link_to 'New language', new_admin_language_path, :class => "niceButton newItem"   %></nav>
+	</header>
 
 <table>
   <tr>
@@ -17,3 +19,4 @@
 <% end %>
 </table>
 
+</article>

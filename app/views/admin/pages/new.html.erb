@@ -1,37 +1,18 @@
-<h1>New page</h1>
+<article id="pageEdit" class="item edit">
+	<header>
+		<h1>New page</h1>
+	</header>
 
 <% form_for([:admin, @page]) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :author %>
-    <%= f.text_field :author %>
-  </p>
-  <p>
-    <%= f.label :date %>
-    <%= f.datetime_select :date %>
-  </p>
-  <p>
-    <%= f.label :content %>
-    <%= f.text_area :content %>
-  </p>
-  <p class="radio">
-	<%= f.radio_button :status, 'draft', :checked => true %> 
-	  <%= label :status_draft, 'Draft' %>
-	  <%= f.radio_button :status, 'published' %>
-	  <%= label :status_published, 'Published' %>
-  </p>
-  <p>
-    <%= f.label :order %>
-    <%= f.text_field :order %>
-  </p>
+  <% render "form", :f => f %>
+
   <p>
     <%= f.submit 'Create' %>
   </p>
 <% end %>
 
 <%= link_to 'Back', admin_pages_path %>
+
+</article>
