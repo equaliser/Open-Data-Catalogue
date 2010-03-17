@@ -25,7 +25,7 @@ class Dataset < ActiveRecord::Base
   
   
   def self.published
-    Dataset.find(:all, :conditions => {:status => "published"}, :order=> "name ASC")
+    Dataset.find(:all)
   end
   
   def self.latest(x)
