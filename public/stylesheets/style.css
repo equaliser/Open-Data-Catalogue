@@ -87,8 +87,7 @@ header#main .logo
 		float: left;
 		width: 171px;
 		height:74px;
-		background-image:url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/WCCtopleftlogo/$file/wcc_logo2005.gif);
-		background-repeat:no-repeat;
+		background:url('http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/WCCtopleftlogo/%24file/wcc_logo2005.gif') no-repeat;
 		font-size:0;
 	}
 
@@ -129,39 +128,39 @@ header#main .logo
 }
 
 .business{	
-	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet1/$file/bullet_arrow_1.gif) left no-repeat;
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet1/%24file/bullet_arrow_1.gif) left no-repeat;
 }
 
 .council{	
-	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet2/$file/bullet_arrow_2.gif) left no-repeat;
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet2/%24file/bullet_arrow_2.gif) left no-repeat;
 }
 
 .environment{	
-	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet3/$file/bullet_arrow_3.gif) left no-repeat;	
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet3/%24file/bullet_arrow_3.gif) left no-repeat;	
 }
 
 .leisure{	
-	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet4/$file/bullet_arrow_4.gif) left no-repeat;	
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet4/%24file/bullet_arrow_4.gif) left no-repeat;	
 }
 
 .travel{	
-	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet5/$file/bullet_arrow_5.gif) left no-repeat;
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet5/%24file/bullet_arrow_5.gif) left no-repeat;
 }
 
 .learning{	
-	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet6/$file/bullet_arrow_6.gif) left no-repeat;
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet6/%24file/bullet_arrow_6.gif) left no-repeat;
 }
 
 .health{	
-	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet7/$file/bullet_arrow_7.gif) left no-repeat;
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet7/%24file/bullet_arrow_7.gif) left no-repeat;
 }
 
 .safety{	
-	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet8/$file/bullet_arrow_8.gif) left no-repeat;
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet8/%24file/bullet_arrow_8.gif) left no-repeat;
 }
 
 .community{	
-	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet9/$file/bullet_arrow_9.gif) left no-repeat;
+	background: url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/TopBullet9/%24file/bullet_arrow_9.gif) left no-repeat;
 }
 
 ul a{
@@ -226,7 +225,7 @@ nav#pageNav li a
 		font-size:1.3em;
 		width:120px;
 		padding:8px 8px 8px 18px;
-		background-image:url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/Dotted+Line/$file/dotted_line.gif);
+		background-image:url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/Dotted+Line/%24file/dotted_line.gif);
 		background-repeat:repeat-x;
 		background-position:top left;
 	}
@@ -246,7 +245,7 @@ nav#pageNav li a:hover
 nav#pageNav li.last
 	{
 		width:146px;
-	background-image:url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/Dotted+Line/$file/dotted_line.gif);
+	background-image:url(http://www.warwickshire.gov.uk/Web/graphics/Graphics.nsf/graphics/Dotted+Line/%24file/dotted_line.gif);
 		background-repeat:repeat-x;
 		background-position:bottom left;
 	}
