@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100316120821) do
+ActiveRecord::Schema.define(:version => 20100317220433) do
 
   create_table "audiences", :force => true do |t|
     t.string   "name"
@@ -85,8 +85,8 @@ ActiveRecord::Schema.define(:version => 20100316120821) do
     t.integer  "author"
     t.datetime "date"
     t.text     "content"
-    t.string   "status",     :limit => 30
-    t.integer  "order"
+    t.string   "status",        :limit => 30
+    t.integer  "display_order"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
