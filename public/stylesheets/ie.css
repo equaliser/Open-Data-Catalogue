@@ -1,0 +1,19 @@
+/* ie specific stylesheet 	*/
+/* (i know, i know)			*/
+
+
+h1#pageHeader
+	{
+	margin:10px 0 50px 0;
+	}
+	
+article header h1
+	{
+		margin-bottom:30px;
+		font-size:1.9em;
+	}
+
+article h2
+	{
+		font-size:1.5em;
+	}
