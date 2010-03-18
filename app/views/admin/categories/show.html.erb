@@ -1,5 +1,6 @@
 <article id="categoryShow" class="item show">
 	<header id="page" class="clearfix">
+	
 		<h1><%= link_to h(@title), admin_categories_path %> : <%=h @category.name %></h1>
 		<nav id="item">
 			<%= link_to 'Edit', edit_admin_category_path(@category), :class => "niceButton editItem"  %>

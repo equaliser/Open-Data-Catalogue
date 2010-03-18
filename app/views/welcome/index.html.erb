@@ -14,8 +14,9 @@
 				<h3><a href="<%=item.link%>"><%=item.title%></a></h3>
 				<time datetime="<%=item.pubDate %>" pubdate><%=item.pubDate.strftime("%A #{item.pubDate.day.ordinalize} %B %Y") %></time>
 				
-				<div id="blogIntro">
+				<div class="blogIntro">
 					<%=item.description %>
+					<p class="readMore"><a href="<%=item.link%>">Read more...</a></p>
 				</div>
 		</div>
 		<% end %>

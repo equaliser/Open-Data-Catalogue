@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   private
   
   def public_start
-    @pages = Page.find(:all, :conditions => {:status => "published"}, :order => "display_order DESC")
+    @pages = Page.published
   end
   
   def public_layout

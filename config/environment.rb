@@ -13,6 +13,9 @@ Rails::Initializer.run do |config|
   config.gem "simple-rss", :version => ">=1.2.2"
   config.gem "validates_existence", :version => "0.3.2"
   
+ # config.to_prepare do
+ #   Tag.has_friendly_id :name, :use_slug => true, :approximate_ascii => true
+ # end  
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded.

@@ -6,16 +6,18 @@
 	<table>
 	  <tr>
 	    <th class="mainName">Name</th>
+		<th class="datasetCount">Datasets</th>
 	  </tr>
-<%#=debug Dataset %>
-	<%	
-		@categories.each do |category| %>
-	  <tr>
-	    <td class="mainName categoryName"><%= link_to category.name, category%></td>
-	  </tr>
-	<% end
+<% @datasets.each do |dataset|	%>
+  <tr>
+    <td class="mainName categoryName"><%= link_to dataset.category.name, dataset.category %></td>
+	<td class="datasetCount"><%= dataset.count %></td>
+  </tr>
+<% end
 
-	 %>
+ %>
+
+
 	</table>
 
 

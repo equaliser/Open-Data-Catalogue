@@ -24,7 +24,7 @@
     <td class="publishStatus"><%=h page.status %></td>
     <td><%=h page.author %></td>
     <td><%=h page.date %></td>
-    <td><%=h page.order %></td>
+    <td><%=h page.display_order %></td>
     <td><%= link_to 'Edit', edit_admin_page_path(page), :class => "niceButton editItem" %></td>
     <td><%= link_to 'Destroy', [:admin, page], :confirm => 'Are you sure?', :method => :delete,  :class => "niceButton destroyItem" %></td>
   </tr>
