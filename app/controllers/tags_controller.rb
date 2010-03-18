@@ -24,7 +24,7 @@ class TagsController < ApplicationController
    # GET /datasets/1
    # GET /datasets/1.xml
    def show    
-     @tag = Tag.find(:first, :conditions => {:name => params[:id] })
+     @tag = Tag.find(params[:id])
     
      @datasets = Dataset.find_tagged_with(@tag.name, :on =>:tags, :conditions => {:status => "Published"}, :order=> "name ASC")
        
