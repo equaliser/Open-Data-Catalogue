@@ -9,4 +9,8 @@ module ApplicationHelper
      link_to_function(name, h("add_fields(this, \"#{association}\", \"#{escape_javascript(fields)}\")"))
    end
   
+  def propercase(str)
+    str.split(/\s+/).each{ |word| word.capitalize! }.join(' ')
+  end
+  
 end

@@ -18,7 +18,7 @@ class CategoriesController < ApplicationController
    # @categories = Category.data.find(:all, :include =>'category', :select => 'count(*) count, category.id, category.name ', :group => 'category_id', :conditions => ['status = ?', 'published' ])
 
 
-logger.info("bla: #{@categories}")
+   logger.info("bla: #{@categories}")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -32,7 +32,7 @@ logger.info("bla: #{@categories}")
   def show
     @category = Category.find(:first, params[:id])
     
-    @datasets = Dataset.find(:all, :conditions => {:category_id => @category.id, :status => "published"}, :order=> "name ASC")
+    @datasets = Dataset.find(:all, :conditions => {:category_id => @category.id, :status => "Published"}, :order=> "name ASC")
 
     respond_to do |format|
       format.html # show.html.erb

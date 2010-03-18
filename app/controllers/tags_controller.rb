@@ -25,13 +25,9 @@ class TagsController < ApplicationController
    # GET /datasets/1.xml
    def show    
      @tag = Tag.find(:first, :conditions => {:name => params[:id] })
-      
-     if @tagName.present?
-       @datasets = Dataset.find_tagged_with(@tag.name, :on =>:tags, :conditions => {:status => "published"}, :order=> "name ASC")
-     else
-       @datasets =''
-     end
-     
+    
+     @datasets = Dataset.find_tagged_with(@tag.name, :on =>:tags, :conditions => {:status => "Published"}, :order=> "name ASC")
+       
      respond_to do |format|
        format.html # show.html.erb
        format.xml  { render :xml => @datasets }
