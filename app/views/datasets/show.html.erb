@@ -8,18 +8,24 @@
 	</section>
 
 <section id="info">
-<p>
-  <strong>Version</strong>
-  <%=h @dataset.version %>
-</p>
+	<p>
+	  <strong>Version</strong>
+	  <%=h @dataset.version %>
+	</p>
 	
+	<% if @dataset.info_url.present? %>
+	<p>
+	  <strong>Further information</strong>
+	  <%= h @dataset.info_url %>
+	</p>
+	<% end %>
 
-<% for format_url in @dataset.format_urls %>
-<p>
-	<strong><%=h format_url.format_type.name %></strong>
-	<%=h format_url.url%>
-</p>
-<% end %>
+	<% for format_url in @dataset.format_urls %>
+	<p>
+		<strong><%=h format_url.format_type.name %></strong>
+		<%=h format_url.url%>
+	</p>
+	<% end %>
 
 <p>
   <strong>Language</strong>
@@ -27,7 +33,7 @@
 </p>
 
 <p>
-  <strong>Geo extent</strong>
+  <strong>Geographic coverage</strong>
   <%=h @dataset.geo_extent %>
 </p>
 
@@ -80,7 +86,7 @@
 	<strong>Tags</strong>
 	<ul id="tags">
 	<% for tag in @dataset.tags %> 
-	<li><%= link_to tag.name, {:controller =>"tags", :action => "show", :id => tag.name} %></li>
+	<li><%= link_to tag.name, tag %></li>
 	<% end %>
 </p></section>
 

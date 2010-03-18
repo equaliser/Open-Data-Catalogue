@@ -72,10 +72,17 @@
 
 <h2>Formats</h2>
 
+<p>
+  <%= f.label :info_url %>
+  <%= f.text_field :info_url %>
+</p>
+
   <% f.fields_for :format_urls do |builder| %>
 		<%= render 'format_url_fields', :f => builder %>
   <% end %>
   <p><%= link_to_add_fields "Add format", f, :format_urls %></p>
+
+
 
 <h2>Maintenance</h2>
 

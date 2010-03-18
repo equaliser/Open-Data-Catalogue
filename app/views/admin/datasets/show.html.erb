@@ -64,6 +64,11 @@
 <h2>Data</h2>
 
 <p>
+  <b>Info URL</b>
+  <%= h @dataset.info_url %>
+</p>
+
+<p>
 	<ul id="data">
 	<% for format_url in @dataset.format_urls %>
 		<li><span class="formatType"><%=h format_url.format_type.name %></span> <%=h format_url.url %></li>
