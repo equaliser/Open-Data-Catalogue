@@ -13,7 +13,7 @@ class CategoriesController < ApplicationController
   def index
     @categories = Category.find(:all, :order=>'name ASC')
     
-    @datasets = Dataset.find(:all, :select =>'count(*) count, category_id', :conditions => {:status => "Published"}, :group =>'category_id')
+    @datasets = Dataset.find(:all, :select =>'count(*) AS count, category_id', :conditions => {:status => "Published"}, :group =>'category_id')
     
     #@categories = @datasets.categories.find(:all, :group=>'category_id')
    # @categories = Category.data.find(:all, :include =>'category', :select => 'count(*) count, category.id, category.name ', :group => 'category_id', :conditions => ['status = ?', 'published' ])
