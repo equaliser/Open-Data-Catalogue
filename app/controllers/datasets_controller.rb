@@ -24,7 +24,7 @@ class DatasetsController < ApplicationController
      respond_to do |format| 
            format.html
            format.rss { render } 
-           format.xml { render :xml => @datasets }
+           format.xml { render :xml => @datasets}
          end        
    end
  
@@ -37,10 +37,12 @@ class DatasetsController < ApplicationController
    # GET /datasets/1.xml
    def show
      @dataset = Dataset.find(params[:id])
+         
      @title = @dataset.name + " : " + @title
      respond_to do |format|
        format.html # show.html.erb
-       format.xml  { render :xml => @dataset }
+      # format.xml  { render :xml => @dataset.to_xml (:include => [:format_urls, :format_types] ) }
+      format.xml { render }
      end
    end
 

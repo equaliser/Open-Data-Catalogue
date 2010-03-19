@@ -201,7 +201,7 @@ article h1
 	{
 		font-weight:normal;
 		margin:0;
-		margin-top:2px;
+		margin:2px 0 40px 0;
 	}
 	
 article h2
@@ -209,6 +209,7 @@ article h2
 		padding-bottom:10px;
 		border-bottom:1px solid #ccc;
 		margin-bottom:8px;
+		font-size:1.4em;
 	}
 
 	
@@ -286,6 +287,19 @@ nav#pageNav li.last
 #latestDatasets
 	{
 		width:170px;
+	}
+	
+#latestDatasets ul
+	{
+		list-style:none;
+		padding:0;
+		margin:0;
+		line-height:150%;
+	}
+	
+#latestDatasets li
+	{
+		margin-bottom:10px;
 	}
 
 #latestBlogposts
