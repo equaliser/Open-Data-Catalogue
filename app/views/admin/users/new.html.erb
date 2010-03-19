@@ -1,21 +1,10 @@
-<header id="page">
-	<h1><%= h @title %></h1>
-</header>
+<article id="userNew" class="item new">
+	<header>
+		<h1><%= h @title %></h1>
+	</header>
 
-
-<%= error_messages_for :user %>
 <% form_for([:admin, @user]) do |f| -%>
-<p><label for="login">Login</label><br/>
-<%= f.text_field :login %></p>
+	<%= render "form", :f => f %>
 
-<p><label for="email">Email</label><br/>
-<%= f.text_field :email %></p>
-
-<p><label for="password">Password</label><br/>
-<%= f.password_field :password %></p>
-
-<p><label for="password_confirmation">Confirm Password</label><br/>
-<%= f.password_field :password_confirmation %></p>
-
-<p><%= submit_tag 'Sign up' %></p>
-<% end -%>
+	<p><%= submit_tag 'Create' %></p>
+<% end -%></article>

@@ -1,15 +1,15 @@
 <article id="welcomePage">
-	<header>
-		<h1>Welcome</h1>
-	</header>
 
+	<%= image_tag "opendata.jpg" %>
 	<p>This is where we do that open data stuff, in Warwickshire.</p>
 	<section id="latestBlogposts">	
 		<header>
 			<h2>Latest posts from the blog</h2>
 		</header>
 
-		<% @rss.items[0..2].each do |item| %>
+		<% 
+		if @rss.present?
+			@rss.items[0..2].each do |item| %>
 		<div class="blog">
 				<h3><a href="<%=item.link%>"><%=item.title%></a></h3>
 				<time datetime="<%=item.pubDate %>" pubdate><%=item.pubDate.strftime("%A #{item.pubDate.day.ordinalize} %B %Y") %></time>
@@ -19,7 +19,9 @@
 					<p class="readMore"><a href="<%=item.link%>">Read more...</a></p>
 				</div>
 		</div>
-		<% end %>
+		<%
+			end
+		end %>
 	</section>
 	
 	<section id="latestDatasets">
