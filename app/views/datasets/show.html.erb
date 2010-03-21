@@ -16,14 +16,14 @@
 	<% if @dataset.info_url.present? %>
 	<p>
 	  <strong>Further information</strong>
-	  <%= h @dataset.info_url %>
+	  <%= link_to h(@dataset.info_url), h(@dataset.info_url) %>
 	</p>
 	<% end %>
 
 	<% for format_url in @dataset.format_urls %>
 	<p>
 		<strong><%=h format_url.format_type.name %></strong>
-		<%=h format_url.url%>
+		<%= link_to h(format_url.url), h(format_url.url) %>
 	</p>
 	<% end %>
 
