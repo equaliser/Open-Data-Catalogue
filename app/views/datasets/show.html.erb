@@ -23,7 +23,7 @@
 	<% for format_url in @dataset.format_urls %>
 	<p>
 		<strong><%=h format_url.format_type.name %></strong>
-		<%= link_to h(format_url.url), h(format_url.url) %>
+		<span class="url"><%= link_to h(format_url.url), h(format_url.url) %></span>
 	</p>
 	<% end %>
 

@@ -522,6 +522,11 @@ article#datasetShow b
 	display:block;
 	}
 	
+#dataset .url
+	{
+		word-wrap: break-word;
+	}
+	
 /***** Content ends *****/	
 	
 	
