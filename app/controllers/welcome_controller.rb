@@ -10,12 +10,18 @@ class WelcomeController < ApplicationController
   
   def index 
     @title = "Welcome"
-    source = "http://abigbang.wordpress.com/feed/"
+    source = "http://warwickshireopendata.wordpress.com/feed/"
     content = ""
-    raise open(source) do |s| content = s.read end  
-    @rss = SimpleRSS.parse(content)
+    
+    begin
+        open(source) do |s| content = s.read end  
+        @rss = SimpleRSS.parse(content)
+    rescue Timeout::Error
+      @rss = ''
     rescue
-   
+      @rss = ''
+    end
+    
     @latestDatasets = Dataset.latest(5)
   end
   

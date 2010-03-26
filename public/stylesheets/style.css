@@ -512,7 +512,7 @@ td.datasetCount
 
 .datasetShow
 	{
-		border:1px solid red;
+	
 	}
 
 
@@ -525,6 +525,10 @@ article#datasetShow b
 #dataset .url
 	{
 		word-wrap: break-word;
+		width:380px;
+		display:block;
+		float:left;
+		margin-bottom:10px;
 	}
 	
 /***** Content ends *****/	
