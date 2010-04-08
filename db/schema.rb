@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100317220433) do
+ActiveRecord::Schema.define(:version => 20100408110922) do
 
   create_table "audiences", :force => true do |t|
     t.string   "name"
@@ -66,6 +66,12 @@ ActiveRecord::Schema.define(:version => 20100317220433) do
     t.datetime "updated_at"
   end
 
+  create_table "geo_granularities", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "languages", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
@@ -76,6 +82,13 @@ ActiveRecord::Schema.define(:version => 20100317220433) do
     t.string   "name"
     t.text     "description"
     t.string   "link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "local_authorities", :force => true do |t|
+    t.string   "name"
+    t.string   "snac_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -128,6 +141,12 @@ ActiveRecord::Schema.define(:version => 20100317220433) do
 
   create_table "tags", :force => true do |t|
     t.string "name"
+  end
+
+  create_table "temporal_granularities", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
