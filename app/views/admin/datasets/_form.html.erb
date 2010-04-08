@@ -79,7 +79,16 @@
 <p>
   <%= f.label :info_url %>
   <%= f.text_field(:info_url, :size => "60") %>
+  <span class="help" id="helpInfoUrl">Could be a page on a website giving further information about the dataset; the data contained within, the way in which it was collected etc.</span>
 </p>
+
+<p>
+  <%= f.label :taxonomy_url %>
+  <%= f.text_field(:taxonomy_url, :size => "60") %>
+  <span class="help" id="helpInfoUrl">This is an Internet link to a web page describing for re-users the taxonomies used in the dataset, if any, to ensure they understand any terms used.</span>
+</p>
+
+
 
   <% f.fields_for :format_urls do |builder| %>
 		<%= render 'format_url_fields', :f => builder %>
@@ -90,15 +99,37 @@
 
 <h2>Maintenance</h2>
 
+<p>
+  <%= f.label :local_authority_id %>
+	<%= f.select :local_authority_id, LocalAuthority.find(:all).collect {|s|
+		[s.name, s.id]
+	} %>
+</p>
+
+
+<p>
+  <%= f.label :author %>
+  <%= f.text_field(:author, :size => "40") %>
+	<span class="help" id="helpAuthor">The public name for the group to contact for any further information about this dataset.</span>
+</p>
+
+
   <p>
     <%= f.label :contact_email %>
     <%= f.text_field(:contact_email, :size => "40") %>
-	<span class="help" id="helpContactEmail">This should be a group inbox rather than an individual.</span>
+	<span class="help" id="helpContactEmail">The group inbox for the author of the dataset.</span>
   </p>
 
  <p>
     <%= f.label :maintainer %>
     <%= f.text_field(:maintainer, :size => "40") %>
+	<span class="help" id="helpMaintainer">This should usually be left blank. In the case that another section has taken over responsibility for maintaining the data, this field should reflect that.</span>
+  </p>
+
+  <p>
+    <%= f.label :maintainer_email %>
+    <%= f.text_field(:maintainer_email, :size => "40") %>
+	<span class="help" id="helpContactEmail">If Maintainer is given, the relevant section’s e-mail address should be given here. Again an individual’s details should not be used.</span>
   </p>
 
 

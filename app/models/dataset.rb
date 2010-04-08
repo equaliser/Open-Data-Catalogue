@@ -18,6 +18,15 @@ class Dataset < ActiveRecord::Base
   belongs_to :category, :foreign_key => 'category_id'
   validates_existence_of  :category
   
+  belongs_to :geo_granularity
+  validates_existence_of :geo_granularity
+  
+  belongs_to :local_authority
+  validates_existence_of :local_authority
+  
+  belongs_to :temporal_granularity
+  validates_existence_of :temporal_granularity
+  
   has_many :format_urls, :dependent => :destroy
   accepts_nested_attributes_for :format_urls, :reject_if => lambda { |a| a[:url].blank? }, :allow_destroy => true
   

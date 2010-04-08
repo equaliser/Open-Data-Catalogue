@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100408110922) do
+ActiveRecord::Schema.define(:version => 20100408141058) do
 
   create_table "audiences", :force => true do |t|
     t.string   "name"
@@ -47,8 +47,20 @@ ActiveRecord::Schema.define(:version => 20100408110922) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "short_description"
-    t.string   "status",            :limit => 30
+    t.string   "status",                     :limit => 30
     t.string   "cached_slug"
+    t.string   "author"
+    t.string   "maintainer_email"
+    t.string   "taxonomy_url"
+    t.datetime "updated_date"
+    t.integer  "geo_granularity_id"
+    t.integer  "geo_coverage_id"
+    t.integer  "temporal_granularity_id"
+    t.string   "precision"
+    t.string   "geo_granularity_other"
+    t.string   "geo_granularity_point"
+    t.string   "temporal_granularity_other"
+    t.integer  "local_authority_id"
   end
 
   create_table "format_types", :force => true do |t|
