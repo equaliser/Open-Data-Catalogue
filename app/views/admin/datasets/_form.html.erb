@@ -4,13 +4,14 @@
 
   <p>
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field(:name, :size => "65") %>
+ 	<span class="help" id="helpName">This is what you call the data set. It is not a description – save that for the Description field. Do not give a trailing full stop</span>
   </p>
 
-  <p>
+<!--  <p>
     <%= f.label :display_title %>
     <%= f.text_field :display_title %>
-  </p>
+  </p> -->
 
   <p>
     <%= f.label :status %>
@@ -19,12 +20,14 @@
 
   <p>
     <%= f.label :short_description %>
-    <%= f.text_area :short_description %>
+    <%= f.text_area(:short_description, :size => "65x3") %>
+    <span class="help" id="helpShortDescription">This is a short, one sentence description that will appear on the dataset list page</span>
   </p>
 
   <p>
     <%= f.label :description %>
-    <%= f.text_area :description %>
+    <%= f.text_area(:description, :size => "65x15") %>
+	<span class="help" id="helpDescription">This field is the main descriptive text for the dataset.</span>
   </p>
 
 <h2>Categories</h2>
@@ -50,13 +53,14 @@
   </p>
 
 <p>
-  <%= f.label 'Tag List (Delimiter is ,)' %>
-  <%= f.text_field :tag_list %>
+  <%= f.label 'Tag list (delimiter is space)' %>
+  <%= f.text_field(:tag_list, :size => "60") %> 
+  <span class="help" id="helpTags">Tags should be separated by a space. Use a dash for a space in a tag, eg. "french-toast"</span>
 </p>
 
   <p>
     <%= f.label :version %>
-    <%= f.text_field :version %>
+    <%= f.text_field(:version, :size => "6") %>
   </p>
 
   <p>
@@ -74,7 +78,7 @@
 
 <p>
   <%= f.label :info_url %>
-  <%= f.text_field :info_url %>
+  <%= f.text_field(:info_url, :size => "60") %>
 </p>
 
   <% f.fields_for :format_urls do |builder| %>
@@ -87,16 +91,22 @@
 <h2>Maintenance</h2>
 
   <p>
-    <%= f.label :maintainer %>
-    <%= f.text_field :maintainer %>
-  </p>
-  <p>
     <%= f.label :contact_email %>
-    <%= f.text_field :contact_email %>
+    <%= f.text_field(:contact_email, :size => "40") %>
+	<span class="help" id="helpContactEmail">This should be a group inbox rather than an individual.</span>
   </p>
+
+ <p>
+    <%= f.label :maintainer %>
+    <%= f.text_field(:maintainer, :size => "40") %>
+  </p>
+
+
+
   <p>
     <%= f.label :update_frequency %>
     <%= f.text_field :update_frequency %>
+	<span class="help" id="helpUpdateFrequency">This should be how frequently it is planned the dataset will be updated with new versions, e.g. monthly. For one-off data, use “never”. For those once updated but now discontinued, use “discontinued”. Do not include ad hoc updates for corrections or refinements which are detailed in the Date Updated box above.</span>
   </p>
   <p>
     <%= f.label :date_range_start %>
@@ -110,6 +120,7 @@
     <%= f.label :publish_date %>
     <%= f.date_select :publish_date %>
   </p>
+
   <p>
     <%= f.label :metadata_date %>
     <%= f.date_select :metadata_date %>

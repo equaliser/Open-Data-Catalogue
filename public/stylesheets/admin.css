@@ -271,10 +271,25 @@ footer
 
 /* forms */
 
+.help
+	{
+		background-color: #DEFBD3;
+		border:1px solid #9EF690;
+		padding:4px 4px;
+		width:500px;
+		display:block;
+		clear:both;
+		margin:6px 0px 6px 2px;
+		color:#4E6D49;
+		line-height:150%;
+	}
+
 label
 	{
 		display:block;
 		font-weight:bold;
+		margin-bottom:3px;
+		padding-left:3px;
 	}
 	
 p.radio input
@@ -295,17 +310,29 @@ form p
 	{
 		display:block;
 		clear:both;
-		margin-bottom:20px;
+		margin-bottom:30px;
 	}
 
 form input, form textarea, form select
 	{
 		font-size:1.1em;
+		padding:3px;
+	}
+	
+form select
+	{
+		font-size:1.4em;
+		padding-right:10px;
 	}
 	
 textarea
 	{
 		float:left;
+	}
+	
+.formatUrlField
+	{
+		width:600px;
 	}
 	
 .fieldInfo

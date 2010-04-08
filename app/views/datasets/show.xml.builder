@@ -1,5 +1,6 @@
 xml.instruct! :xml, :version =>"1.0"
   xml.dataset do 
+    xml.package_identifier @dataset.to_param
     xml.title @dataset.name
     xml.short_description @dataset.short_description
     xml.description @dataset.description
