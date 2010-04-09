@@ -8,11 +8,6 @@
  	<span class="help" id="helpName">This is what you call the data set. It is not a description – save that for the Description field. Do not give a trailing full stop</span>
   </p>
 
-<!--  <p>
-    <%= f.label :display_title %>
-    <%= f.text_field :display_title %>
-  </p> -->
-
   <p>
     <%= f.label :status %>
     <%= f.select(:status, ["Draft", "Published"])%>
@@ -30,6 +25,12 @@
 	<span class="help" id="helpDescription">This field is the main descriptive text for the dataset.</span>
   </p>
 
+  <p>
+    <%= f.label :precision %>
+    <%= f.text_field(:precision, :size=>"60") %>
+    <span class="help" id="helpPrecisions">This should indicate to users the level of precision in the data, to avoid over-interpretation. e.g. “per cent to two decimal places”</span>
+  </p>
+
 <h2>Categories</h2>
 
   <p>
@@ -45,6 +46,7 @@
 		[s.name, s.id]
 	} %>
   </p>
+
   <p>
     <%= f.label :category_id %>
 	<%= f.select :category_id, Category.find(:all).collect {|s|
@@ -69,10 +71,31 @@
 		[s.name, s.id]
 	} %>
   </p>
+
   <p>
     <%= f.label :geo_extent %>
     <%= f.text_field :geo_extent %>
   </p>
+
+<p>
+	<%= f.label :geo_granularity %>
+	<%= f.select :geo_granularity_id, GeoGranularity.find(:all).collect {|s|
+		[s.name, s.id]
+	} %>
+	<span class="help" id="helpGeoGranularity">This should give the lowest level of geographic granularity given in the dataset. <br />“Point” means datasets given down to the level of the entities being reported on (such as school, hospital, or police station). Where point applies use the Other/Point box to specify what is being reported on. <br />If none of the choices is appropriate, please specify in the “other” field. Where the granularity varies, please select the smallest and note this in the “other” field.</span>
+</p>
+
+<p id="f_geoGranularityPoint">
+	<%= f.label :geo_granularity_point %>
+	<%= f.text_field :geo_granularity_point %>
+	<span class="help" id="helpGeoGranularityPoint">eg. police station, hospital, school, etc.</span>
+</p>
+
+<p id="f_geoGranularityOther">
+	<%= f.label :geo_granularity_other %>
+	<%= f.text_field :geo_granularity_other %>
+	<span class="help" id="helpGeoGranularityOther">Tell us what your thing is .</span>
+</p>
 
 <h2>Formats</h2>
 
@@ -93,8 +116,27 @@
   <% f.fields_for :format_urls do |builder| %>
 		<%= render 'format_url_fields', :f => builder %>
   <% end %>
-  <p><%= link_to_add_fields "Add format", f, :format_urls %></p>
+  <p id="addFormatsButton"><%= link_to_add_fields "Add format", f, :format_urls %></p>
 
+<h2>Dataset date range</h2>
+
+<p>
+	<%= f.label :temporal_granularity_id %>
+	<%= f.select :temporal_granularity_id, TemporalGranularity.find(:all).collect {|s|
+		[s.name, s.id]
+	} %>
+	<span class="help" id="helpTemporalGranularity">This should give the lowest level of temporal granularity given in the dataset. “Point” means datasets given down to the level of the individual occurrences being reported on. If none of the choices is appropriate, please specify in the “other” field. Where the granularity varies, please select the lowest and note this in the “other” field.</span>
+</p>
+
+<p>
+  <%= f.label :date_range_start %>
+  <%= f.datetime_select :date_range_start %>
+</p>
+
+<p>
+  <%= f.label :date_range_end %>
+  <%= f.datetime_select :date_range_end %>
+</p>
 
 
 <h2>Maintenance</h2>
@@ -139,17 +181,17 @@
     <%= f.text_field :update_frequency %>
 	<span class="help" id="helpUpdateFrequency">This should be how frequently it is planned the dataset will be updated with new versions, e.g. monthly. For one-off data, use “never”. For those once updated but now discontinued, use “discontinued”. Do not include ad hoc updates for corrections or refinements which are detailed in the Date Updated box above.</span>
   </p>
-  <p>
-    <%= f.label :date_range_start %>
-    <%= f.datetime_select :date_range_start %>
-  </p>
-  <p>
-    <%= f.label :date_range_end %>
-    <%= f.datetime_select :date_range_end %>
-  </p>
+
+<h2>Publish and update dates</h2>
+
   <p>
     <%= f.label :publish_date %>
     <%= f.date_select :publish_date %>
+  </p>
+
+  <p>
+    <%= f.label :updated_date %>
+    <%= f.date_select :updated_date %>
   </p>
 
   <p>

@@ -40,6 +40,12 @@ header#site h1
 		float:left;
 	}
 	
+#visitLive
+	{
+		font-size:0.6em;
+		padding-left:10px;
+	}
+	
 #userStatus
 	{
 		margin:15px 0 14px 6px;
@@ -235,7 +241,13 @@ footer
 		color:#990000;
 	}
 	
-.errorExplanation h2
+.errorExplanation
+	{
+		display:block;
+		clear:both;
+	}
+	
+div.errorExplanation h2
 	{
 		margin:0;
 	}
@@ -345,6 +357,42 @@ textarea
 		padding:6px 9px;
 		color:#666;
 	}
+
+input.update
+	{
+		padding:10px 22px;
+		-moz-border-radius:8px;
+		-webkit-border-radius:8px;
+		border-radius:8px;
+		background-color:#2B9900;
+		color:white;
+		font-size:1.4em;
+		border:0;
+		cursor:pointer;
+		margin:20px 0 30px 0;
+	}
+
+input.update:hover, p#addFormatsButton a:hover
+	{
+		background-color:#07D100;
+	}
+	
+p#addFormatsButton a:link, p#addFormatsButton a:hover
+	{
+		padding:6px 12px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		border-radius:5px;
+		background-color:#2B9900;
+		color:white;
+		font-size:1.1em;
+		font-weight:bold;
+		border:0;
+		cursor:pointer;
+		text-decoration:none;
+	}
+
+
 
 /* inputrow, used on the formats on the datasets page */
 

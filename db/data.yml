@@ -1,0 +1,129 @@
+
+--- 
+geo_granularities: 
+  columns: 
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - National
+    - 
+    - 
+  - - "2"
+    - Regional
+    - 
+    - 
+  - - "3"
+    - Local authority
+    - 
+    - 
+  - - "4"
+    - District
+    - 
+    - 
+  - - "10"
+    - Division
+    - 
+    - 
+  - - "11"
+    - Ward
+    - 
+    - 
+  - - "12"
+    - Parish
+    - 
+    - 
+  - - "13"
+    - Super Output Area
+    - 
+    - 
+  - - "14"
+    - Census Output Area
+    - 
+    - 
+  - - "15"
+    - Point
+    - 
+    - 
+  - - "16"
+    - Other
+    - 
+    - 
+
+--- 
+local_authorities: 
+  columns: 
+  - id
+  - name
+  - snac_id
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - Warwickshire County Council
+    - "44"
+    - 
+    - 
+  - - "2"
+    - Nuneaton and Bedworth Borough Council
+    - 44UC
+    - 
+    - 
+  - - "3"
+    - North Warwickshire District Council
+    - 44UB
+    - 
+    - 
+  - - "4"
+    - Stratford District Council
+    - 44UE
+    - 
+    - 
+  - - "5"
+    - Rugby Borough Council
+    - 44UD
+    - 
+    - 
+
+--- 
+temporal_granularities: 
+  columns: 
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - Years
+    - 
+    - 
+  - - "2"
+    - Quarters
+    - 
+    - 
+  - - "3"
+    - Months
+    - 
+    - 
+  - - "4"
+    - Weeks
+    - 
+    - 
+  - - "5"
+    - Days
+    - 
+    - 
+  - - "6"
+    - Hours
+    - 
+    - 
+  - - "7"
+    - Point
+    - 
+    - 
+  - - "8"
+    - Other
+    - 
+    - 

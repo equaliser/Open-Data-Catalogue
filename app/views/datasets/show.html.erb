@@ -12,10 +12,12 @@
 		<%=h @dataset.to_param %>
 	</p>
 	
+	<% if @dataset.version.present? %>
 	<p>
 	  <strong>Version</strong>
 	  <%=h @dataset.version %>
 	</p>
+	<% end %>
 	
 	<% if @dataset.info_url.present? %>
 	<p>
@@ -23,6 +25,14 @@
 	  <%= link_to h(@dataset.info_url), h(@dataset.info_url) %>
 	</p>
 	<% end %>
+	
+	<% if @dataset.taxonomy_url.present? %>
+	<p>
+	  <strong>Taxonomy information</strong>
+	  <%= link_to h(@dataset.taxonomy_url), h(@dataset.taxonomy_url) %>
+	</p>
+	<% end %>
+	
 
 	<% for format_url in @dataset.format_urls %>
 	<p>
@@ -36,20 +46,49 @@
   <%=h @dataset.language.name %>
 </p>
 
+<% if @dataset.geo_extent.present? %>
 <p>
   <strong>Geographic coverage</strong>
   <%=h @dataset.geo_extent %>
 </p>
+<% end %>
 
 <p>
-  <strong>Maintainer</strong>
-  <%=h @dataset.maintainer %>
+  <strong>Geographic granularity</strong>
+  <%=h @dataset.geo_granularity.name %>
+</p>
+
+<% if @dataset.precision.present? %>
+<p>
+  <strong>Precision</strong>
+  <%=h @dataset.precision %>
+</p>
+<% end %>
+
+<p>
+  <strong>Author</strong>
+  <%=h @dataset.author %>
 </p>
 
 <p>
   <strong>Contact email</strong>
   <%=h @dataset.contact_email %>
 </p>
+
+<% if @dataset.maintainer.present? %>
+<p>
+  <strong>Maintainer</strong>
+  <%=h @dataset.maintainer %>
+</p>
+<% end %>
+
+<% if @dataset.maintainer_email.present? %>
+<p>
+  <strong>Maintainer email</strong>
+  <%=h @dataset.maintainer_email %>
+</p>
+<% end %>
+
 
 <p>
   <strong>Update frequency</strong>

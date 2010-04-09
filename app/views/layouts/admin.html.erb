@@ -10,12 +10,12 @@
 	<![endif]-->
 	
 	<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>-->
-	<%= javascript_include_tag :defaults %>
+	<%= javascript_include_tag "jquery", "jquery.cookie", "application" %>
 	</head>
 <body>
 	<div id="pageContainer">
 		<header id="site">	
-			<h1 id="pageHeader"><%= link_to "Warwickshire Open Data Admin", '/admin' %></h1>
+			<h1 id="pageHeader"><%= link_to "Warwickshire Open Data Admin", '/admin' %><span id="visitLive"><a href="/">&rarr; public site</a></span></h1>
 			<div id="userStatus">
 				<% if current_user %>
 					Logged in as <%=h(current_user.first_name + " "  + current_user.last_name) %> | <%= link_to "logout", logout_path %>
@@ -47,7 +47,7 @@
 		</div>	
 		
 		<footer id="site">
-			<%= link_to "Public site", home_path %>
+			<!--<%= link_to "Public site", home_path %>-->
 		</footer>
 	</div>
 </body>
