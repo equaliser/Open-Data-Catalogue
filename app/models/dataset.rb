@@ -3,8 +3,8 @@ class Dataset < ActiveRecord::Base
   acts_as_taggable_on :tags
   has_friendly_id :name, :use_slug => true, :approximate_ascii => true
   
-  include RFC822
-  validates_format_of :contact_email,  :with => EmailAddress
+  #include RFC822
+  #validates_format_of :contact_email,  :with => EmailAddress
   
   validates_presence_of     :name, :description
   validates_uniqueness_of   :name
