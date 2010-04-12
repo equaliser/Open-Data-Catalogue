@@ -44,7 +44,7 @@ class Admin::DatasetsController < Admin::AdminController
   # GET /datasets/1/edit
   def edit
     @dataset = Dataset.find(params[:id])
-  
+    @tags = @dataset.tags
   end
 
   # POST /datasets

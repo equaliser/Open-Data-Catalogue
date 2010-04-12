@@ -13,7 +13,6 @@ function add_fields(link, association, content) {
 $(document).ready(function(){
 	showHideBasedOnValue('#dataset_geo_granularity_id', '#f_geoGranularityOther', 16);
 	showHideBasedOnValue('#dataset_geo_granularity_id', '#f_geoGranularityPoint', 15);
-
 });
 
 

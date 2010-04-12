@@ -60,6 +60,12 @@
   <span class="help" id="helpTags">Tags should be separated by a space. Use a dash for a space in a tag, eg. "french-toast"</span>
 </p>
 
+<div id="tags" style="margin-top:30px;">
+<% @tags.each do |tag|%>
+<div class="tag<%= ' selectedTag' if @dataset.tag_list.index(tag.name) %>" onclick="selectTag(this);"><%= tag.name %></div>
+<% end %>
+</div>
+
   <p>
     <%= f.label :version %>
     <%= f.text_field(:version, :size => "6") %>
