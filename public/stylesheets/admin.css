@@ -358,7 +358,7 @@ textarea
 		color:#666;
 	}
 
-input.update
+input.update, input.create
 	{
 		padding:10px 22px;
 		-moz-border-radius:8px;
@@ -372,7 +372,7 @@ input.update
 		margin:20px 0 30px 0;
 	}
 
-input.update:hover, p#addFormatsButton a:hover
+input.update:hover, input.create:hover, p#addFormatsButton a:hover
 	{
 		background-color:#07D100;
 	}
@@ -391,7 +391,6 @@ p#addFormatsButton a:link, p#addFormatsButton a:hover
 		cursor:pointer;
 		text-decoration:none;
 	}
-
 
 
 /* inputrow, used on the formats on the datasets page */

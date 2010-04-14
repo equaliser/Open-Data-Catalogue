@@ -1,7 +1,7 @@
 <span class="fields">
 	<p class="inputrow">
 		<%= f.label :format_type_id %>
-		<%= f.select :format_type_id, FormatType.find(:all).collect {|s|
+		<%= f.select :format_type_id, FormatType.all(:order => "name ASC").collect {|s|
 			[s.name, s.id]
 		} %>
 

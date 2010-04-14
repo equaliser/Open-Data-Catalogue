@@ -35,21 +35,21 @@
 
   <p>
     <%= f.label :audience_id %>
-	<%= f.select :audience_id, Audience.find(:all).collect {|s|
+	<%= f.select :audience_id, Audience.all.collect {|s|
 		[s.name, s.id]
 	} %>
   </p>
 
   <p>
     <%= f.label :licence_id %>
-	<%= f.select :licence_id, Licence.find(:all).collect {|s|
+	<%= f.select :licence_id, Licence.all.collect {|s|
 		[s.name, s.id]
 	} %>
   </p>
 
   <p>
     <%= f.label :category_id %>
-	<%= f.select :category_id, Category.find(:all).collect {|s|
+	<%= f.select :category_id, Category.all(:order => "name ASC").collect {|s|
 		[s.name, s.id]
 	} %>
   </p>
@@ -68,7 +68,7 @@
 
   <p>
     <%= f.label :language_id %>
-	<%= f.select :language_id, Language.find(:all).collect {|s|
+	<%= f.select :language_id, Language.all(:order => "name ASC").collect {|s|
 		[s.name, s.id]
 	} %>
   </p>

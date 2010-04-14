@@ -32,7 +32,8 @@ class Admin::DatasetsController < Admin::AdminController
   # GET /datasets/new.xml
   def new
     @dataset = Dataset.new
-
+    @dataset.language_id = 5     # defaulting to English
+    
     3.times { @dataset.format_urls.build }
 
     respond_to do |format|
