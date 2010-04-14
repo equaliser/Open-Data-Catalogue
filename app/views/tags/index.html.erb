@@ -8,7 +8,7 @@
 	<% debug @sorted_tags %>
 	<ul id="tags">
 	<% @sorted_tags.each do |tag| %>
-		<li><%= link_to tag.name, '/tags/'+tag.name, {:title => tag.count.to_s + " items tagged" } %></li>
+		<li><%= link_to tag.name.downcase, '/tags/'+tag.name.downcase, {:title => tag.count.to_s + " items tagged" } %></li>
 	<% end %>
 	</ul>
 	
