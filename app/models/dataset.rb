@@ -44,5 +44,10 @@ class Dataset < ActiveRecord::Base
     Dataset.find(:all, :conditions => {:status => "Published"}, :order=> "publish_date DESC", :limit=> x)
   end
   
+  # strips commas and downcases tags before saving 
+  def before_save
+     self.tag_list.map!(&:downcase) 
+     self.tag_list.map!{|item| item.gsub(',','')}
+  end
   
 end
