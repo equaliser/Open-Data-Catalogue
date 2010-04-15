@@ -10,8 +10,8 @@ class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.xml
   def index
-    @categories = Category.find(:all, :order=>'name ASC')
-    @datasets = Dataset.find(:all, :select =>'count(*) AS count, category_id', :conditions => {:status => "Published"}, :group =>'category_id')
+    #@categories = Category.find(:all, :order=>'name ASC')
+    @datasets = Dataset.all(:select =>'count(*) AS count, category_id, categories.name AS category_name', :joins=>:category, :conditions => {:status => "Published"}, :group =>'category_id', :order=>"category_name ASC")
     
     respond_to do |format|
       format.html # index.html.erb
