@@ -9,7 +9,7 @@ class TagsController < ApplicationController
    # GET /datasets
    # GET /datasets.xml
    def index    
-    @sorted_tags = Dataset.all(:select=>'slugs.name AS slug_name, tags.*, count(*) as count',:conditions => {:status => "Published"},:joins=>{:tags=>:slugs}, :group=>"tags.id, tags.name").sort { |x,y| x.name.downcase <=> y.name.downcase }
+    @sorted_tags = Dataset.all(:select=>'slugs.name AS slug_name, tags.*, count(*) as count',:conditions => {:status => "Published"},:joins=>{:tags=>:slugs}, :group=>"tags.id, tags.name, slug_name").sort { |x,y| x.name.downcase <=> y.name.downcase }
     
     #@tags_old = Dataset.tag_counts.sort { |x,y| x.name.upcase <=> y.name.upcase }
     
