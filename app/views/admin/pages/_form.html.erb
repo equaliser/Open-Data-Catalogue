@@ -4,10 +4,15 @@
    <%= f.label :title %>
    <%= f.text_field :title %>
  </p>
- <p>
-   <%= f.label :author %>
-   <%= f.text_field :author %>
- </p>
+
+
+<p>
+	<%= f.label :author %>
+	<%= f.select :author, User.all.collect {|s|
+		[s.first_name+" "+s.last_name, s.id]
+	} %>
+</p>
+
  <p>
    <%= f.label :date %>
    <%= f.datetime_select :date %>

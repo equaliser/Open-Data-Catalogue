@@ -22,7 +22,7 @@
   <tr>
     <td class="mainName"><%= link_to h(page.title), [:admin, page] %></td>
     <td class="publishStatus"><%=h page.status %></td>
-    <td><%=h page.author %></td>
+    <td><%=h(page.user.first_name + " " + page.user.last_name) %></td>
     <td><%=h page.date %></td>
     <td><%=h page.display_order %></td>
     <td><%= link_to 'Edit', edit_admin_page_path(page), :class => "niceButton editItem" %></td>

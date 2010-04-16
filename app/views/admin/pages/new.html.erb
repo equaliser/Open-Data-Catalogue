@@ -4,9 +4,8 @@
 	</header>
 
 <% form_for([:admin, @page]) do |f| %>
-  <%= f.error_messages %>
 
-  <% render "form", :f => f %>
+	<%= render "form", :f => f %>
 
   <p>
     <%= f.submit 'Create' %>

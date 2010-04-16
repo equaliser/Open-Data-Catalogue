@@ -6,7 +6,7 @@
 
 <p>
   <b>Author:</b>
-  <%=h @page.author %>
+  <%=h(@page.user.first_name + " " + @page.user.last_name) %>
 </p>
 
 <p>
