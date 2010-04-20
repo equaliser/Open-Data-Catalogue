@@ -20,13 +20,11 @@ ActionController::Routing::Routes.draw do |map|
    end
   
   map.resources :datasets
-  map.resources :data
-  map.resources :licences
-  map.resources :hello
+  #map.resources :data
+  #map.resources :licences
   map.resources :categories
-  map.resources :users
+  #map.resources :users
   map.resources :pages
-  map.resources :testing
   map.resources :tags
 
   map.home '/home', :controller => "welcome"
@@ -36,8 +34,7 @@ ActionController::Routing::Routes.draw do |map|
   map.logout '/logout', :controller => 'session', :action => 'destroy'
   map.loggedout '/loggedout', :controller => 'session', :action => 'loggedout'
 
-  map.resources :languages
-  map.resources :audiences  
+  map.resources :languages 
   
   # The priority is based upon order of creation: first created -> highest priority.
 
