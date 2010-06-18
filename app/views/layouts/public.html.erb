@@ -52,20 +52,16 @@
 		
 		<div id="home" class="pageContent clearfix">
 			<nav id="pageNav">
-				<ul>
 					<%= navigation [{:home => home_path},
 									{:datasets => datasets_path}, 
 									{:categories => categories_path},
 									{:tags => tags_path}]%>	
 									
-					<% @pages.each do |page| %>
-						<li><%= link_to h(page.title), page %></li>
-					<% end %>								
-				<!--	<li><a href="#">Categories</a></li>
-					<li><a href="#">Tags</a></li>
-					<li><a href="#">Thing</a></li>
-					<li><a href="/blogposts">Blog</a></li>
-					<li class="last"><a href="#">Community</a></li>-->
+					<ul>
+						<% @pages.each do |page| %>
+							<li><%= link_to h(page.title), page %></li>
+						<% end %>
+					</ul>								
 				</ul>
 			</nav>
 			<div id="mainCol">
@@ -96,6 +92,19 @@
 				</ul>
 			</nav>
 		</footer>
+		
+		<% if Rails.env.production? %>
+			<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+			<script type="text/javascript">
+			try{
+			var pageTracker = _gat._getTracker("UA-xxxxxx-x");
+			pageTracker._trackPageview();
+			} catch(err) {}</script>
+		<% end %>
+	
 	</div>
 </body>
 </html>

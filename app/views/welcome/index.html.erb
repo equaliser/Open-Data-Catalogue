@@ -11,8 +11,8 @@
 		if @rss.present?
 			@rss.items[0..2].each do |item| %>
 		<div class="blog">
-				<h3><a href="<%=item.link%>"><%=item.title%></a></h3>
-				<time datetime="<%=item.pubDate %>" pubdate><%=item.pubDate.strftime("%A #{item.pubDate.day.ordinalize} %B %Y") %></time>
+				<h3><a href="<%=h(item.link)%>"><%=item.title%></a></h3>
+				<time datetime="<%=item.pubDate.strftime('%Y-%m-%dT%H:%M:%S%z'); %>" pubdate><%=item.pubDate.strftime("%A #{item.pubDate.day.ordinalize} %B %Y") %></time>
 				
 				<div class="blogIntro">
 					<%=item.description %>

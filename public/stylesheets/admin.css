@@ -124,7 +124,7 @@ article header
 
 article header h1
 	{
-		width:700px;
+		
 		float:left;
 	}
 	
@@ -136,14 +136,14 @@ article header h1 a
 article header nav
 	{
 		display:block;
-		margin-top:15px;
-		float:right;
+		margin:17px 0 0 20px;
+		float:left;
 	}
 	
 #mainCol article header nav a.niceButton
 	{
-		padding:8px 40px;
-		font-size:1.2em;
+		padding:6px 20px;
+		font-size:1.1em;
 	}
 
 .item.show ul
@@ -270,6 +270,7 @@ div.errorExplanation h2
 	{
 		margin:0;
 		padding:0 12px 20px;
+		width:936px;
 		
 	}
 	
@@ -333,7 +334,7 @@ form input, form textarea, form select
 	
 form select
 	{
-		font-size:1.4em;
+
 		padding-right:10px;
 	}
 	
@@ -484,7 +485,3 @@ td.mainName a
 	    clear: both; 
 	    visibility: hidden;
 	}
-
-/* Hides from IE-mac \*/
-* html .clearfix {height: 1%;}
-/* End hide from IE-mac */

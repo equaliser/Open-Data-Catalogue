@@ -1,0 +1,11 @@
+/* admin ie */
+
+article header h1 {
+	font-size:1.8em;
+}
+
+article header {
+display:block;
+margin:10px 0 20px 0;
+width:100%;
+}

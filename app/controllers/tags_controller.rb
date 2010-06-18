@@ -27,8 +27,8 @@ class TagsController < ApplicationController
    # GET /datasets/1.xml
    def show    
      @tag = Tag.find(params[:id].downcase)
-    
-     @datasets = Dataset.find_tagged_with(@tag.name, :on =>:tags, :conditions => {:status => "Published"}, :order=> "name ASC")
+     @datasets = Dataset.find_tagged_with(params[:id].downcase)
+     #@datasets = Dataset.tagged_with(params[:id].downcase, :on =>:tags, :conditions => {:status => "Published"}, :order=> "name ASC")
        
      respond_to do |format|
        format.html # show.html.erb
