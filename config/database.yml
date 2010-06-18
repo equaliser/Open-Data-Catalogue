@@ -34,7 +34,7 @@ test:
   database: opendata_test
   pool: 5
   username: root
-  password: fronT242
+  password: 
   socket: /var/run/mysqld/mysqld.sock
 
 production:
